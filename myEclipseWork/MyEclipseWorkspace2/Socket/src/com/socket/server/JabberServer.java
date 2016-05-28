@@ -1,0 +1,108 @@
+package com.socket.server;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+/** 
+ ***************************************************************  
+ * 项目名称：JavaThread 
+ * 程序名称：JabberServer 
+ * 日期：2015年7月30日16:09:58
+ * 作者： 
+ * 模块： 
+ * 描述： 
+ * 备注： 
+ * ------------------------------------------------------------ 
+ * 修改历史 
+ * 序号               日期              修改人       修改原因 
+ *  
+ * 修改备注： 
+ * @version  
+ *************************************************************** 
+ */  
+public class JabberServer {
+
+	 public static int PORT = 8080;  
+	    public static void main(String[] agrs) {  
+	        ServerSocket s = null;  
+	        Socket socket = null;  
+	        BufferedReader br = null;  
+	        PrintWriter pw = null;  
+	        try {  
+	            //设定服务端的端口号  
+	            s = new ServerSocket(PORT);  
+	            System.out.println("ServerSocket Start:"+s);  
+	            //等待请求,此方法会一直阻塞,直到获得请求才往下走  
+	            socket = s.accept();  
+	            System.out.println("Connection accept socket:"+socket);  
+	            //用于接收客户端发来的请求  
+	            br = new BufferedReader(new InputStreamReader(socket.getInputStream()));  
+	            //用于发送返回信息,可以不需要装饰这么多io流使用缓冲流时发送数据要注意调用.flush()方法  
+	            pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())),true);  
+	            while(true){  
+	            	//接收
+	                String str = br.readLine();
+	                //输出
+	                System.out.println("Client Socket Message:"+str);
+	                //休眠1秒
+	                Thread.sleep(1000);
+	                //操作
+	                str=outString(str);
+	                //是否停止服务
+	                if(str.equals("END")){  
+	                    break;  
+	                }  
+	                
+	                //响应
+	                pw.println(str);  
+	                //发送
+	                pw.flush();  
+	            }  
+	              
+	        } catch (Exception e) {  
+	            // TODO Auto-generated catch block  
+	            e.printStackTrace();  
+	        }finally{  
+	            System.out.println("Close.....");  
+	            try {  
+	                br.close();  
+	                pw.close();  
+	                socket.close();  
+	                s.close();  
+	            } catch (Exception e2) {  
+	                  
+	            }  
+	        }  
+	    } 
+	    
+	    private static String outString(String str){
+	    	
+	    	if("Hello".equals(str)){
+	    		str="吃饭了麽？！";
+	    	}else if("hi".equals(str)){
+	    		str="你好！";
+	    	}else if("sorry".equals(str)){
+	    		str="没关系！";
+	    	}else if("END".equals(str)){
+	    		str="再见！";
+	    	}else{
+	    		str="听不懂！";
+	    	}
+	    	
+	    	return str;
+	    }
+	    
+	    private static void oneServer(Socket socket){
+	    	 //用于接收客户端发来的请求  
+           /* br = new BufferedReader(new InputStreamReader(socket.getInputStream()));  
+            //用于发送返回信息,可以不需要装饰这么多io流使用缓冲流时发送数据要注意调用.flush()方法  
+            pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())),true);*/  
+	    	
+	    }
+}

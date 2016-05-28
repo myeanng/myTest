@@ -1,0 +1,10 @@
+package com.ss.dao;
+
+import com.ss.entity.Person;
+
+public interface CategoryDao {
+	int add(Category category);
+	int del(int id);
+	int upd(Category category);
+	Person sel(int id);
+}

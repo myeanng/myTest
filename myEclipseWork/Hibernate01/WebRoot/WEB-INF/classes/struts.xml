@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="forumpackage" extends="struts-default">
+		<action name="personAction_*" method="{1}" class="com.forum.action.PersonAction">
+			<result type="redirect">/index.jsp</result>
+		</action>
+		<action name="categoryAction_*" method="{1}" class="com.forum.action.CategoryAction">
+			<result >/index.jsp</result>
+			<result name="error" type="redirect">/error.jsp</result>
+		</action>
+		<action name="boardAction_*" method="{1}" class="com.forum.action.BoardAction">
+			<result type="redirect">/index.jsp</result>
+			<result name="error" type="redirect">/error.jsp</result>
+		</action>
+	</package>
+</struts>    

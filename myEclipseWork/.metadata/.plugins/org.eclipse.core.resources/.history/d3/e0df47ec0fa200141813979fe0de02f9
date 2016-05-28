@@ -1,0 +1,20 @@
+package com.test.service.impl;
+
+import java.util.List;
+
+import com.test.entity.Book;
+import com.test.service.BookService;
+
+public class BookServiceImpl implements BookService {
+	private BookDao bookDao;
+	public void add(Book entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public List<Book> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

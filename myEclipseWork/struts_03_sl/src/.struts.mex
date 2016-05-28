@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="adminpkg" location="0,0" size="0,0">
+    <action name="loginaction" location="0,0" size="0,0">
+      <result name="dui" />
+      <result name="cuo" />
+    </action>
+    <action name="show" location="0,0" size="0,0">
+      <result name="dui" />
+      <result name="cuo" />
+    </action>
+    <action name="addaction" location="0,0" size="0,0">
+      <result name="dui" />
+      <result name="cuo" />
+    </action>
+    <action name="delaction" location="0,0" size="0,0">
+      <result name="dui" />
+      <result name="cuo" />
+    </action>
+  </package>
+</Struts2Diagram>
+

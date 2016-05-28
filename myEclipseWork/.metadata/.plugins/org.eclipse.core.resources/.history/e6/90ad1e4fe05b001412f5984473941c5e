@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="jisuans" extends="struts-default">
+	<action name="jisuan_*" class="com.sx4.action.JisuanAction" method="{1}">
+		<result name="result" type="dispatcher">/jisuan.jsp</result>
+		<result name="cuo" type="redirect">/error.jsp</result>
+		<result name="error" type="redirect">/errortow.jsp</result>
+	</action>
+</package>
+<package name="adminpackage" extends="struts-default">
+	<action name="admin_*" class="com.sx4.action.AdminAction" method="{1}">
+		<result name="dui" type="dispatcher">/adminlist.jsp</result>
+		<result name="cuo" type="redirect">/error.jsp</result>
+	</action>
+</package>
+</struts>    

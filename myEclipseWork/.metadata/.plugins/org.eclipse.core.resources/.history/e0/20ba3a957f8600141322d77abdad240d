@@ -1,0 +1,40 @@
+package com.ss.action;
+
+import java.util.List;
+
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+import com.ss.biz.S5Biz;
+import com.ss.entity.Emp;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+@Controller("empaction")
+@Scope("prototype")
+@Results({@Result(location="/list.jsp")})
+@SuppressWarnings("serial")
+public class S5Action extends ActionSupport implements ModelDriven<Emp> {
+	private S5Biz s5biz;
+	private List<Emp> list;
+	public String findByPage() {
+		// TODO Auto-generated method stub
+		list = s5biz.findAllEmpByPage(1, 5);
+		return SUCCESS;
+	}
+	public S5Biz getS5biz() {
+		return s5biz;
+	}
+	public void setS5biz(S5Biz s5biz) {
+		this.s5biz = s5biz;
+	}
+	public List<Emp> getList() {
+		return list;
+	}
+	public void setList(List<Emp> list) {
+		this.list = list;
+	}
+	
+	
+}

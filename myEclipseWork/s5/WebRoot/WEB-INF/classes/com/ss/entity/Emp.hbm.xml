@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ss.entity">
+	<class name="Emp" table="t_Spring_s5_emp">
+		<id name="id" type="java.lang.Integer">
+			<column name="id"></column>
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="createDate" type="java.sql.Timestamp">
+		</property>
+		<property name="name" type="java.lang.String">
+		</property>
+		<property name="zw" type="java.lang.String">
+		</property>
+		<property name="money" type="java.lang.Float">
+		</property>
+		<property name="jj" type="java.lang.Float">
+		</property>
+		<many-to-one name="demp" class="Demp">
+		</many-to-one>
+	</class>
+</hibernate-mapping>

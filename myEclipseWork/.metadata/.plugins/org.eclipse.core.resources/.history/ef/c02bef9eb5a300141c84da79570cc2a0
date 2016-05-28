@@ -1,0 +1,14 @@
+package com.test.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Book2 {
+	@Id
+	@GeneratedValue
+	private int id;
+	private String name;
+	
+}

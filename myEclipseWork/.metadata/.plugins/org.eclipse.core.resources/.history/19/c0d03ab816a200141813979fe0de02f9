@@ -1,0 +1,26 @@
+package com.test.action;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.test.entity.Book;
+import com.test.service.BookService;
+
+
+public class BookAction extends ActionSupport {
+	@Autowired
+	private BookService bookService;
+	
+	public String add(){
+		System.out.println("add");
+		Book book= new Book();
+		book.setName("≤‚ ‘");
+		bookService.add(book);
+		
+		return "add";
+	}
+	public String findAll(){
+		bookService.list();
+		return "list";
+	}
+}

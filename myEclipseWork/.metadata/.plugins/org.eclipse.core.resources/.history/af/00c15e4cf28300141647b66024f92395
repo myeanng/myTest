@@ -1,0 +1,10 @@
+package com.ss.aop;
+
+public class BingXangAop {
+	public void qian(){
+		System.out.println("»¶Ó­¹ºÂò...");
+	}
+	public void hou(){
+		System.out.println("»¶Ó­ÏÂ´Î¹âÁÙ...");
+	}
+}

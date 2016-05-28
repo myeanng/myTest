@@ -1,0 +1,7 @@
+package com.ss.dao;
+
+import com.ss.entity.Record;
+
+public interface RecordDao {
+	void add(Record record);
+}

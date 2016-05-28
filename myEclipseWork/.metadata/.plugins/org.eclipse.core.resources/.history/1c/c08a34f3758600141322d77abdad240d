@@ -1,0 +1,11 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+import java.util.Set;
+
+@SuppressWarnings("serial")
+public class Demp implements Serializable {
+	private Integer id;
+	private String name;
+	private Set<Emp> emps=new HashSet<Emp>();
+}

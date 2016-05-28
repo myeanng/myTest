@@ -1,0 +1,50 @@
+.siteMessageMain{width: 1000px;margin: 0 auto;border-radius: 6px 6px 0 0;border:1px solid #D5D5D5;}
+.siteMessageNav{border-radius: 6px 6px 0 0;margin-bottom: 12px;}
+.siteMessageNav li{height: 42px;border-right: 1px solid #D5D5D5;width: 332px;background: #F8F8F8;float: left;}
+.siteMessageNav li.first{border-radius: 6px 0 0 0;}
+.siteMessageNav li.last{border-right: none;width: 334px;border-radius: 0 6px 0 0;}
+.siteMessageNav li a{display: block;height: 42px;line-height: 42px;text-align: center;color: #999;}
+.siteMessageNav li.current{background: #fff;}
+.siteMessageNav li.current a{color: #1488da;font-size: 16px;}
+.siteMessageNav li:hover a{color: #1488da;font-size: 16px;}
+.siteMessageNav2 li.first{width: 499px;}
+.siteMessageNav2 li.last{width: 500px;}
+.sendMessageBar{height: 36px;background: #F8F8F8;position: relative;z-index: 1;}
+.webSiteMessage-send{background: #FFFFFF;width: 58px;height: 21px;border: 1px solid #d5d5d5;text-align: center;line-height: 21px;color: #666;position: absolute;top: 50%;margin-top: -10px;right: 37px;border-radius: 3px;}
+.sendMessageBar a:hover{background: #F8F8F8;}
+.privateMessageList .part{padding-top: 20px;}
+.privateMessageList .part p{color: #666;text-align: center;padding-bottom: 20px;}
+.privateMessageList .part .content{padding: 0 20px;margin-bottom: 34px;}
+.privateMessageList .part .qName{float: left;background: url(../img/siteMessage/icon.png) 0 5px no-repeat;height: 20px;line-height: 20px; padding-left: 20px;margin-right: 5px;}
+.privateMessageList .part .qDetail{float: left;position: relative;z-index: 1;background: #fff;padding-left: 20px;}
+.privateMessageList .part .qDetail .detail{border: 1px solid #DFDFDF;border-radius: 6px;padding: 15px;color: #666;}
+.privateMessageList .part .qDetail .icon1{position: absolute;height: 19px;width: 19px;background: url(../img/siteMessage/icon.png) 0 -45px no-repeat;left: 2px;top: 10px;}
+.privateMessageList .part .aDetail{float: right;position: relative;z-index: 1;padding-right: 20px;}
+.privateMessageList .part .aDetail .detail{padding: 15px;border-radius: 6px;background: #39A1EA;color: #fff;}
+.privateMessageList .part .aName{float: right;margin-left: 5px;}
+.privateMessageList .part .aDetail .icon2{position: absolute;height: 18px;width: 21px;background: url(../img/siteMessage/icon.png) no-repeat 0 -95px; right: 0;top: 7px;}
+.siteMessageTable1{width: 100%;}
+.siteMessageTable1 th{font-weight: normal;height: 36px;background: #F8F8F8;text-align: center;}
+.siteMessageTable1 th a{color: #1488da;}
+.siteMessageTable1 th a:hover{color: #666666;text-decoration: underline;}
+.siteMessageTable1 td{text-align: center;border-bottom: 1px dashed #E2E2E2;padding: 10px 0;}
+.siteMessageTable1 td span.read{display: inline-block;background: url(../img/siteMessage/icon.png) no-repeat;width: 14px;height: 12px;}
+.siteMessageTable1 th .webSiteMessage-send{ position: static;display: inline-block;margin-top: 0;}
+.siteMessageTable1 td span.yes{background-position: 0 0;}
+.siteMessageTable1 td span.no{background-position: -126px 0;}
+.siteMessageTable1 td.readNo{ font-weight: bold;}
+.siteMessageTable1 td.tal{text-align: left;}
+.siteMessageTable1 td.tal a{background:#fff;padding: 3px;color: #0066CC;}
+.siteMessageTable1 td.operate a{margin-top: 3px;color: #1488da;margin-right: 6px;}
+.siteMessageTable1 td.operate a:hover{color: #666666;text-decoration: underline;}
+.siteMessageMain .noMessage{height: 230px;position: relative;}
+.siteMessageMain .noMessage p{height: 40px;width: 210px;position: absolute;left: 50%;top: 50%;margin-top: -20px;margin-left: -105px;background: url(../img/siteMessage/noMessageBg.png) left center no-repeat;line-height: 40px;font-size: 16px;color: #666;text-indent: 55px;}
+
+/*·ÖÒ³*/
+.pagination-container{ clear: both;padding-bottom: 10px;padding-top: 10px;}
+.pagination-container .pagination{ overflow: hidden;display: table;margin: 0 auto;}
+.pagination-container .pagination li,.pagination-container .pagination li a{ float: left;}
+.pagination-container .pagination li{ margin-right: 10px;display: inline-block;}
+.pagination-container .pagination li a{ padding: 2px 13px;background: #f3f3f3;border-radius: 6px;font-size: 14px;}
+.pagination-container .pagination li.active a{ color: #fff;background: #39a1ea;}
+.pagination-container .pagination li:hover a{ color: #fff;background: #39a1ea;}

@@ -1,0 +1,14 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+@SuppressWarnings("serial")
+public class Emp implements Serializable {
+	private Integer id;
+	private String name;
+	private String zw;
+	private Float money;
+	private Float jj;
+	private Timestamp createDate;
+}

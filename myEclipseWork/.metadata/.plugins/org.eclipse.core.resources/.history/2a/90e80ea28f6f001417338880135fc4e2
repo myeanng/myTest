@@ -1,0 +1,162 @@
+package com.ss.entity;
+
+
+
+/**
+ * TPerson entity. @author MyEclipse Persistence Tools
+ */
+
+public class TPerson extends com.ss.dao implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Long id;
+     private Boolean deleted;
+     private String datecreated;
+     private String account;
+     private String sex;
+     private String name;
+     private String birthday;
+     private String email;
+     private String ipcreated;
+     private String datelastactived;
+     private String iplastactived;
+     private String password;
+
+
+    // Constructors
+
+    /** default constructor */
+    public TPerson() {
+    }
+
+	/** minimal constructor */
+    public TPerson(Long id) {
+        this.id = id;
+    }
+    
+    /** full constructor */
+    public TPerson(Long id, Boolean deleted, String datecreated, String account, String sex, String name, String birthday, String email, String ipcreated, String datelastactived, String iplastactived, String password) {
+        this.id = id;
+        this.deleted = deleted;
+        this.datecreated = datecreated;
+        this.account = account;
+        this.sex = sex;
+        this.name = name;
+        this.birthday = birthday;
+        this.email = email;
+        this.ipcreated = ipcreated;
+        this.datelastactived = datelastactived;
+        this.iplastactived = iplastactived;
+        this.password = password;
+    }
+
+   
+    // Property accessors
+
+    public Long getId() {
+        return this.id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Boolean getDeleted() {
+        return this.deleted;
+    }
+    
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    public String getDatecreated() {
+        return this.datecreated;
+    }
+    
+    public void setDatecreated(String datecreated) {
+        this.datecreated = datecreated;
+    }
+
+    public String getAccount() {
+        return this.account;
+    }
+    
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public String getSex() {
+        return this.sex;
+    }
+    
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBirthday() {
+        return this.birthday;
+    }
+    
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getIpcreated() {
+        return this.ipcreated;
+    }
+    
+    public void setIpcreated(String ipcreated) {
+        this.ipcreated = ipcreated;
+    }
+
+    public String getDatelastactived() {
+        return this.datelastactived;
+    }
+    
+    public void setDatelastactived(String datelastactived) {
+        this.datelastactived = datelastactived;
+    }
+
+    public String getIplastactived() {
+        return this.iplastactived;
+    }
+    
+    public void setIplastactived(String iplastactived) {
+        this.iplastactived = iplastactived;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
+   
+
+
+
+
+
+
+
+
+}

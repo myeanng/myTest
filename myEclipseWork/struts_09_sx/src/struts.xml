@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.custom.i18n.resources" value="application"></constant>
+<package name="sx09" extends="struts-default">
+	<action name="studentaction_*" class="com.ss.action.StudentAction" method="{1}">
+	<interceptor-ref name="fileUpload">
+		<param name="maximumSize">1000000</param>
+	</interceptor-ref>
+	<interceptor-ref name="defaultStack"></interceptor-ref>
+	<result>/show.jsp</result>
+	<result name="input">/index.jsp</result>
+	</action>
+	<action name="changeLang" class="com.ss.action.ChangeLangAction">
+	<result>/index.jsp</result>
+	</action>
+</package>
+</struts>    

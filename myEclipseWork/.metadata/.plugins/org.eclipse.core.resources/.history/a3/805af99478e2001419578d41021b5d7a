@@ -1,0 +1,9 @@
+package com.ppd.dao;
+
+import java.util.List;
+
+import com.ppd.entity.Duein;
+
+public interface DueinDao extends BaseDao<Duein> {
+	
+}

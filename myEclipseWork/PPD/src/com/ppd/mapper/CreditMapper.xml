@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.CreditDao">
+
+  <select id="queryById" resultType="com.ppd.entity.Credit" parameterType="int">
+  	select
+  	creaitid,
+	rank,
+	maxmoney,
+	criterion
+  	from credit where rank = #{id}
+  </select>
+  
+</mapper>

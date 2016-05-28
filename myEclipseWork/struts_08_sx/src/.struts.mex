@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="adminaction" location="0,0" size="0,0">
+    <action name="adminaction_*" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="dayaction" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="shengri.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="10,10" size="150,55" />
+  <webResource name="shengri.jsp" path="/shengri.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

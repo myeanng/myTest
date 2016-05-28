@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;PPD/src/com.ppd.util&apos;&#x0D;&#x0A;- Original project: &apos;SSMDemo&apos;&#x0D;&#x0A;- Destination element: &apos;PPD/src/com.ppd.util&apos;&#x0D;&#x0A;- Original element: &apos;org.springmvc_demo.util.SqlSessionDaoSupportTool.java&apos;" description="Copy compilation unit" destination="=PPD/src&lt;com.ppd.util" element1="/src&lt;org.springmvc_demo.util{SqlSessionDaoSupportTool.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1426917747661" units="1" version="1.0"/>
+</session>

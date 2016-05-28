@@ -1,0 +1,24 @@
+package com.ss.factory;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.Session;
+
+public class HibernateUtil {
+	private static Configuration config;
+	private final static SessionFactory factory;
+	static{
+		config=new Configuration();
+		config.configure();
+		factory=config.buildSessionFactory();
+	}
+	public static Configuration getConfig() {
+		return config;
+	}
+	public static SessionFactory getFactory() {
+		return factory;
+	}
+	public static Session getSession(){
+		return factory.openSession();
+	}
+}

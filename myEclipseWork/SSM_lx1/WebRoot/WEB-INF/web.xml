@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:applicationDataSource.xml</param-value>
+	</context-param>
+<!--
+	配置springMVC入口
+	-->
+	<servlet>
+		<servlet-name>springMVCLesson</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!--
+		配置SpringMVC配置文件路径
+		-->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:applicationContext.xml</param-value>
+		</init-param>
+<!--
+		配置启动顺序
+		-->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+<!--
+	配置拦截的请求类型
+	-->
+	<servlet-mapping>
+		<servlet-name>springMVCLesson</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+  	<servlet-mapping>
+	  	<servlet-name>default</servlet-name>
+	  	<url-pattern>*.html</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>default</servlet-name>
+	  	<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>*.jpg</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>*.png</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>*.gif</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,20 @@
+package com.ss.aop;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class BingXangAop {
+	private Set<String> cus=new HashSet<String>();
+	public void qian(){
+		System.out.println("欢迎光临...");
+	}
+	public void hou(){
+		System.out.println("谢谢光临,欢迎下次光临...");
+	}
+	public void yichang(){
+		System.out.println("购买数量有误...");
+	}
+	public void huan(){
+		
+	}
+}

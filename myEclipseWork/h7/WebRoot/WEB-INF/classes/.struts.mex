@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="H7package" location="0,0" size="0,0">
+    <action name="h7Action_*" location="0,0" size="0,0">
+      <result name="showType">
+        <resourceEdge source="showType" routing="0" target="showType.jsp" />
+      </result>
+      <result name="add">
+        <resourceEdge source="add" routing="0" target="add.jsp" />
+      </result>
+      <result name="find">
+        <resourceEdge source="find" routing="0" target="find.jsp" />
+      </result>
+      <result name="message">
+        <resourceEdge source="message" routing="0" target="message.jsp" />
+      </result>
+      <result name="showMessage">
+        <resourceEdge source="showMessage" routing="0" target="showMessage.jsp" />
+      </result>
+    </action>
+    <action name="h8admin_*" location="0,0" size="0,0">
+      <result name="login">
+        <resourceEdge source="login" routing="0" target="login.jsp" />
+      </result>
+      <result name="main">
+        <resourceEdge source="main" routing="0" target="main.jsp" />
+      </result>
+    </action>
+    <action name="h8vote_*" location="0,0" size="0,0">
+      <result name="listVote">
+        <resourceEdge source="listVote" routing="0" target="listVote.jsp" />
+      </result>
+      <result name="updateVote">
+        <resourceEdge source="updateVote" routing="0" target="updateVote.jsp" />
+      </result>
+      <result name="addVotecontext">
+        <resourceEdge source="addVotecontext" routing="0" target="addVotecontext.jsp" />
+      </result>
+    </action>
+    <action name="h8votecontext_*" location="0,0" size="0,0">
+      <result name="listVote">
+        <resourceEdge source="listVote" routing="0" target="listVote.jsp" />
+      </result>
+      <result name="updateVote">
+        <resourceEdge source="updateVote" routing="0" target="updateVote.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="showType.jsp" path="/showType.jsp" location="0,0" size="0,0" />
+  <webResource name="add.jsp" path="/add.jsp" location="0,0" size="0,0" />
+  <webResource name="message.jsp" path="/message.jsp" location="0,0" size="0,0" />
+  <webResource name="showMessage.jsp" path="/showMessage.jsp" location="0,0" size="0,0" />
+  <webResource name="find.jsp" path="/find.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="/H8/login.jsp" location="0,0" size="0,0" />
+  <webResource name="main.jsp" path="/H8/main.jsp" location="0,0" size="0,0" />
+  <webResource name="listVote.jsp" path="/H8/listVote.jsp" location="0,0" size="0,0" />
+  <webResource name="addVotecontext.jsp" path="/H8/addVotecontext.jsp" location="0,0" size="0,0" />
+  <webResource name="updateVote.jsp" path="/H8/updateVote.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

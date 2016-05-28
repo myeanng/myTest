@@ -1,0 +1,623 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>完善资料 -拍拍贷-中国首家，最大、最多人使用的互联网金融P2P网络借贷平台。提供小额贷款,短期贷款,个人贷款,自定利率,借期灵活。您还可以成为借出人理财投资,超低门槛，获得高年收益率回报</title>
+    <meta name="description" content="拍拍贷，中国首家，最大、最多人使用的互联网金融P2P(人人贷)网络借贷平台。提供小额贷款,短期贷款,个人贷款,抵押,无抵押贷款服务。利率自定,借期灵活。您还可以成为借出人理财借贷投资，获得高年收益率回报，超低门槛，超高收益。作为可信赖的投融资,理财,贷款,信贷平台,拍拍贷助您财富实现增值" />
+    <meta name="keywords" content="网络贷款,民间借贷,小额贷款,无抵押贷款,信用贷款,网络借贷,借贷平台,拍拍贷,人人贷,投资理财,个人理财,p2p贷款,贷款,互联网金融,投融资" />
+    <link rel="stylesheet" type="text/css" href="./ppd_userMessage_files/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./ppd_userMessage_files/layout.css" />
+    <link href="./ppd_userMessage_files/validation-min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./ppd_userMessage_files/favicon.ico" type="image/x-icon" />
+    <script src="./ppd_userMessage_files/newRefer.js"></script>
+    
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faab1030ecb68cd7b5c613bd7a5127a40' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="./ppd_userMessage_files/firstborrow.css" />
+
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/chinaprovinces_0.2.1.js"></script>
+</head>
+<body>
+    <div class="top PPD_header_nav">
+        <div class="top_inner w1188center clearfix PPD_login_status">
+            
+        </div>
+    </div>
+
+    <div class="mainNav">
+        <div class="mainNav_inner w1000center clearfix">
+            <h1 class="logo">
+                <a href="/">
+                    <img src="./ppd_userMessage_files/logo.png" alt="" /></a>
+            </h1>
+            <ul id="tabIcon">
+                <li class="hasSubMenu">
+                    <a href="/lend" category="Lend">我要投资</a>
+                    <div class="subMenu">
+                        <a href="/lend">我要投资</a>
+                        <a href="http://www.ppdai.com/product/plan/rainbow">彩虹计划</a>
+                        <a href="http://www.ppdai.com/debtdeal/AlldebtList/DebtList">债权交易</a>
+                        <a href="/howtolend">如何投资</a>
+                        <a href="/help/principalprotection">本金保障</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu">
+                    <a href="/borrow" category="Borrow">我要借款</a>
+                    <div class="subMenu">
+                        <a href="/borrow">我要借款</a>
+                        <a href="/help/howtoborrow">如何借款</a>
+                        <a href="/borrow/interestcalculate">利息计算器</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="/account" category="Account">我的账户</a>
+                    <div class="subMenu">
+                        <a href="/account/borrow">借款账户</a>
+                        <a href="/account/lend">投资账户</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="/help/aboutus" category="About">关于拍拍贷</a>
+                    <div class="subMenu">
+                        <a href="/help/aboutus">关于我们</a>
+                        <a href="/help/howworks">工作原理</a>
+                        <a href="/help/fees">资费说明</a>
+                            <a href="/job">招贤纳士</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+<div class="main">
+    <div class="clearfix">
+        <ul class="breadcrumb">
+            <li>首页 &gt;</li>
+            <li>我的借款</li>
+        </ul>
+    </div>
+
+    <form method="post" id="firstborrow" action="../PPD/perfectuser/updatausers" class="">
+        <div class="main_con">
+            <span class="title">申请贷款</span>
+
+            <div class="basic_infor">
+                <p class="info">
+                    温馨提示：亲爱的客户，拍拍贷会有严格的信息和安全加密机制，确保您的信息安全，不会向外界泄露。请您认真填写。如有造假，您的贷款资格会被取消；并加入拍拍贷黑名单<br />
+                    <i></i>系统将无法贷款。
+                </p>
+
+                <div class="process_info">
+                    <span class="one cur">填写个人信息</span>
+                    <i class="arrow cur"></i>
+                    <span class="two">发布借款信息</span>
+                    <i class="arrow"></i>
+                    <span class="three">资质审核</span>
+                </div>
+
+                <div class="information clearfix">
+                    <span class="user">我的基本信息</span>
+
+                    <div class="info_con">
+                            <input type="hidden" value="1" name="userid"/>
+                        <ul class="clearfix">
+                            
+                            <li class="clearfix"><em>姓名：</em><input type="text" class="txt01" name="truename" rules="" maxlength="30" value=""></li>
+                            <li class="clearfix"><em>身份证：</em><input name="cardid" type="text" class="txt01 num" maxlength="18" value=""/></li>
+                            <li class="clearfix"><em>手机号：</em><input id="txtMobilePhone" name="mobile" type="text" class="txt01 num" maxlength="11" value=""/></li>
+                            <li class="clearfix"><em>QQ：</em><input name="qq" type="text" maxlength="11" class="txt01 num" value=""/></li>
+                            <li class="clearfix">
+                            <!-- 婚姻状况 -->
+                            <c:forEach items="${listDataDictionary}" var="data">
+                                <c:if test="${data.ddid == 10001}">
+                                   <em>${data.ddcontent}：</em>
+                                </c:if>  
+                            </c:forEach>
+                            <c:forEach items="${listDataDictionary}" var="data">
+                                <c:if test="${data.numberid == 10000}">
+                                  <c:if test="${data.ddid != 10001}">
+                                    <input name="marital" type="radio" value="${data.ddcontent}" class="radios"  />${data.ddcontent}
+                                  </c:if>
+                                </c:if>  
+                            </c:forEach>
+
+                            </li>
+                             <!-- 学历 -->
+                            <li class="clearfix">
+                            <c:forEach items="${listDataDictionary}" var="data">
+                               <c:if test="${data.ddid == 10005}">
+                                 <em>${data.ddcontent}：</em>
+                               </c:if>
+                            </c:forEach>
+                          
+                                <select class="selct txt02" id="EducationId" name="education">  
+                                   <c:forEach items="${listDataDictionary}" var="data">
+                                      <c:if test="${data.numberid == 10001}">
+                                         <c:if test="${data.ddid != 10005}">
+                                          <option value="${data.ddcontent}">${data.ddcontent}</option>                               
+                                         </c:if>
+                                      </c:if>  
+                                   </c:forEach>
+                              </select>
+                            </li>
+                         <li class="clearfix"><em>住宅地址：</em>
+                               
+                           
+                            <span id="addressx"></span>
+				<script>
+					$("#addressx").chinaprovinces({valueType:'name',change:function(province,city,area){
+						$("#address").val(province+city+area);
+	
+					}});
+				</script> </li>  
+                            <li class="clearfix">
+                                <input name="address" id="address" type="text" maxlength="40" class="txt01 ml75" value="" /></li>
+                            <li class="clearfix"><em>住宅电话：</em><input name="tell" type="text" class="txt01 num"  value=""/></li>
+                             <li class="clearfix">
+                             <!-- 财力证明 -->
+                              <c:forEach items="${listDataDictionary}" var="data">
+                                 <c:if test="${data.ddid == 10013}">
+                                   <em class="f18">${data.ddcontent}：<br />
+                                   <i>（可多选）</i></em>  
+                                  </c:if>  
+                              </c:forEach>
+                                <p class="cailizhm">
+                                  <c:forEach items="${listDataDictionary}" var="data">
+                                    <c:if test="${data.numberid == 10002}">
+                                      <c:if test="${data.ddid != 10013}">
+                                        <input type="checkbox" value="${data.ddcontent}" name="financial" >${data.ddcontent} 
+                                       
+                                      </c:if>
+                                    </c:if>  
+                                  </c:forEach>
+                                  
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="jobs clearfix">
+                        <div class="works clearfix">
+                        <!-- 就业状况 -->
+                         <c:forEach items="${listDataDictionary}" var="data">
+                            <c:if test="${data.ddid == 10019}">
+                            <span class="job">${data.ddcontent}：</span>
+                            </c:if>  
+                         </c:forEach>
+                         <c:forEach items="${listDataDictionary}" var="data">
+                             <c:if test="${data.numberid == 10003}">
+                               <c:if test="${data.ddid != 10019}">
+                                 <input name="employment" type="radio" value="${data.ddcontent}" id="a1" checked="checked" groupfor="${data.ddcontent}" style="margin: 7px 10px 0 0;" />${data.ddcontent}
+                               </c:if>
+                             </c:if>  
+                         </c:forEach>
+                        </div>
+                    
+                    <div class="view">
+                            <div class="position_con clearfix" style="display: block">
+                            <!-- 社保/公积金 -->
+                                <span class="user mt110">我的工作情况</span>
+                                <ul style="width: 700px;">
+                                    <li class="clearfix">
+                                      <c:forEach items="${listDataDictionary}" var="data">
+                                         <c:if test="${data.ddid == 10025}">
+                                            <em>${data.ddcontent}：</em>
+                                         </c:if>  
+                                      </c:forEach>
+                                        <label for="a11">
+                                           <c:forEach items="${listDataDictionary}" var="data">
+                                             <c:if test="${data.numberid == 10004}">
+                                              <c:if test="${data.ddid != 10025}">
+                                                <input name="socialse" type="radio" value="${data.ddcontent}" id="a11" />${data.ddcontent}
+                                               </c:if>
+                                              </c:if>  
+                                          </c:forEach>
+                                        </label>
+                                    </li>
+                                    <li class="clearfix"><em>单位名称：</em><input name="unitname" maxlength="20" type="text" class="txt01" /></li>
+                                    <li class="clearfix">
+                                      <!-- 工作年限 -->
+                                     <c:forEach items="${listDataDictionary}" var="data">
+                                         <c:if test="${data.ddid == 10028}"> 
+                                            <em>${data.ddcontent}：</em>
+                                         </c:if>  
+                                     </c:forEach>
+                                     <select class="selct txt02" id="WorkYears" name="workexper">
+                                       <c:forEach items="${listDataDictionary}" var="data">
+                                        <c:if test="${data.numberid == 10005}">
+                                          <c:if test="${data.ddid != 10028}">                               
+                                                <option value="${data.ddcontent}">${data.ddcontent}</option>
+                                          </c:if>
+                                        </c:if>  
+                                       </c:forEach>
+                                    </select>
+                                    </li>
+                                   <li class="clearfix"><em>单位地址：</em>
+                                      
+                                      <span id="unitaddressx"></span>
+				<script>
+					$("#unitaddressx").chinaprovinces({valueType:'name',change:function(province,city,area){
+						$("#unitaddress").val(province+city+area);
+					
+					}});
+				</script>
+                                    <li class="clearfix">
+                                        <input id="unitaddress" name="unitaddress" type="text" maxlength="40" class="txt01 ml95" /></li>
+                                    <li class="clearfix"><em>单位电话：</em><input name="unittell" type="text" class="txt01 num" /></li>
+                                    <li class="clearfix"><em>任职部门：</em><input name="department" type="text" maxlength="20" class="txt01"/></li>
+                                    <li class="clearfix"><em>任职职位：</em><input name="position" type="text" maxlength="20" class="txt01"/></li>
+                                </ul>
+                            </div>
+                                                    <div class="position_con" style="display: none">
+                                <span class="user mt40">我的公司情况</span>
+                                <ul>
+                                    <li class="clearfix"><em>公司名称：</em><input name="companyname" maxlength="20" type="text" class="txt01" /></li>
+                                    
+                                    <li class="clearfix">
+                                  <!-- 公司人数 -->
+                                  <c:forEach items="${listDataDictionary}" var="data">
+                                    <c:if test="${data.ddid == 10035}">
+                                      <em>${data.ddcontent}：</em>
+                                    </c:if>
+                                  </c:forEach>
+                                      
+                                    
+ 
+                                        <select class="selct txt02" id="CompanySizeId" name="companynum">
+<c:forEach items="${listDataDictionary}" var="data">
+<c:if test="${data.numberid == 10006}">
+<c:if test="${data.ddid != 10035}">
+
+<option value="${data.ddcontent}">${data.ddcontent}</option>
+</c:if>
+</c:if>
+
+</c:forEach>
+</select>
+                                    </li>
+                                 <li class="clearfix"><em>经营地址：</em>
+                                         <span id="BusinessaAddressx"></span>
+				<script>
+					$("#BusinessaAddressx").chinaprovinces({valueType:'name',change:function(province,city,area){
+						$("#BusinessaAddress").val(province+city+area);
+						
+					}});
+				</script>
+                                    <li class="clearfix">
+                                        <input id="BusinessaAddress" name="businessaaddress" type="text" maxlength="40" class="txt01 ml95"></li>
+                                    <li class="clearfix"><em>公司电话：</em><input name="companytell" type="text" class="txt01 num" /></li>
+                                    <li class="clearfix">
+                                    <!-- 营业执照 -->
+                                    <c:forEach items="${listDataDictionary}" var="data">
+                                      <c:if test="${data.ddid == 10041}">
+                                        <em>${data.ddcontent}：</em>
+                                      </c:if>
+                                    </c:forEach>
+                                    <c:forEach items="${listDataDictionary}" var="data">
+                                       <c:if test="${data.numberid == 10007}">
+                                         <c:if test="${data.ddid !=10041}">
+                                            <input id="HasBusinessLicense" name="businlicen" style="margin:7px 5px 0 12px" type="radio" value="${data.ddcontent}" />${data.ddcontent}
+                                         </c:if>
+                                       </c:if>
+                                    </c:forEach>
+                                    
+                                </ul>
+                            </div>
+                                                    <div class="position_con" id="my_js"  style="display: none">
+                                <span class="user mt50">我的网店情况</span>
+                                <ul>
+                                <!-- 经营网店 -->
+                                    <li class="clearfix">
+                                     <c:forEach items="${listDataDictionary}" var="data">
+                                      <c:if test="${data.ddid == 10044}">
+                                           <em>${data.ddcontent}：</em>
+                                       </c:if>
+                                    </c:forEach>
+                                   
+                                        <select class="selct txt02" id="WebShopTypeId" name="onlineshop">
+                                          <c:forEach items="${listDataDictionary}" var="data">
+                                            <c:if test="${data.numberid == 10008}">
+                                              <c:if test="${data.ddid !=10044}">
+                                                <option value="${data.ddcontent}">${data.ddcontent}</option>
+                                              </c:if>
+                                            </c:if>
+                                          </c:forEach>
+</select>
+                                    </li>
+                                    <li class="clearfix"><em>卖家昵称：</em><input name="nick" type="text" maxlength="40" class="txt01" /></li>
+                                    <li class="clearfix"><em>店铺地址：</em><input name="onlineaddress" type="text" maxlength="100" class="txt01" /></li>
+                                    <li class="clearfix"><em>月营业额：</em><input name="averagemoney" maxlength="6" type="text" class="money" value="" /></li>
+                                    <li class="clearfix"><em>经营地址：</em>
+                                                               <span id="operaaddress"></span>
+				<script>
+					$("#operaaddress").chinaprovinces({valueType:'name',change:function(province,city,area){
+						$("#BussinessAddressForCompanyOwner").val(province+city+area);
+						$("#demo2_city").val(city);
+						$("#demo2_area").val(area);
+					}});
+				</script>
+                                    </li> 
+                                    <li class="clearfix">
+                                        <input name="operaaddress" type="text" maxlength="40" class="txt01 ml95" /></li>
+                                </ul>
+                            </div>
+                                                    <div class="position_con" style="display: none">
+                                <span class="user">我的学生情况</span>
+                                <ul>
+                                    <li class="clearfix"><em>学校名称：</em><input name="schoolname" maxlength="40" type="text" class="txt01" /></li>
+                                    <li class="clearfix"><em>宿舍电话：</em><input name="telephones" type="text" class="txt01 num" /></li>
+                                    <li class="clearfix"><em>还款来源：</em><input name="repayment" maxlength="40" type="text" class="txt01" /></li>
+                                </ul>
+                            </div>
+                                                    <div class="position_con"  style="display: none">
+                                <span class="user">我的就业状态</span>
+                                <ul>
+                                    <li class="clearfix"><em>还款来源：</em><input name="repayment" maxlength="40" type="text" class="txt01" /></li>
+                                </ul>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="sure_btn">
+            <input name="" type="submit" value="我已认真填写，下一步" class="next_Btn" />
+        </div>
+    </form>
+</div>
+
+
+
+
+
+    <div class="clear">
+    </div>
+
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <ul class="footer_footerBottomNav clearfix">
+                <li><span class="webindex"></span><a href="/">网站首页</a>|</li>
+                <li><span class="aboutus"></span><a href="/help/aboutus">关于我们</a>|</li>
+                <li><span class="mapsite"></span><a href="/home/sitemap">网站地图</a>|</li>
+                <li><span class="webservice"></span><a href="/consult">客服中心</a>|</li>
+                <li class="nomr"><span class="onlneserve"></span><a href="./ppd_userMessage_files/wpa.php?ln=1&key=XzgwMDAyNzUzNV8xODAzNjBfODAwMDI3NTM1XzJf" target="_blank">在线咨询</a></li>
+            </ul>
+            <p>Copyright Reserved 2007-2015©拍拍贷（www.ppdai.com）&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备05063398号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;上海拍拍贷金融信息服务有限公司</p>
+
+
+        </div>
+
+    </div>
+
+    <script src="./ppd_userMessage_files/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_userMessage_files/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_userMessage_files/servicestack-min.js"></script>
+    <script src="http://www.ppdaicdn.com/js/jquery.cookie.js"></script>
+    <script src="http://ac.ppdai.com/status?v=2014" type="text/javascript"></script>
+    
+    <script>
+        $(".my-f-l-list li a.on").closest(".my-f-l-list").prev(".my-f-l-nav").addClass("my-f-l-nav-sd");
+        try {
+            $("#tabIcon a[category='" + breadcrumbCategory + "']").addClass("tabon");
+        } catch (e) {
+
+        }
+    </script>
+    
+    <script src="./ppd_userMessage_files/ppd_checkform.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_userMessage_files/firstborrow1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_userMessage_files/servicestack-min.js"></script>
+    <script src="./ppd_userMessage_files/customize.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var gateway = new servicestack.ClientGateway('http://' + window.location.host);
+        $(function () {
+            $(document).PPDqustion({ BtnId: 'submitbtn', TextId: 'Description', tit: '亲爱的拍友们，为了给您提供最好的服务，请留下您宝贵的意见和建议，以便我们改正。' });
+            $("#submitbtn").click(function () {
+                var description = $("#Description").val() + "〖 手机号码：" + $('#txtMobilePhone').val() + ",QQ号码:" + $('input[name=QQ]').val() + " 〗";
+                $.post("/common/feedback", { description: description, categoryId: "21" }, function (e) {
+                    $(".fankui_emsg").html(e.Message);
+                    $("#Description").val(""); //清空内容
+                });
+            });
+
+
+            $('.position_con li .zz').click(function () {
+                $(this).addClass('cur').siblings().removeClass('cur');
+            });
+
+            $("[name='ProvinceId'], [name='CityId'], [name='ProvinceIdForCompanyOwner'], [name='CityIdForCompanyOwner'], [name='ProvinceIdForWageEarner'], [name='CityIdForWageEarner'], [name='ProvinceIdForWebShop'], [name='CityIdForWebShop']").change(function () {
+                if ($(this).find("option:selected").val() == "") {
+                    $(this).nextAll("select").find("option").not(":first-child").remove();
+                    $(this).nextAll("select").find("option:first-child").attr("selected", true);
+                    $(this).nextAll("select").change();
+                } else {
+                    getAreaList($(this));
+                }
+            });
+
+
+            var sub1 = false;
+            window.onbeforeunload = function (e) {
+                if (!sub1) {
+                    var ss = "关闭后将无法保存已填写内容。确认不保存已填写的内容，放弃本次借款吗？\n";
+                    return ss;
+                }
+            };
+
+            $('.next_Btn').click(function () {
+                setTimeout(function () {
+                    if ($('.Wrong').length) {
+                        var top = $('.Wrong').eq(0).offset().top - 20;
+
+                        $('body, html').animate({
+                            'scrollTop': top
+                        }, 100);
+
+                        //添加记录
+                        var errorMessage = '';
+
+                        $('.Wrong').each(function () {
+                            errorMessage += ('[' + $(this).parents('li').children('input').attr('name') + ':' + $(this).parents('li').children('input').val() + '|' + $(this).text() + '],') || ('[' + $(this).parents('li').children('select').attr('name') + ':' + $(this).parents('li').children('select').val() + '|' + $(this).text() + '],');
+
+                        });
+                        $.post("/actionlog", { useraction: 'newfirstuser', functionname: "new填写资料验证未通过", remark: errorMessage });
+
+                    }
+                }, 100);
+
+
+                if ($('.Wrong').length > 0) {
+
+                    sub1 = false;
+                } else {
+                    sub1 = true;
+                }
+            });
+
+
+        });
+
+        ///获取区域信息方法
+
+        function getAreaList(obj) {
+            var type = obj.attr("data-type");
+            var data = { AreaType: type, Id: obj.find("option:selected").val(), format: "json" };
+            gateway.postToService(
+                { AreaRequest: data },
+                function (e) {
+                    var ilist = "";
+                    var econtent = e.Content;
+                    var nextobj = obj.nextAll("select")[0];
+                    if (type == "2") {
+                        for (var i = 0; i < econtent.length; i++) {
+                            ilist += "<option value=" + econtent[i].Id + ">" + econtent[i].CityName + "</option>";
+                        }
+                        //nextobj.next().hide();
+                        $(obj.nextAll("select")[1]).find("option").not(":first-child").remove();
+                    } else {
+                        for (var j = 0; j < econtent.length; j++) {
+                            ilist += "<option value=" + econtent[j].Id + ">" + econtent[j].DistrictName + "</option>";
+                        }
+                        //nextobj.show();
+                    }
+                    $(nextobj).find("option").not(":first-child").remove();
+                    $(nextobj).append(ilist);
+
+                }, function (e) {
+                    alert(e.message);
+                }
+            );
+        }
+    </script>
+
+    <!-- Google Tag Manager 
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WSCJD4"
+                height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script> (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WSCJD4'); </script>
+     End Google Tag Manager -->
+
+    <!-- Google Code for &#27880;&#20876;725 Conversion Page Begin-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 968292381;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "LCv7CKu4jxMQnfDbzQM";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">        
+        
+        
+    </script>
+    <noscript>
+        <div style="display: inline;">
+            <img height="1" width="1" style="border-style: none;" alt="" src="//www.googleadservices.com/pagead/conversion/968292381/?label=LCv7CKu4jxMQnfDbzQM&amp;guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    <!-- Google Code for &#27880;&#20876;725 Conversion Page End-->
+
+    <!-- Google Code for &#27880;&#20876; Conversion Page Begin-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 977881590;
+        var google_conversion_language = "en";
+        var google_conversion_format = "2";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "n5mACLqdxQcQ9pOl0gM";
+        var google_conversion_value = 1.00;
+        var google_conversion_currency = "CNY";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">        
+        
+        
+    </script>
+    <noscript>
+        <div style="display: inline;">
+            <img height="1" width="1" style="border-style: none;" alt="" src="//www.googleadservices.com/pagead/conversion/977881590/?value=1.00&amp;currency_code=CNY&amp;label=n5mACLqdxQcQ9pOl0gM&amp;guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    <!-- Google Code for &#27880;&#20876; Conversion Page End-->
+
+    <script type="text/javascript">
+        var _mvq = window._mvq || []; window._mvq = _mvq;
+        _mvq.push(['$setAccount', 'm-24792-0']);
+
+
+        _mvq.push(['$setGeneral', 'registered', '', 'pdu25767440',  '10820799']);
+        _mvq.push(['$logConversion']);
+
+</script>
+    
+
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVQ5D8"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PVQ5D8');</script>
+    <!-- End Google Tag Manager -->
+</body>
+</html>

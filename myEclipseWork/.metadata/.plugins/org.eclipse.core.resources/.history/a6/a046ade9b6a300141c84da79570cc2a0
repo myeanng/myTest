@@ -1,0 +1,22 @@
+package com.test.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.test.entity.Book2;
+import com.test.service.BookService;
+@Component
+public class BookServiceImpl implements BookService {
+
+	public void addbook(Book2 entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public List<Book2> findall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

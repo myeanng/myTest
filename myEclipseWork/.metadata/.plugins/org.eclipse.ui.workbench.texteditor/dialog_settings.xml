@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+		<item value="857" key="DIALOG_X_ORIGIN"/>
+		<item value="459" key="DIALOG_HEIGHT"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wholeword"/>
+		<item value="loanMap2" key="selection"/>
+		<list key="findhistory">
+			<item value=" as"/>
+			<item value="loanMap2"/>
+			<item value="BigDecimal"/>
+			<item value="http://ac.ppdai.com/user/accountbind"/>
+			<item value="http://ac.ppdai.com/safe/setting"/>
+			<item value="http://www.ppdai.com/paybackLendReceived"/>
+			<item value="http://pay.ppdai.com/trade/cashWithDrawal"/>
+			<item value="http://pay.ppdai.com/order/online"/>
+		</list>
+		<list key="replacehistory">
+			<item value=" "/>
+			<item value="Double"/>
+			<item value="myAccount-connectNumber"/>
+			<item value="myAccount-securityCenter"/>
+			<item value="myAccount-investMessage?classType=99&amp;dateType=3"/>
+			<item value="withdrawCash.jsp"/>
+			<item value="recharge.jsp"/>
+			<item value="myAccount-moneyhistory?classType=99&amp;dateType=3"/>
+		</list>
+	</section>
+</section>

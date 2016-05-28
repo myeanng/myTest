@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ss.entity">
+	<class name="Record" table="t_Spring_s4_record">
+		<id name="id" type="java.lang.Integer">
+			<column name="id"></column>
+			<generator class="native">
+			</generator>
+		</id>
+		<many-to-one name="fromaccount" class="Account">
+		</many-to-one>
+		<many-to-one name="toaccount" class="Account">
+		</many-to-one>
+		<property name="recordDate" type="java.sql.Timestamp">
+		</property>
+		<property name="remark" type="java.lang.String">
+		</property>
+	</class>
+</hibernate-mapping>

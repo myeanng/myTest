@@ -1,0 +1,22 @@
+package com.ss.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ss.biz.BankBiz;
+
+
+public class Test {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+		BankBiz bb=(BankBiz) ac.getBean("bankbiz");
+		
+	}
+
+}

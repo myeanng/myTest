@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<package name="adminpkg" extends="struts-default">
+	<action name="loginaction" class="com.sl3.action.LoginAction">
+	<result name="dui" type="redirect">/show.action</result>
+	<result name="cuo">/error.jsp</result>
+	</action>
+	<action name="show" class="com.sl3.action.FindAllAction">
+	<result name="dui">/index.jsp</result>
+	<result name="cuo">/error.jsp</result>
+	</action>
+	<action name="addaction" class="com.sl3.action.AddAdminAction">
+	<result name="dui" type="redirect">/show.action</result>
+	<result name="cuo">/error.jsp</result>
+	</action>
+	<action name="delaction" class="com.sl3.action.DelAdminAction">
+	<result name="dui" type="redirect">/show.action</result>
+	<result name="cuo">/error.jsp</result>
+	</action>
+</package>
+</struts>    

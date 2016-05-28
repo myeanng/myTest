@@ -1,0 +1,38 @@
+package com.ss.dao.impl;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.ss.dao.PersonDao;
+import com.ss.entity.Person;
+import com.ss.factory.HibernateUtil;
+
+
+public class PersonDaoImpl implements PersonDao {
+
+	Session session =null;
+	public int add(Person person) {
+		// TODO Auto-generated method stub
+		session =HibernateUtil.getSession();
+		Transaction tx=session.beginTransaction();
+		session.save(person);
+		tx.commit();
+		session.close();
+		return 1;
+	}
+
+	public int del(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Person sel(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int upd(Person person) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

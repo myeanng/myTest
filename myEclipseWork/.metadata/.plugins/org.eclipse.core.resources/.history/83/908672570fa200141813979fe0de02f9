@@ -1,0 +1,8 @@
+package com.test.service;
+
+import com.test.entity.Book;
+
+public interface BookService {
+	void add(Book entity);
+	List<Book> list();
+}

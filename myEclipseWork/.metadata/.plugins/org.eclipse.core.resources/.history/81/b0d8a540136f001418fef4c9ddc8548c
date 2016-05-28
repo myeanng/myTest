@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="adminpackage" location="0,0" size="0,0">
+    <action name="forumaction_*" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="sel.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="show.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="show.jsp" path="/show.jsp" location="0,0" size="0,0" />
+  <webResource name="error.jsp" path="/error.jsp" location="0,0" size="0,0" />
+  <webResource name="dui.jsp" path="/dui.jsp" location="0,0" size="0,0" />
+  <webResource name="sel.jsp" path="/sel.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

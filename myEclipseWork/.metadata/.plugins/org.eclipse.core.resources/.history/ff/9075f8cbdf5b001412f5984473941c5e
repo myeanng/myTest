@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="jisuans" location="50,50" size="170,92">
+    <action name="jisuan_*" location="10,20" size="150,62">
+      <result name="result">
+        <resourceEdge source="result" routing="0" target="jisuan.jsp" />
+      </result>
+      <result name="cuo">
+        <resourceEdge source="cuo" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="adminpackage" location="350,50" size="170,92">
+    <action name="admin_*" location="10,20" size="150,62">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="adminlist.jsp" />
+      </result>
+      <result name="cuo">
+        <resourceEdge source="cuo" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="jisuan.jsp" path="/jisuan.jsp" location="50,200" size="150,55" />
+  <webResource name="error.jsp" path="/error.jsp" location="200,200" size="150,55" />
+  <webResource name="adminlist.jsp" path="/adminlist.jsp" location="350,200" size="150,55" />
+</Struts2Diagram>
+

@@ -1,0 +1,40 @@
+package com.ss.biz.impl;
+
+import java.util.List;
+
+import com.ss.biz.BankBiz;
+import com.ss.dao.AccountDao;
+import com.ss.dao.RecordDao;
+import com.ss.entity.Account;
+import com.ss.entity.Record;
+
+public class BankBizImpl implements BankBiz {
+	private AccountDao ad;
+	private RecordDao rd;
+	
+	public void add(Record record) {
+		// TODO Auto-generated method stub
+		rd.add(record);
+	}
+
+	public void add(Account account) {
+		// TODO Auto-generated method stub
+		ad.add(account);
+	}
+
+	public List<Account> findAccount() {
+		// TODO Auto-generated method stub
+		return ad.find();
+	}
+
+	public List<Record> findRecord() {
+		// TODO Auto-generated method stub
+		return rd.find();
+	}
+
+	public void update(Account account) {
+		// TODO Auto-generated method stub
+		ad.update(account);
+	}
+
+}

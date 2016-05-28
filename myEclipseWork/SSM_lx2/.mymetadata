@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SSM_lx2"
+  id="myeclipse.1425453058774"
+  context-root="/SSM_lx2"
+  j2ee-spec="5.0"
+  archive="SSM_lx2.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

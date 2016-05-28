@@ -1,0 +1,672 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib uri="http://www.iteye.com/tags/pager" prefix="w"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+     <title>我的账户-中国首家，最大、最多人使用的互联网金融P2P网络借贷平台。提供小额贷款,短期贷款,个人贷款,自定利率,借期灵活。您还可以成为借出人理财投资,超低门槛，获得高年收益率回报</title>
+    <meta name="description" content="拍拍贷，中国首家，最大、最多人使用的互联网金融P2P(人人贷)网络借贷平台。提供小额贷款,短期贷款,个人贷款,抵押,无抵押贷款服务。利率自定,借期灵活。您还可以成为借出人理财借贷投资，获得高年收益率回报，超低门槛，超高收益。作为可信赖的投融资,理财,贷款,信贷平台,拍拍贷助您财富实现增值" />
+    <meta name="keywords" content="网络贷款,民间借贷,小额贷款,无抵押贷款,信用贷款,网络借贷,借贷平台,拍拍贷,人人贷,投资理财,个人理财,p2p贷款,贷款,互联网金融,投融资" />
+    <link rel="stylesheet" type="text/css" href="./ppd_personBorrow_files/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./ppd_personBorrow_files/layout.css" />
+    <link href="./ppd_personBorrow_files/validation-min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./ppd_personBorrow_files/favicon.ico" type="image/x-icon" />
+    <script src="./ppd_personBorrow_files/newRefer.js"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faab1030ecb68cd7b5c613bd7a5127a40' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <link href="./ppd_personBorrow_files/account.css" rel="stylesheet" />
+
+        <link href="./ppd_personBorrow_files/jr.css" rel="stylesheet" />        
+
+</head>
+<body>
+    <div class="top PPD_header_nav">
+        <div class="top_inner w1188center clearfix PPD_login_status">
+            
+        </div>
+    </div>
+
+    <div class="mainNav">
+        <div class="mainNav_inner w1000center clearfix">
+            <h1 class="logo">
+                <a href="/">
+                    <img src="./ppd_personBorrow_files/logo.png" alt="" /></a>
+            </h1>
+            <ul id="tabIcon">
+                <li class="hasSubMenu">
+                    <a href="http://www.ppdai.com/lend" category="Lend">我要投资</a>
+                    <div class="subMenu">
+                        <a href="http://www.ppdai.com/lend">我要投资</a>
+                        <a href="http://www.ppdai.com/product/plan/rainbow">彩虹计划</a>
+                        <a href="http://www.ppdai.com/debtdeal/AlldebtList/DebtList">债权交易</a>
+                        <a href="http://www.ppdai.com/howtolend">如何投资</a>
+                        <a href="http://www.ppdai.com/help/principalprotection">本金保障</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu">
+                    <a href="/borrow" category="Borrow">我要借款</a>
+                    <div class="subMenu">
+                        <a href="/borrow">我要借款</a>
+                        <a href="http://www.ppdai.com/help/howtoborrow">如何借款</a>
+                        <a href="http://www.ppdai.com/borrow/interestcalculate">利息计算器</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="myAccount-personBorrow" category="Account">我的账户</a>
+                    <div class="subMenu">
+                        <a href="myAccount-personBorrow">借款账户</a>
+                        <a href="myAccount-person">投资账户</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="http://www.ppdai.com/help/aboutus" category="About">关于拍拍贷</a>
+                    <div class="subMenu">
+                        <a href="http://www.ppdai.com/help/aboutus">关于我们</a>
+                        <a href="http://www.ppdai.com/help/howworks">工作原理</a>
+                        <a href="http://www.ppdai.com/help/fees">资费说明</a>
+                            <a href="http://www.ppdai.com/job">招贤纳士</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+<div class="w100per maintop"></div>
+<div class="my-frame">
+    <!-- 子导航-->
+    
+<div>
+    <ul class="breadcrumb" style="border: none !important;">
+        <li><a href="/">首页</a> <span class="divider">&gt;</span></li>
+            <li><a href="myAccount-personBorrow">我的账户-我是借款者</a> <span class="divider">></span></li>
+                    <li><a href="myAccount-personBorrow">我的账户</a></li>
+    </ul>
+</div>
+<script>
+    var breadcrumbCategory = "Account";
+</script>
+
+    <div class="clearfix">
+        <!-- 左菜单栏-->
+        
+<div class="my-f-left fl">
+    <div class="my-f-l-nav">我的账户</div>
+    <ul class="my-f-l-list">
+            <li><a href="myAccount-personBorrow" class=on>我的账户首页</a></li>
+
+    </ul>
+    <div class="my-f-l-nav">资金管理</div>
+    <ul class="my-f-l-list">
+        <li><a href="myAccount-moneyRecord" >资金记录</a></li>
+        <li><a href="recharge.jsp" >充值</a></li>
+        <li><a href="withdrawCash.jsp" >提现</a></li>
+    </ul>
+        <div class="my-f-l-nav">借款管理</div>
+        <ul class="my-f-l-list">
+            <li><a href="myAccount-endRelease" >我的借款</a></li>
+            <li><a href="http://www.ppdai.com/user/auth/videouser" >信息认证</a></li>
+            <li><a href="myAccount-basicMes" >基本资料</a></li>
+            <li><a href="myAccount-upLoadMes" >上传资料</a></li>
+        </ul>
+
+    <div class="my-f-l-nav">账户设置</div>
+    <ul class="my-f-l-list">
+        <li><a href="myAccount-securityCenter" >安全中心</a></li>
+        <li><a href="myAccount-connectNumber" >关联账户</a></li>
+    </ul>
+    <div class="my-f-l-nav">市场推广</div>
+    <ul class="my-f-l-list">
+        <li><a href="http://www.ppdai.com/account/spread" >有奖推荐</a></li>
+        <li><a href="http://www.ppdai.com/account/paimoney/market?menu" >拍币兑换</a></li>
+        <li><a href="http://www.ppdai.com/account/raffletickets" >我的抽奖券</a></li>
+    </ul>
+</div>
+            <div class="my-f-right c666666 fr">
+                <div class="my-ac-haowai"><div class="extra">
+    <span class="float_l">号外：</span><label>新版“拍”了传（安卓版）资料上传更方便啦，<a href="myAccount-upLoadMes?haowai" class="c39a1ea">点击下载</a>吧</label>！
+</div></div>
+                <div class="jr_h01 clearfix">
+                    <div class="my-ac-users jr13 fl ">
+                        <div class="my-ac-userHead">
+
+                            <a href="/info/userface/">
+                                <img src="./ppd_personBorrow_files/nophoto_80.gif"  alt="用户头像" width="150px" height="150px">
+                            </a>
+
+                            <div class="my-ac-vfr">
+                                <a class="my-ac-vfs my-ac-vidh fl" href="/cert/identitycert" title="身份认证"></a>
+                                <a class="my-ac-vfs my-ac-vphone ml17 fl" title="手机绑定" href="http://ac.ppdai.com/userbind/bindmobile"></a>
+                                <a class="my-ac-vfs my-ac-vvideo " title="视频认证" href="/cert/videousercert"></a>
+
+                            </div>
+                        </div>
+                        <div class="w600 my-ac-userInfo">
+                            <div class="my-ac-userverfy clearfix">
+                                <label class="my-ac-username fl">${user.username}</label>
+
+                                            <a class="my-ac-dgvip my-ac-dgvip3 fl" title="您还不是VIP" href="/info/vip"></a>
+
+                            </div>
+                            <div class="clearfix">
+                                <div class="my-ac-paisafty fl">
+
+                                    <div class="my-ac-ps-one">
+                                        <label class="taJustify">拍币：</label><span class="c39a1ea mr20" id="paiMoney">0</span>
+                                        <label class="my-ac-qiandao my-ac-qdq">
+                                            <span id="btnGetPaiMoney"  class="signIn hover">签到</span>
+                                            <span class="exchange hover"><a href="/account/paimoney/market">兑换</a></span>
+                                        </label>
+                                    </div>
+                                    <div class="my-ac-ps-two clearfix">
+                                        <label class="taJustify">账户安全：</label><span class="my-ac-ps-twomark my-ac-ps-twok2"></span><span><a href="myAccount-securityCenter">【增强】</a></span>
+
+                                    </div>
+                                    <div class="lastLoginTime"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jr_13 fl">
+                        <div class="jr_13bg fl">
+                            <div class="jr_13ei ">
+                                <div class="jr_13tit">信用额度</div>
+                                <div class="jr_ein fl">
+                                    <p class="jr_t01" style="position: relative; z-index: 1;">
+                                        可用额度&nbsp;:
+                                        <img style="position: absolute; left: 76px; top: 5px;" src="./ppd_personBorrow_files/wenhao.png" title="目前可申请借款的额度" />
+                                    </p>
+                                    <p class="jr_t02 cf7971a">${availablemoney}</p>
+                                    <p class="jr_t03" style="position: relative; z-index: 1;">
+                                        总额度&nbsp;:
+                                        <img style="position: absolute; left: 62px; top: 5px;" src="./ppd_personBorrow_files/wenhao.png" title="最多可借额度，可用额度和已借额度之和" />
+                                    </p>
+                                    <p class="jr_t02">${totalAmount}</p>
+                                </div>
+                                <div class="jr_ein1 fl">
+
+                                    <!--
+                                        原图
+                                        <img src="http://www.ppdaicdn.com/2014/img/11_03.jpg">
+                                        -->
+                                    <div class="jr_jd_outer">
+                                        <div class="jr_jd" id="scaleMap"></div>
+                                        <div class="jr_jdl"><a href="borrowController/findDictionary">立即借款&gt;</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="jr_13hr fl"></div>
+                        <div class="pl35 pt18 fl" style="">
+                            <div class="jr_13tit01" style="font-size: 18px; color: #333;">账户余额<img style="margin-left: 3px;" src="./ppd_personBorrow_files/wenhao.png" title="可用于还款或提现" /></div>
+                            <div class="lh50"><span class="my-ac-ps-yue">&yen;${user.accounts.get(0)}</span></div>
+                            <div class="taCenter"><a class="my-blue-btn my-ac-btns" href="recharge.jsp" target="_blank">充值</a><a href="withdrawCash.jsp" target="_blank" class="ml16 my-yellow-btn my-ac-btns">提现</a></div>
+                        </div>
+                    </div>
+                </div>
+<c:forEach>
+			<div class="my-bor-frame">
+                        <div class="my-bor-gobidfr bgf8">
+                            <div class="my-ac-ctTitle clearfix"><span class="fs18 fl">借款列表</span></div>
+                        </div>
+                            <div class="borrowList">
+                            <span class="text">借款列表：<a href="/firstborrow/document" target="_blank" class="c39a1ea">【${borrows.borrowpur}】${borrows.borrowtitle}</a></span><br />
+
+                                     
+                             <span class="text">金额：&#165;${borrows.borrowmoney}</span>
+                             <span class="text">还款：&#165;${(borrows.borrowmoney+borrows.parate)/borrows.borrowdeadline}/ 月 &#215; ${borrows.borrowdeadline}期</span>
+                          
+                            <span class="text">增值服务：
+                            <span class="airBubble">
+                                <img src="./ppd_personBorrow_files/wenhao.png" />
+                                <div class="tag">
+                                    <div class="arrow">
+                                        <em></em><span></span>
+                                    </div>
+                                    收取一定手续费，利率直降，优先推荐，更快满标。
+                                </div>
+                            </span>
+                                享受
+
+                            </span>
+                        
+                         
+                        </div>
+
+                        
+                        
+                        <div class="lc-ts-frame">
+
+                            <div class="ts c666666">
+                                           <ul class="lc-ts-frame-message">
+                                        <li  class="yellow"><fmt:formatDate value="${borrows.borrowDate}" pattern="yyyy-MM-dd hh:mm"/> 申请提交成功！客户经理会很快和您联系哦。建议您：<a target="_blank"  href='/firstborrow/document' class="c39a1ea">完善基本资料</a>。</li>
+
+                                    </ul>
+                            </div>
+                        </div>
+
+                    </div>
+					 </c:forEach>
+					    <w:pager pageSize="${listBorrow.pageSize}" pageNumber="${listBorrow.pageNum}" url="borrowController/findBorrowByUser" recordCount="${listBorrow.total}"/> 
+					 <c:if test="${listBorrow.result=='[]'}">
+                    <div class="my-bor-frame">
+                        <div class="my-bor-gobidfr bgf8">
+                            <div class="my-ac-ctTitle clearfix"><span class="fs18 fl">当前借款</span></div>
+                        </div>
+					
+                        <div class="my-bor-lc clearfix">
+                                        <a href="/firstuserdetail">
+                                            <div class="lc grxx1 fl"></div>
+                                        </a>
+                                        <div class="hxone lcgreen fl"></div>
+                                        <a href="/firstcreatelist">
+                                            <div class="lc jkxx2 fl">
+                                                <div class="lc-jt"></div>
+                                            </div>
+                                        </a>
+                                        <div class="hxtwo lcgay fl"></div>
+                                        <a href="/firstdocuments">
+                                            <div class="lc zzsh3 fl"></div>
+                                        </a>
+                                        <div class="hxthree lcgay fl"></div>
+                                        <div class="lc cjzj3 fl"></div>
+                        </div>
+                        <div class="lc-ts-four-ts">
+                                        <a href="/firstuserdetail"><span class="c8fc320">个人信息</span></a>
+                                        <a href="/firstcreatelist"><span class="cf7971a ml96">借款信息</span></a>
+                                        <a href="/firstdocuments"><span class="c666666 ml86">资质审核</span></a>
+                                        <span class="c666666 ml86">筹集资金</span>
+
+                        </div>
+                        <div class="lc-ts-frame">
+
+                            <div class="ts c666666">
+                                            <p class="lh30"><a href="/firstcreatelist" class="c39a1ea">去填写借款信息</a>，即可发布借款需求。</p>
+                            </div>
+                        </div>
+
+                    </div></c:if>
+
+					<br/>
+					
+                <div class="my-bor-ops clearfix" style="padding: 19px 0;">
+                    <a class="op1 fl" href="/info/userdetail">填写基本资料</a>
+                    <a class="ml11 op2 fl" href="/info/userdocuments">上传资料</a>
+                    <a class="ml11 op3 fl" href="/user/auth/mobile">手机实名认证</a>
+                    <a class="ml11 op4 fl" href="myAccount-connectNumber">关联账户</a>
+                </div>
+
+
+
+
+            </div>
+
+
+    </div>
+            <input type="hidden" id="IsFinishSwitchBorrowLoan" value="0" />
+    <iframe src="/cookie" style="height: 1px; width: 1px; position: absolute; left: 0pt; top: 0pt; margin-left: -100px;"></iframe>
+
+</div>
+<!-- 意见框 -->
+<div class="cover" id="cover" style="display: none"></div>
+<div class="suggestion_box" id="suggestion_box" style="display: none">
+    <div class="suggestion_title">版本切换</div>
+    <div class="suggestion_body">
+        <p>真的不爱新版吗？有什么不满意的,我改还不好么？T^T</p>
+        <textarea placeholder="留下不满意的原因,让我改好吗.." id="Description"></textarea>
+    </div>
+    <div class="suggestion_btnBox">
+        <input type="button" value="提个意见,继续用新版" id="submitbtn" />
+        <input type="button" value="没法忍,我要用旧版" class="closeSuggestion" id="v2013" />
+    </div>
+    <a href="javascript:;" class="suggestion_close closeSuggestion">×</a>
+</div>
+<!-- 意见框 结束 -->
+<!-- 体验版意见框 -->
+<div class="suggestion_box" id="suggestion_box1" style="display: none">
+    <div class="suggestion_title">版本切换</div>
+    <div class="suggestion_body">
+        <p>真的不爱体验版吗？有什么不满意的,我改还不好么？T^T</p>
+        <textarea placeholder="留下不满意的原因,让我改好吗.." id="Description1"></textarea>
+    </div>
+    <div class="suggestion_btnBox">
+        <input type="button" value="提个意见,继续用新版" id="submitbtn1" />
+        <input type="button" value="没法忍,我要用旧版" class="closeSuggestion" id="vison" />
+    </div>
+    <a href="javascript:;" class="suggestion_close closeSuggestion">×</a>
+</div>
+<!-- 体验版意见框 结束 -->
+
+    <div class="clear">
+    </div>
+
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <ul class="footer_footerBottomNav clearfix">
+                <li><span class="webindex"></span><a href="/">网站首页</a>|</li>
+                <li><span class="aboutus"></span><a href="/help/aboutus">关于我们</a>|</li>
+                <li><span class="mapsite"></span><a href="/home/sitemap">网站地图</a>|</li>
+                <li><span class="webservice"></span><a href="/consult">客服中心</a>|</li>
+                <li class="nomr"><span class="onlneserve"></span><a href="./ppd_personBorrow_files/wpa.php" target="_blank">在线咨询</a></li>
+            </ul>
+            <p>Copyright Reserved 2007-2015©拍拍贷（www.ppdai.com）&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备05063398号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;上海拍拍贷金融信息服务有限公司</p>
+
+
+        </div>
+
+    </div>
+
+    <script src="./ppd_personBorrow_files/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_personBorrow_files/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_personBorrow_files/servicestack-min.js"></script>
+    <script src="http://www.ppdaicdn.com/js/jquery.cookie.js"></script>
+    <script src="http://ac.ppdai.com/status?v=2014" type="text/javascript"></script>
+    
+    <script>
+        $(".my-f-l-list li a.on").closest(".my-f-l-list").prev(".my-f-l-nav").addClass("my-f-l-nav-sd");
+        try {
+            $("#tabIcon a[category='" + breadcrumbCategory + "']").addClass("tabon");
+        } catch (e) {
+
+        }
+    </script>
+    
+    <script src="./ppd_personBorrow_files/bootstrap.js"></script>
+    <script type="text/javascript" src="./ppd_personBorrow_files/customize.js"></script>
+    <script src="./ppd_personBorrow_files/echarts-plain.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_personBorrow_files/scaleMap.js"></script>
+    <script src="./ppd_personBorrow_files/raphael-min.js"></script>
+
+    <script>
+        $(function () {
+            //新版反馈
+            $("#suggestion_box #submitbtn,#suggestion_box .closeSuggestion").click(function () {
+                    
+                var description = $("#suggestion_box #Description").val() + "〖 手机号码：" + 18837123234 + ",QQ号码:" + 1784105345 + " 〗";
+        
+                if ($("#suggestion_box #Description").val() != "" && $("#suggestion_box #Description").val() != undefined) {
+                    $.post("/common/FeedBack", { description: description, categoryId: "120" }, function (e) {
+                        $(".fankui_emsg").html(e.Message);
+                        $("#suggestion_box #Description").val(""); //清空内容
+                    });
+                }
+            });
+            $("#suggestion_box .closeSuggestion,#submitbtn").click(function () {
+                $("#suggestion_box,.cover").hide();
+            });
+            $('#v2013').click(function () {
+                $.cookie('ui-version', '2013', { expires: 365, path: '/', domain: '.ppdai.com', secure: false });
+                window.location.reload();
+            });
+        });
+
+    </script>
+    <script>
+        $(function () {
+            //体验版反馈
+            $("#suggestion_box1 #submitbtn1,#suggestion_box1 .closeSuggestion").click(function () {
+                    
+                var description = $("#suggestion_box1 #Description1").val() + "〖 手机号码：" + 18837123234 + ",QQ号码:" + 1784105345 + " 〗";
+        
+                if ($("#suggestion_box1 #Description1").val() != "" && $("#suggestion_box1 #Description1").val() != undefined) {
+                    $.post("/common/FeedBack", { description: description, categoryId: "131" }, function (e) {
+                        $(".fankui_emsg").html(e.Message);
+                        $("#suggestion_box1 #Description1").val(""); //清空内容
+                    });
+                }
+            });
+            $("#suggestion_box1 .closeSuggestion,#submitbtn1").click(function () {
+                $("#suggestion_box1,.cover").hide();
+            });
+            $(".userInfo_goOldVer").click(function (e) {
+                $("#cover,#suggestion_box1").show();
+                e.preventDefault();
+
+            });
+            $('#vison').click(function () {
+                    
+                var description = $("#suggestion_box1 #Description1").val() + "〖 手机号码：" + 18837123234 + ",QQ号码:" + 1784105345 + " 〗";
+        
+                $.post("/common/FeedBack", { description: description, categoryId: "132" }, function (e) {
+                    $(".fankui_emsg").html(e.Message);
+                    $("#suggestion_box1 #Description1").val(""); //清空内容
+                    switchvosion(1);
+                });
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        var polar = document.getElementById('polar');
+        if (polar != null && polar != 'undefined') {
+            var myChart = echarts.init(polar);
+
+            myChart.setOption({
+                toolbox: {
+                    show: false,
+                    feature: {
+                        mark: { show: true },
+                        dataView: { show: true, readOnly: false },
+                        restore: { show: true },
+                        saveAsImage: { show: true }
+                    }
+                },
+                calculable: false,
+                polar: [
+                    {
+                        indicator: [
+                            { text: '', max: 20 },
+                            { text: '', max: 20 },
+                            { text: '', max: 20 },
+                            { text: '', max: 20 },
+                            { text: '', max: 20 }
+                        ],
+                        radius: 90
+                    }
+                ],
+                series: [
+                    {
+                        name: '',
+                        type: 'radar',
+                        itemStyle: {
+                            normal: {
+                                areaStyle: {
+                                    type: 'default'
+                                }
+                            }
+                        },
+                        data: [
+                            {
+                                value: [0, 0, 0, 0, 0],
+
+                                name: ''
+                            }
+                        ]
+                    }
+                ]
+            });
+                }
+
+    </script>
+
+
+    <script>
+        //切换新旧体验版
+        function switchvosion(ver) {
+            try {
+                $.cookie('Borrow-version', ver, { expires: 30, path: '/', domain: 'loan.ppdai.com', secure: false });
+                window.location.href = window.location.href;
+            } catch (err) {
+                //
+            }
+        }
+
+        $(function () {
+            $.ajax({
+                url: "/accountmessage?Type=3",
+                type: "POST",
+                dataType: 'html',
+                success: function (date) {
+                    //alert(date);
+                    if (date != '') {
+                        //alert(date);
+                        var remind = $('<div id="remindtips"></div>');
+                        $('body').prepend(remind);
+                        remind.prepend($(date));
+                        $('#remindtips>div').append('<span id="remindclose"></span>');
+                    }
+
+                },
+                error: function (er) {
+                }
+            });
+            $('body').on('click', '#remindclose', function () {
+                $(this).parents('#remindtips').remove();
+            });
+        });
+
+
+    </script>
+
+    <script>
+        //var scaleMap = $("#scaleMap");
+        //if (scaleMap != null && scaleMap != 'undefined') {
+
+
+        //}
+        $("#scaleMap").css({ "width": 110, "height": 72 }).scaleMap({ scale: '1' });
+        $(function () {
+            if ($('.my-frame').width() == 1200) {
+                $('.top_inner > .top_inner, .mainNav_inner').width(1188);
+                $('.breadcrumb').width(1169);
+            }
+        });
+    </script>
+    <!--列表确认 开始-->
+    <!--列表确认 结束-->
+    <!--营销 开始-->
+    <!--营销 结束-->
+    <!--切换角色 开始-->
+    <!--切换角色 结束-->
+
+    <!--提额 开始-->
+    <!--提额 结束-->
+    <!--拍币 开始-->
+    <script type="text/javascript">
+        $("#btnGetPaiMoney").click(function () {
+            var $this = $(this);
+            if ($this.attr("disabled") == "disabled") return false;
+            $this.attr("disabled", true);
+            if ($this.hasClass("signIn")) {
+                $this.removeClass("hover");
+            } else {
+                $this.removeClass("my-ac-qdsignb").addClass("my-ac-qdsigna");
+            }
+            $this.removeClass("my-ac-qdsignb").addClass("my-ac-qdsigna");
+            var gateway = new servicestack.ClientGateway('http://' + window.location.host);
+            var data = {};
+            gateway.postToService(
+                {
+                    PaiMoneyRequest: data
+                }, function (e) {
+                    $this.PPDfloatDiv({
+                        floatbgtype: true,
+                        handertext: '签到成功！',
+                        context: "<div style='font-size:14px'>" + e.Message + "</div>",
+                        floattruebtn: false,
+                        floatfalsebtn: '确定',
+                        btnshow: true,
+                        keyboards: false
+                    });
+                    $("#signDay").text(e.Day);
+                    $("#paiMoney").text(e.MoneyAll);
+                    $this.text("已签");
+                    $(".left_gray").attr("title", e.Message);
+                    $(".left_gray").show();
+                    $(".left_yellow").hide();
+                }, function (e) {
+                    $this.attr("disabled", false);
+                    $this.css({ color: "#690", cursor: "pointer" });
+                    alert("您可能已经签到，请刷新后再试，或明天再来~");
+                }
+            );
+        });
+    </script>
+    <!--拍币 结束-->
+
+    <!--营销部分 开始-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var referUrl = 'http://loan.ppdai.com/firstborrow/createlist';
+            if ('0' == '1' && referUrl.indexOf("firstuserdetail") > 0) {
+                var txt = "拍拍贷销售专员稍后会与您联系。在此期间，您可以继续在网站自助操作，完成淘宝认证及上传资料。";
+                $('body').PPDfloatDiv({
+                    floatbgtype: true,
+                    handertext: '提示',
+                    context: "<div style='font-size:14px'>" + txt + "</div>",
+                    floattruebtn: false,
+                    floatfalsebtn: '确定',
+                    btnshow: true,
+                    keyboards: false
+                });
+                $('#modalbackdroptrue').on('hide', function () {
+                    window.location.href = "myAccount-personBorrow";
+                });
+            }
+
+        });
+    </script>
+    <!--营销部分 结束-->
+
+
+    <!--记录当前使用角色 开始-->
+    <script type="text/javascript">
+        $.cookie("ppdaiRole", "8", { expires: 365, path: '/', domain: '.ppdai.com', secure: false });
+    </script>
+    <!--记录当前使用角色 结束-->
+
+    <!--交互 开始-->
+    <script>
+        $(".my-hn-user").bind("click", function () {
+            $(this).closest("tr").next().toggleClass("dtr");
+        });
+        $(".close").click(function () {
+            $(this).parent().remove();
+        });
+    </script>
+    <!---交互 结束-->
+    
+    <!--topNav 提示 开始 -->
+        <script src="http://www.ppdaicdn.com/2014/js/topnav.js"></script>
+    <!--topNav 提示 开始 -->
+
+
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVQ5D8"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PVQ5D8');</script>
+    <!-- End Google Tag Manager -->
+</body>
+</html>

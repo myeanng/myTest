@@ -1,0 +1,7 @@
+package com.yourcompany.struts;
+
+import org.apache.struts.action.ActionForm;
+
+public class LonginForm extends ActionForm {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 package(s) to &apos;struts_03_sl/src&apos;&#x0D;&#x0A;- Original project: &apos;struts_02_sl&apos;&#x0D;&#x0A;- Destination element: &apos;struts_03_sl/src&apos;&#x0D;&#x0A;- Original element: &apos;struts_02_sl/src/com.sl2.factory&apos;" description="Copy package" destination="=struts_03_sl/src" element1="/src&lt;com.sl2.factory" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1413508091718" version="1.0"/>
+</session>

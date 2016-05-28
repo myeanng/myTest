@@ -1,0 +1,65 @@
+package com.ppd.dao.impl;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.ppd.dao.DueinDao;
+import com.ppd.entity.Duein;
+import com.ppd.util.SqlSessionDaoSupportTool;
+
+@Repository("dueinDao")
+public class DueinDaoImpl extends SqlSessionDaoSupportTool implements DueinDao {
+
+	public boolean add(Duein entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean del(Duein entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public List<Duein> queryAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Duein queryById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Duein> queryByParam(Duein entity) {
+		// TODO Auto-generated method stub
+		return  getSqlSession().getMapper(DueinDao.class).queryByParam(entity);
+	}
+
+	public boolean up(Duein entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public double dsmoney(int id) {
+		// TODO Auto-generated method stub
+		return getSqlSession().getMapper(DueinDao.class).dsmoney(id);
+	}
+
+	public double ljmoney(int id) {
+		// TODO Auto-generated method stub
+		return getSqlSession().getMapper(DueinDao.class).ljmoney(id);
+	}
+
+	public double allLGmoney(int id) {
+		// TODO Auto-generated method stub
+		return getSqlSession().getMapper(DueinDao.class).allLGmoney(id);
+	}
+
+	public int dueinNum(HashMap<String,int> map) {
+		// TODO Auto-generated method stub
+		return getSqlSession().getMapper(DueinDao.class).dueinNum(map);
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ppd.dao;
+
+import com.ppd.entity.Duein;
+
+public interface DueinDao extends BaseDao<Duein> {
+	double ljmoney(int id);
+	double dsmoney(int id);
+}

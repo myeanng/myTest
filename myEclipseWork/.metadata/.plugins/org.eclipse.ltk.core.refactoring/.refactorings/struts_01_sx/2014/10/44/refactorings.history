@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;struts_06_sx3/src/com.ss.action&apos;&#x0D;&#x0A;- Original project: &apos;struts_01_sx&apos;&#x0D;&#x0A;- Destination element: &apos;struts_06_sx3/src/com.ss.action&apos;&#x0D;&#x0A;- Original element: &apos;com.sx1.entity.Admin.java&apos;" description="Copy compilation unit" destination="=struts_06_sx3/src&lt;com.ss.action" element1="/src&lt;com.sx1.entity{Admin.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1414647344139" units="1" version="1.0"/>
+</session>

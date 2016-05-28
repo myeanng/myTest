@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="adminaction" extends="struts-default">
+		<action name="adminaction_*" class="com.ss.action.AdminAction" method="{1}">
+			<result name="dui">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="dayaction" class="com.ss.action.DateAction">
+
+			<result name="dui">/shengri.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+</struts>    

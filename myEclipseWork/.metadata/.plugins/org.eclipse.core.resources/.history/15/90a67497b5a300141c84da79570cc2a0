@@ -1,0 +1,6 @@
+package com.test.entity;
+
+public class Book2 {
+	private int id;
+	private String name;
+}

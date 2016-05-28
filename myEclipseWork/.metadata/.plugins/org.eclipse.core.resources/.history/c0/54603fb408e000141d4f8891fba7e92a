@@ -1,0 +1,31 @@
+
+<!-- saved from url=(0027)http://www.ppdai.com/cookie -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"></head><body><object type="application/x-shockwave-flash" data="http://www.ppdai.com/Content/counter.swf" id="anehtaWatermark" name="anehtaWatermark" width="0" height="0">
+        <param name="allowScriptAccess" value="always">
+        <param name="movie" value="/Content/counter.swf">
+        <param name="FlashVars" value="domainAllowed=ppdai.com">
+        <param name="bgColor" value="#fff">
+        <embed id="anehtaWatermark2" name="anehtaWatermark2" height="0" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/Content/counter.swf" type="application/x-shockwave-flash" allowscriptaccess="always" flashvars="domainAllowed=ppdai.com" movie="/Content/counter.swf" bgcolor="#fff" width="0">
+        
+    </object>
+
+ <span id="wm"></span>
+<span id="wm1"></span>
+<script type="text/javascript" src="P.js"></script>
+    <script type="text/javascript">
+        var domain=document.domain;
+        var watermarkvalue = "";
+        var watermarksrc="";
+        var watermarkId="anehtaWatermark";
+        var wa = new WatermarkFlash(domain,watermarkId,watermarkvalue,watermarksrc);
+
+        window.onload = function() {
+            try {
+                window.setTimeout(function() {
+                    wa.getWatermark("Watermark");
+                }, 800);
+            } catch(ex) {
+            }
+        };
+    </script>
+</body></html>

@@ -1,0 +1,103 @@
+$(function(){
+    //检测是否登陆
+    if($('#isLogin').text()=='False'){
+        $('.buy,.exp a,#loginSpan').addClass('ac_quicklogin_btn');
+       
+    }
+    /**
+    * 购买债权
+    */
+    
+    var arr = null;
+    $('.btn-mybutton').click(function() { 
+        //如果登陆才可以购买
+        if($('#isLogin').text()=='True'){
+            var creditCode = $(this).attr("creditCode"); //信用评级
+            var listingId = $(this).parents('li').children().eq(1).children().text(); //列表号
+            var priceforsale = $(this).parents('li').children().eq(5).text(); //转让价
+            arr = $(this).attr("debtdealId"); //债权号
+            var pophtml = "<div class='zhuanrangPopContent'>" +
+                "<div class='div1 clearfix'><span>评级：" + creditCode + "</span><span>列表号：" + listingId + "</span><span>转让价：" + priceforsale + "</span></div>" +
+                "<em>是否立即购买？</em>" +
+                "<input type='text' id='codeText' style='height:41px;margin-left:60px;'/>" + "<img id='checkcode' src='/debtdeal/Validate/Image'  style='margin-left:5px;position:relative;top:17px;margin-right:13px;'/><a href='javascript:;' id='refresh' >刷新</a>" +
+                "</div>";
+            $(this).PPDfloatDiv({
+                floatbgtype: true,
+                floattruebtn: "确认",
+                floatfalsebtn: "取消",
+                handertext: '提示',
+                context: pophtml,
+                btnalign: 'center',
+                truebtnid: 'btn_Pms',
+                floatheight: 294
+            });
+            var img = $('#checkcode');
+            $('#refresh').click(function() {
+                //alert(1)
+                img.attr('src', '/debtdeal/Validate/Image?+' + Math.random());
+            });
+        }
+    });
+    //购买按钮
+    $('body').delegate('#btn_Pms', 'click', function() {
+        
+        var codeText = $('#codeText').val();
+        buydebt(arr, codeText);
+
+    });
+    
+    //确认购买
+    $('body').delegate('#btn_confirm', 'click', function() {
+            window.location.href = location;
+    });
+    //充值按钮
+    $('body').delegate('#btn_chongzhi', 'click', function() {
+        window.location.href = "http://pay.ppdai.com/order/offline";
+    });
+    
+    
+     //收起新手指导
+    $('.newGuid p').click(function() {
+        if ($('.newGuid ul').is(':visible')) {
+            $('.newGuid ul').slideUp();
+            $(this).next().removeClass().addClass('up');
+        } else {
+            $('.newGuid ul').slideDown();
+            $(this).next().removeClass().addClass('down');
+        }
+    });
+});
+
+/**
+* 购买债权函数
+*/
+function buydebt(debtDealId, codeText) {
+    $.post("/debtdeal/AllDebtList/DebtBuy", { debtDealId: debtDealId, codeText: codeText },
+        function(data) {
+            //alert(data.Message);
+            parent.$('#modalbackdroptrue').modal('hide');
+            if (data.Code == 2) {
+                $(this).PPDfloatDiv({
+                    floatbgtype: true,
+                    floattruebtn: "怒了，去充值！",
+                    floatfalsebtn: false,
+                    handertext: '提示',
+                    context: "<p>" + data.Message + "</p>",
+                    btnalign: 'center',
+                    truebtnid: 'btn_chongzhi',
+                    floatheight: 100
+                });
+            } else {
+                $(this).PPDfloatDiv({
+                    floatbgtype: true,
+                    floattruebtn: "确认",
+                    floatfalsebtn: false,
+                    handertext: '提示',
+                    context: "<p>" + data.Message + "</p>",
+                    btnalign: 'center',
+                    truebtnid: 'btn_confirm',
+                    floatheight: 100
+                });
+            }
+        });
+}

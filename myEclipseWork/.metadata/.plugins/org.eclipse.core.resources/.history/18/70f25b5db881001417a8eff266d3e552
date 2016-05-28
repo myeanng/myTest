@@ -1,0 +1,16 @@
+package com.ss.service;
+
+import com.ss.dao.CxDao;
+
+public class ServiceImpl {
+	private CxDao cx;
+
+	public CxDao getCx() {
+		return cx;
+	}
+
+	public void setCx(CxDao cx) {
+		this.cx = cx;
+	}
+	
+}

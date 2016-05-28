@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="PPD"
+  id="myeclipse.1426666220361"
+  context-root="/PPD"
+  j2ee-spec="5.0"
+  archive="PPD.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

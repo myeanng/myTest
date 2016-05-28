@@ -1,0 +1,30 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=gbk"></head><body><object type="application/x-shockwave-flash" data="cookie_data/counter.swf" id="anehtaWatermark" name="anehtaWatermark" height="0" width="0">
+        <param name="allowScriptAccess" value="always">
+        <param name="movie" value="/Content/counter.swf">
+        <param name="FlashVars" value="domainAllowed=ppdai.com">
+        <param name="bgColor" value="#fff">
+        <embed id="anehtaWatermark2" name="anehtaWatermark2" pluginspage="http://www.macromedia.com/go/getflashplayer" src="cookie_data/counter.swf" type="application/x-shockwave-flash" allowscriptaccess="always" flashvars="domainAllowed=ppdai.com" movie="/Content/counter.swf" bgcolor="#fff" height="0" width="0">
+        
+    </object>
+
+ <span id="wm"></span>
+<span id="wm1"></span>
+<script type="text/javascript" src="cookie_data/P.js"></script>
+    <script type="text/javascript">
+        var domain=document.domain;
+        var watermarkvalue = "";
+        var watermarksrc="";
+        var watermarkId="anehtaWatermark";
+        var wa = new WatermarkFlash(domain,watermarkId,watermarkvalue,watermarksrc);
+
+        window.onload = function() {
+            try {
+                window.setTimeout(function() {
+                    wa.getWatermark("Watermark");
+                }, 800);
+            } catch(ex) {
+            }
+        };
+    </script>
+</body></html>

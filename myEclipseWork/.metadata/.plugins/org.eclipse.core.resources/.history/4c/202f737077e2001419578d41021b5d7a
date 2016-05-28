@@ -1,0 +1,377 @@
+package com.ppd.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.ppd.entity.Account;
+import com.ppd.entity.Message;
+import com.ppd.entity.Safety;
+import com.ppd.entity.Userinfo;
+import com.ppd.entity.Users;
+import com.ppd.service.AaaService;
+
+@Controller("aaaController")
+public class AaaController {
+	
+	/*private AccountService accountService;
+	private UsersService usersService;
+	private CreditService creditService;
+	private BillService billService;
+	private BankService bankService;
+	private DueinService dueinService;
+	private LandingrecordService landingrecordService;
+	private LoanService loanService;
+	private MessageService messageService;
+	private QuestionService questionService;
+	private ProtectService protectService;
+	private RepaymentplanService repaymentplanService;
+	private SafetyService safetyService;*/
+	
+	private AaaService aaaService;
+
+	/**
+	 *基本方法模板
+	 * 
+	 */
+	@RequestMapping(value="ff" , method={RequestMethod.POST , RequestMethod.GET})
+	public String ff(HttpServletRequest request){
+		return "";
+	}
+	
+//业务方法
+	
+	/**
+	 *安全中心-登陆历史
+	 * 
+	 */
+	@RequestMapping(value="myAccount-loginHistory" , method={RequestMethod.POST , RequestMethod.GET})
+	public String dlls(HttpServletRequest request){
+		
+		return "loginHistory";
+	}
+	
+	/**
+	 *充值
+	 * 
+	 */
+	@RequestMapping(value="myAccount-recharge" , method={RequestMethod.POST , RequestMethod.GET})
+	public String cz(Double money,HttpServletRequest request){
+		
+		aaaService.uPaccount((Users)request.getSession().getAttribute("user"), money);
+		return "personBorrow";
+	}
+	
+	/**
+	 *提现
+	 * 
+	 */
+	@RequestMapping(value="myAccount-withdrawCash" , method={RequestMethod.POST , RequestMethod.GET})
+	public String tx(String zfmm,Double money,HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		Account account=(Account)user.getAccounts().get(0);
+		//验证支付密码
+		if(account.getAccountpassword().equals(zfmm)){
+			aaaService.uPaccount(user, money);
+			return "baccount";
+		}else{
+			return "personBorrow";
+		}
+		
+	}
+	
+	/**
+	 * 我是投资者-资金管理-资金记录
+	 * 
+	 */
+	@RequestMapping(value="myAccount-moneyhistory" , method={RequestMethod.POST , RequestMethod.GET})
+	public String zjjl(int classType,int dateType,HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		request.getSession().setAttribute("bills", aaaService.findBill(classType, dateType, user.getUserid()));
+		return "moneyhistory";
+	}
+	
+	/**
+	 * 我是投资者-借款管理-我的借款
+	 * 
+	 */
+	@RequestMapping(value="myAccount-myloan" , method={RequestMethod.POST , RequestMethod.GET})
+	public String wdjk(HttpServletRequest request){
+		return "myloan";
+	}
+	
+	/**
+	 * 我是投资者-投资管理-代收款查询
+	 * 
+	 */
+	@RequestMapping(value="myAccount-investMessage" , method={RequestMethod.POST , RequestMethod.GET})
+	public String wddsk(Integer classType,Integer dateType,HttpServletRequest request){
+		
+		return "investMessage";
+	}
+	
+	/**
+	 * 我是投资者-借款管理-信息认证
+	 * 
+	 */
+	@RequestMapping(value="myAccount-xxrz" , method={RequestMethod.POST , RequestMethod.GET})
+	public String xxrz(HttpServletRequest request){
+		return "securityCenter";
+	}
+	
+	/**
+	 * 我是投资者-借款管理-基本资料
+	 * 
+	 */
+	@RequestMapping(value="myAccount-basicMes" , method={RequestMethod.POST , RequestMethod.GET})
+	public String jbzl(HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		//查找基本信息
+		request.getSession().setAttribute("userinfo",aaaService.findUserinfo(user.getUserid()));
+		return "basicMes";
+	}
+	
+	/**
+	 * 我是投资者-借款管理-基本资料-修改
+	 * 
+	 */
+	@RequestMapping(value="myAccount-upBasicMes" , method={RequestMethod.POST , RequestMethod.GET})
+	public String upJBZL(Userinfo userinfo , HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		//修改基本信息
+		aaaService.upUserinfo(userinfo);
+		//查找
+		return jbzl(request);
+	}
+	
+	/**
+	 * 我是投资者-借款管理-上传资料
+	 * 
+	 */
+	@RequestMapping(value="myAccount-upLoadMes" , method={RequestMethod.POST , RequestMethod.GET})
+	public String sczl(HttpServletRequest request){
+		return "upLoadMes";
+	}
+	
+	/**
+	 * 首页 > 我的账户-我是借出者 > 安全中心
+	 * 
+	 */
+	@RequestMapping(value="myAccount-securityCenter" , method={RequestMethod.POST , RequestMethod.GET})
+	public String aqzx(HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		//查找认证情况
+		//并查找是否绑定安全问题
+		Map map=aaaService.aqzx(user);
+		Safety s=(Safety)map.get("safety");
+		List l=(List)map.get("protects");
+		//放入数据
+		request.getSession().setAttribute("safety", s);
+		request.getSession().setAttribute("protects", l);
+		return "securityCenter";
+	}
+	
+	/**
+	 * 首页 >我的账户-我是借出者 >关联账户
+	 * 我是投资者-账户设置-关联账户
+	 * 
+	 */
+	@RequestMapping(value="myAccount-connectNumber" , method={RequestMethod.POST , RequestMethod.GET})
+	public String glzh(HttpServletRequest request){
+		return "connectNumber";
+	}
+	
+	/**
+	 * 我是投资者-投资管理-投资列表
+	 * 
+	 */
+	@RequestMapping(value="myAccount-investMessage" , method={RequestMethod.POST , RequestMethod.GET})
+	public String tzlb(HttpServletRequest request){
+		return "investMessage";
+	}
+	
+	/**
+	 * 我的消息-单个消息阅读
+	 * 
+	 */
+	@RequestMapping(value="myAccount-message" , method={RequestMethod.POST , RequestMethod.GET})
+	public String xx(Integer messageid , HttpServletRequest request){
+		request.getSession().setAttribute("message", aaaService.findMessage(messageid));
+		return "message";
+	}
+	
+	/**
+	 * 我的消息-单个消息删除
+	 * 
+	 */
+	@RequestMapping(value="myAccount-deleteMessage" , method={RequestMethod.POST , RequestMethod.GET})
+	public String deleteMessage(Integer messageid , HttpServletRequest request){
+		aaaService.upMessage(messageid);
+		//删除后查找所有我的未读信息
+		return message(request);
+	}
+	
+	/**
+	 * 我的消息-全部消息删除
+	 * 
+	 */
+	@RequestMapping(value="myAccount-deleteAllMessage" , method={RequestMethod.POST , RequestMethod.GET})
+	public String deleteAllMessage(Integer[] messageids , HttpServletRequest request){
+		//循环删除
+		for (Integer messageid : messageids) {
+			aaaService.upMessage(messageid);
+		}
+		//删除后查找所有我的未读信息
+		return message(request);
+	}
+	
+	/**
+	 * 我的消息
+	 * 
+	 */
+	@RequestMapping(value="myAccount-mymessage" , method={RequestMethod.POST , RequestMethod.GET})
+	public String message(HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		Message message = new Message();
+		message.setUsersByTouserid(user);
+		//Set未读信息状态
+		message.setStatus(1);
+		request.getSession().setAttribute("messages", aaaService.findMessage(message));
+		return "mymessage";
+	}
+	
+	/**
+	 *首页 > 我的账户-我是借出者 > 安全中心 > 安全问题
+	 * 
+	 */
+	@RequestMapping(value="myAccount-safetyProblem" , method={RequestMethod.POST , RequestMethod.GET})
+	public String aqwt(HttpServletRequest request){
+		request.getSession().setAttribute("questions", aaaService.findQuestion());
+		return "safetyProblem";
+	}
+
+	
+	/**
+	 * 首页 >我的账户-我是借款者 >我的账户
+	 * 我的账户首页-我是借款者
+	 * 个人中心融资账户显示的数据查询
+	 * 根据用户ID查找用户的借款融资项目记录和账户信息
+	 * 借款记录只查询通过审核正在还款的项目
+	 */
+	@RequestMapping(value="myAccount-baccount" , method={RequestMethod.POST , RequestMethod.GET})
+	public String baccount(HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		request.getSession().setAttribute("user", aaaService.findUsersAccountLoan(1));
+		return "baccount";
+	}
+	
+	/**
+	 * 首页 >我的账户-我是投资者 >我的账户
+	 * 个人账户-我是投资者
+	 * 个人中心投资账户显示的数据查询
+	 * 根据用户ID查找用户的投资记录和账户信息
+	 */
+	@RequestMapping(value="myAccount-laccount" , method={RequestMethod.POST , RequestMethod.GET})
+	public String laccount(HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		request.getSession().setAttribute("user", aaaService.findUsersAccountDuein(user.getUserid()));
+		//计算待收收益总金额
+		//计算总利化率
+		//查找所有收益
+		//查找收益状态
+		return "laccount";
+	}
+	
+	/**
+	 * 个人中心
+	 * 修改用户的各项信息
+	 * 修改密码,绑定状态等
+	 */
+	@RequestMapping(value="upuser" , method={RequestMethod.POST , RequestMethod.GET})
+	public String upuser(Users users,HttpServletRequest request){
+		Users user=(Users)request.getSession().getAttribute("user");
+		users.setUserid(user.getUserid());
+		aaaService.upUsers(users);
+		return "showTest";
+	}
+	
+	/**
+	 * 根据用户ID
+	 * 查询账户信息
+	 * 
+	 */
+	@RequestMapping(value="faccount" , method={RequestMethod.POST , RequestMethod.GET})
+	public String faccount(int id,HttpServletRequest request){
+		return "showTest";
+	}
+	
+
+	@Resource(name="aaaService")
+	public void setAaaService(AaaService aaaService) {
+		this.aaaService = aaaService;
+	}
+	
+	
+	
+	
+	
+/*//Set注入Service	
+	@Resource(name="accountService")
+	public void setAccountService(AccountService accountService) {
+		this.accountService = accountService;
+	}
+	@Resource(name="bankService")
+	public void setBankService(BankService bankService) {
+		this.bankService = bankService;
+	}	
+	@Resource(name="billService")
+	public void setBillService(BillService billService) {
+		this.billService = billService;
+	}
+	@Resource(name="dueinService")
+	public void setDueinService(DueinService dueinService) {
+		this.dueinService = dueinService;
+	}
+	@Resource(name="landingrecordService")
+	public void setLandingrecordService(LandingrecordService landingrecordService) {
+		this.landingrecordService = landingrecordService;
+	}
+	@Resource(name="loanService")
+	public void setLoanService(LoanService loanService) {
+		this.loanService = loanService;
+	}
+	@Resource(name="messageService")
+	public void setUsersService(MessageService messageService) {
+		this.messageService = messageService;
+	}
+	@Resource(name="protectService")
+	public void setProtectService(ProtectService protectService) {
+		this.protectService = protectService;
+	}
+	@Resource(name="questionService")
+	public void setQuestionService(QuestionService questionService) {
+		this.questionService = questionService;
+	}
+	@Resource(name="repaymentplanService")
+	public void setRepaymentplanService(RepaymentplanService repaymentplanService) {
+		this.repaymentplanService = repaymentplanService;
+	}
+	@Resource(name="safetyService")
+	public void setSafetyService(SafetyService safetyService) {
+		this.safetyService = safetyService;
+	}	
+	@Resource(name="usersService")
+	public void setUsersService(UsersService usersService) {
+		this.usersService = usersService;
+	}
+	@Resource(name="creditService")
+	public void setCreditService(CreditService creditService) {
+		this.creditService = creditService;
+	}*/
+}

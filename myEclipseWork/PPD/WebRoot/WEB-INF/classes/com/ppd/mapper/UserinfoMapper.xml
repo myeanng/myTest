@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.UserinfoDao">
+
+  
+  <resultMap type="com.ppd.entity.Userinfo" id="userinfo">
+  	<id column="userinfoid" property="userinfoid"/>
+  	<result column="realname" property="realname"/>
+  	<result column="ic" property="ic"/>
+  	<result column="marriage" property="marriage"/>
+  	<result column="education" property="education"/>
+  	<result column="address" property="address"/>
+  	<result column="homephone" property="homephone"/>
+  	<result column="property" property="property"/>
+  	<result column="company" property="company"/>
+  	<result column="worktime" property="worktime"/>
+  	<result column="workaddress" property="workaddress"/>
+  	<result column="companyphone" property="companyphone"/>
+  	<result column="department" property="department"/>
+  	<result column="job" property="job"/>
+  </resultMap>
+  <select id="queryById" resultMap="userinfo" parameterType="int">
+  	select * from userinfo
+  	where 
+  	userinfo.userid = #{userid}
+  </select>
+  
+  <update id="up" parameterType="com.ppd.entity.Userinfo">
+  	update userinfo 
+		<set>
+			<if test="realname !=null and realname != ''">realname = #{realname} ,</if>
+			<if test="ic !=null and ic !=''">ic = #{ic} ,</if>
+			<if test="email !=null and email!=''">email = #{email} ,</if>
+			<if test="marriage !=null and marriage !=''">marriage = #{marriage} ,</if>
+			<if test="education !=null and education !=''">education = #{education} ,</if>
+			<if test="address !=null and address != ''">address = #{address} ,</if>
+			<if test="homephone !=null and homephone !=''">homephone = #{homephone} ,</if>
+			<if test="property !=null and property !=''">property = #{property} ,</if>
+			<if test="company !=null and company !=''">company = #{company} ,</if>
+			<if test="worktime !=null and worktime !=''">worktime = #{worktime} ,</if>
+			<if test="workaddress !=null and workaddress !=''">workaddress = #{workaddress} </if>
+			<if test="companyphone !=null and companyphone !=''">companyphone = #{companyphone} ,</if>
+			<if test="department !=null and department !=''">department = #{department} ,</if>
+			<if test="job !=null and job !=''">job = #{job} </if>
+		</set>
+	where userid = #{userid}
+  </update>
+</mapper>

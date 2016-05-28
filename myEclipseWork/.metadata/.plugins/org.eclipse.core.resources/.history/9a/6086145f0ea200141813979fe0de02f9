@@ -1,0 +1,15 @@
+package com.test.util;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class BaseDao {
+	@Autowired
+	private SessionFactory faction;
+	
+	protected Session getSession() {
+		return faction.getCurrentSession();
+	}
+	
+}

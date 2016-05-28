@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.BillDao">
+  <select id="queryByParam" resultMap="bill" parameterType="com.ppd.entity.Bill">
+  	select
+  	billid ,money ,class ,state ,createtime 
+	from bill 
+	<where>
+		<if test="class_==99">
+		userid = #{users.userid} and createtime>#{createtime}
+		</if>
+		<if test="class_!=99">
+		userid = #{users.userid} and createtime>#{createtime} and class=#{class_}
+		</if>
+	</where>
+  </select>
+  <insert id="add" parameterType="com.ppd.entity.Bill">
+  	insert into bill (billid ,userid ,money ,class ,state ,createtime ) values(seq_bill.nextval,#{users.userid}, #{money} , #{class_} , #{state} , SYSDATE)
+  </insert>
+  <resultMap type="com.ppd.entity.Bill" id="bill">
+  	<id column="billid" property="billid"/>
+  	<result column="money" property="money"/>
+  	<result column="class" property="class_"/>
+  	<result column="state" property="state"/>
+  	<result column="createtime" property="createtime"/>
+  </resultMap>
+</mapper>

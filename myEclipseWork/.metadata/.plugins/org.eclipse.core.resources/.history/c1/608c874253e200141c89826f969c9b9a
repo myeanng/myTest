@@ -1,0 +1,24 @@
+package com.ppd.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.ppd.entity.*;
+
+public interface AaaService {
+	//提现和充值返回用户账户信息
+	Users uPaccount(Users users,double money);
+	//根据时间,类型,用户ID,查询资金记录(classType=0时查询所有)
+	List<Bill> findBill(int classType,int dateType,int userid);
+	//查找用户基本资料及Loan列表和账户信息
+	Users findUsersAccountLoan(int userid);
+	//查找用户基本资料及Duein列表和账户信息
+	Users findUsersAccountDuein(int userid);
+	//修改用户信息并返回用户新信息
+	Users upUsers(Users users);
+	//查找认证情况安全中心,返回是否有安全问题和信息认证的Map
+	Map aqzx(Users user);
+	//查找安全问题
+	List<Question> findQuestion();
+	
+}

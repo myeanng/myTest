@@ -1,0 +1,9 @@
+package com.test.dao;
+
+
+import com.test.entity.Book;
+
+public interface BookDao {
+	void save(Book entity);
+	List<Book> queryAll();
+}

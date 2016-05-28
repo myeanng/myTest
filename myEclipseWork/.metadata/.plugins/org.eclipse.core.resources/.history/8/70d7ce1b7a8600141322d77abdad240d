@@ -1,0 +1,11 @@
+package com.ss.action;
+
+import java.util.List;
+
+import com.ss.biz.S5Biz;
+import com.ss.entity.Emp;
+
+public class S5Action {
+	private S5Biz s5biz;
+	private List<Emp> list;
+}

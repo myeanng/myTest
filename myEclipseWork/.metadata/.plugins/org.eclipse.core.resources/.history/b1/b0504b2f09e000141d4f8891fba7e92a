@@ -1,0 +1,400 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+      <title>创建列表 -拍拍贷-中国首家，最大、最多人使用的互联网金融P2P网络借贷平台。提供小额贷款,短期贷款,个人贷款,自定利率,借期灵活。您还可以成为借出人理财投资,超低门槛，获得高年收益率回报</title>
+    <meta name="description" content="拍拍贷，中国首家，最大、最多人使用的互联网金融P2P(人人贷)网络借贷平台。提供小额贷款,短期贷款,个人贷款,抵押,无抵押贷款服务。利率自定,借期灵活。您还可以成为借出人理财借贷投资，获得高年收益率回报，超低门槛，超高收益。作为可信赖的投融资,理财,贷款,信贷平台,拍拍贷助您财富实现增值" />
+    <meta name="keywords" content="网络贷款,民间借贷,小额贷款,无抵押贷款,信用贷款,网络借贷,借贷平台,拍拍贷,人人贷,投资理财,个人理财,p2p贷款,贷款,互联网金融,投融资" />
+    <link rel="stylesheet" type="text/css" href="./ppd_bidMessage_files/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./ppd_bidMessage_files/layout.css" />
+    <link href="./ppd_bidMessage_files/validation-min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./ppd_bidMessage_files/favicon.ico" type="image/x-icon" />
+    <script src="./ppd_bidMessage_files/newRefer.js"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faab1030ecb68cd7b5c613bd7a5127a40' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="./ppd_bidMessage_files/firstborrow.css" />
+
+</head>
+<body>
+    <div class="top PPD_header_nav">
+        <div class="top_inner w1188center clearfix PPD_login_status">
+            
+        </div>
+    </div>
+
+    <div class="mainNav">
+        <div class="mainNav_inner w1000center clearfix">
+            <h1 class="logo">
+                <a href="/">
+                    <img src="./ppd_bidMessage_files/logo.png" alt="" /></a>
+            </h1>
+            <ul id="tabIcon">
+                <li class="hasSubMenu">
+                    <a href="/lend" category="Lend">我要投资</a>
+                    <div class="subMenu">
+                        <a href="/lend">我要投资</a>
+                        <a href="http://www.ppdai.com/product/plan/rainbow">彩虹计划</a>
+                        <a href="http://www.ppdai.com/debtdeal/AlldebtList/DebtList">债权交易</a>
+                        <a href="/howtolend">如何投资</a>
+                        <a href="/help/principalprotection">本金保障</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu">
+                    <a href="/borrow" category="Borrow">我要借款</a>
+                    <div class="subMenu">
+                        <a href="/borrow">我要借款</a>
+                        <a href="/help/howtoborrow">如何借款</a>
+                        <a href="/borrow/interestcalculate">利息计算器</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="/account" category="Account">我的账户</a>
+                    <div class="subMenu">
+                        <a href="/account/borrow">借款账户</a>
+                        <a href="/account/lend">投资账户</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu"><a href="/help/aboutus" category="About">关于拍拍贷</a>
+                    <div class="subMenu">
+                        <a href="/help/aboutus">关于我们</a>
+                        <a href="/help/howworks">工作原理</a>
+                        <a href="/help/fees">资费说明</a>
+                            <a href="/job">招贤纳士</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+<div class="main">
+    <div class="clearfix">
+        <ul class="breadcrumb">
+            <li>首页 &gt;</li>
+            <li>我的借款</li>
+        </ul>
+    </div>
+    <form id="create_list_form" action="../PPD/ppborrow/addPpBorrow" method="POST">
+       <input type="hidden" name="ppUsers.userid" value="1"/>
+        <div class="main_con">
+            <span class="title">申请贷款</span>
+            <script type="text/javascript">
+                var message = '';
+                var redirect = '';
+                if (message.length > 0) {
+                    alert(message);
+                }
+                if (redirect.length > 0) {
+                    location = redirect;
+                }
+            </script>
+           
+            <div class="basic_infor clearfix">
+                <div class="process_info">
+                    <span class="one cur">填写个人信息</span>
+                    <i class="arrow cur"></i>
+                    <span class="two cur">发布借款信息</span>
+                    <i class="arrow cur"></i>
+                    <span class="three">资质审核</span>
+                </div>
+                <span class="info_title">借款基本信息</span>
+
+                <ul class="basic_conment">
+                    <li class="clearfix">
+                    <c:forEach items="${listDataDictionary}" var="data">
+                       <c:if test="${data.ddid == 10054}">
+                        <em>${data.ddcontent}：</em>  
+                       </c:if>
+                    </c:forEach>
+                    
+                        <select id="BorrowType" name="borrowpur" class="selct txt02">
+                           <c:forEach items="${listDataDictionary}" var="data">
+                              <c:if test="${data.numberid == 10009}">
+                                <c:if test="${data.ddid != 10054}">
+                                   <option value="${data.ddcontent}">${data.ddcontent}</option>
+                                </c:if>
+                              </c:if>
+                           </c:forEach>
+                           
+                            
+                        </select>
+                    </li>
+                    <li class="clearfix"><em>借款标题：</em><input id="txtTitle" name="borrowtitle" maxlength="30" type="text" class="txt03" /></li>
+                    <li class="clearfix"><em>借款金额：</em><input type="text" size="5" value="3000" name="borrowmoney" readonly="readonly"/> <span class="altQust" title="此为初次借款额度，还清后可申请提高额度，最高可至50万。" style="background: url(./ppd_bidMessage_files/wenhao.png) no-repeat;display: inline-block;width: 14px;height: 14px;position: relative;top: 2px;"></span></li>
+                  
+                    <li class="clearfix">
+                  <!-- <em>借款期限：</em> -->
+                    <c:forEach items="${listDataDictionary}" var="data">
+                       <c:if test="${data.ddid == 10062}">
+                        <em>${data.ddcontent}：</em>  
+                       </c:if>
+                    </c:forEach>                    
+                    
+                        <select id="Months" name="borrowdeadline" class="selct txt04">
+                           <c:forEach items="${listDataDictionary}" var="data">
+                              <c:if test="${data.numberid == 10010}">
+                                <c:if test="${data.ddid != 10062}">
+                                   <option value="${data.ddcontent}">${data.ddcontent}</option>
+                                </c:if>
+                              </c:if>
+                           </c:forEach>
+                                       
+                        </select>
+                       
+                        <span class="altQust" title="可提前还款" style="background: url(./ppd_bidMessage_files/wenhao.png) no-repeat;display: inline-block;width: 14px;height: 14px;position: relative;top: 2px;left: 6px;"></span>
+                    </li>
+                    <li class="pl55 clearfix" style="line-height: 1;">
+                        <span class="service_con"><em>享受增值服务</em><br />
+                            <i>年利率12%<br />
+                                手续费+服务费：319元</i></span>
+                        <span class="service_con cur"><em>未享受增值服务</em><br />
+                            <i>年利率22~24%<br />
+                                手续费：120元</i></span>
+                        <span class="altQust" title="首次信用增值服务三大优势：
+1、&nbsp;&nbsp;利率直降10%
+2、&nbsp;&nbsp;闪电满标
+3、&nbsp;&nbsp;优先审核" style="background: url(./ppd_bidMessage_files/wenhao.png) no-repeat;display: inline-block;width: 14px;height: 14px;position: relative;top: 2px;left: 6px;"></span>
+                    </li>
+                    <li class="clearfix checkformrate"><em>年 利 率：</em><input name="yearrate" type="text" class="txt03 w98" />
+                        &nbsp;&nbsp;<span>%</span>
+                        
+                    </li>
+                    <li>
+                        <p>实际支付利息：
+                        <input name="parate" size="6"  id="interestmsg" ></input>元</p>
+                    </li>
+                    <li>
+                        <p>实际到款金额：
+                        <input id="interestmsg1" size="6" name="actualmoney"  ></input>元</p>
+                         <p style="color:#999;padding-left:34px;margin-bottom:0;background:none;">注：实际到账金额=借款金额-手续费-服务费</p>
+                        <p style="color:#999;padding-left:60px;margin-bottom:0;background:none">选择增值服务，利率低，审核快，满标到账如闪电</p>
+                        <p style="color:#999;padding-left:60px;margin-bottom:0;background:none">不成功不收取任何费用：<a target="_blank" href="http://www.ppdai.com/help/fees" style="color:#999;">费用说明</a></p>
+                    </li>
+                </ul>
+
+                <span class="info_title">借款描述</span>
+                <textarea id="txtDescription" name="borrowdes" rols="20" cols="10" placeholder="请输入借款描述，例如您的自我介绍/想要使用这笔款项做什么/您的还款能力说明" class="jk_info"></textarea>
+            </div>
+        </div>
+        <div class="sure_btn">
+            <input type="hidden" value="3000" id="txtAmount" />
+            <input type="hidden" value="false" id="txtUseService" />
+             <input type="submit" value="我已认真填写，下一步"  class="next_Btn">
+            <p id="result"></p>
+        </div>
+    </form>
+</div>
+
+
+
+    <div class="clear">
+    </div>
+
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <ul class="footer_footerBottomNav clearfix">
+                <li><span class="webindex"></span><a href="/">网站首页</a>|</li>
+                <li><span class="aboutus"></span><a href="/help/aboutus">关于我们</a>|</li>
+                <li><span class="mapsite"></span><a href="/home/sitemap">网站地图</a>|</li>
+                <li><span class="webservice"></span><a href="/consult">客服中心</a>|</li>
+                <li class="nomr"><span class="onlneserve"></span><a href="./ppd_bidMessage_files/wpa.php?ln=1&key=XzgwMDAyNzUzNV8xODAzNjBfODAwMDI3NTM1XzJf" target="_blank">在线咨询</a></li>
+            </ul>
+            <p>Copyright Reserved 2007-2015©拍拍贷（www.ppdai.com）&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备05063398号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;上海拍拍贷金融信息服务有限公司</p>
+
+
+        </div>
+
+    </div>
+
+    <script src="./ppd_bidMessage_files/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bidMessage_files/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bidMessage_files/servicestack-min.js"></script>
+    <script src="http://www.ppdaicdn.com/js/jquery.cookie.js"></script>
+    <script src="http://ac.ppdai.com/status?v=2014" type="text/javascript"></script>
+    
+    <script>
+        $(".my-f-l-list li a.on").closest(".my-f-l-list").prev(".my-f-l-nav").addClass("my-f-l-nav-sd");
+        try {
+            $("#tabIcon a[category='" + breadcrumbCategory + "']").addClass("tabon");
+        } catch (e) {
+
+        }
+    </script>
+    
+    <script src="./ppd_bidMessage_files/ppd_checkform.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bidMessage_files/firstborrow2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bidMessage_files/servicestack-min.js"></script>
+    <script src="./ppd_bidMessage_files/bootstrap.min.js"></script>
+    <script src="./ppd_bidMessage_files/customize.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+        var gateway = new servicestack.ClientGateway('http://' + window.location.host);
+        $(function () {
+            
+            $(document).PPDqustion({ BtnId: 'submitbtn', TextId: 'Description', tit: '亲爱的拍友们，为了给您提供最好的服务，请留下您宝贵的意见和建议，以便我们改正。' });
+            $("#submitbtn").click(function () {
+                var description = $("#Description").val();
+                $.post("/common/feedback", { description: description, categoryId: "21" }, function (e) {
+                    $(".fankui_emsg").html(e.Message);
+                    $("#Description").val(""); //清空内容
+                });
+            });
+
+
+            var lendMoneyTotal = 3000,
+                lendMoneyMonth = parseInt($('#Months').val()),//获取月份
+                lendRate = parseInt($('#Rate').val());  //获取利率
+            
+           
+
+            function interest() {
+                var months = parseFloat($("#Months").val());
+                var rates = parseFloat($("#txtRate").val()) / 12 / 100;
+                var amounts = parseFloat(3000);
+                var p = Math.pow(1 + rates, months);
+                var payment = Math.round((amounts * rates * p / (p - 1) * months - amounts) * 100) / 100;
+                if (isNaN(payment) == false) $("#interestmsg").val(payment);
+            }
+
+            $('#Months').change(function () {
+                
+                interest();
+            });
+
+            $('#txtRate').blur(function() {
+               
+                interest();
+            });
+            
+            
+            $('.service_con').click(function() {
+                
+                $(this).addClass('cur').siblings().removeClass('cur');
+                var index = $(this).index();
+                if (index == 0) {
+                    $('#txtRate').val('12').attr('disabled', 'disabled').attr('name', '').css('background', '#e7e7e7');
+                    $('#create_list_formtip_-r-a-t-e').remove();
+                    var months = parseFloat($("#Months").val());
+                    var rates = parseFloat($("#txtRate").val()) / 12 / 100;
+                    var amounts = parseFloat(3000);
+                    var p = Math.pow(1 + rates, months);
+                    var payment = Math.round((amounts * rates * p / (p - 1) * months - amounts) * 100) / 100;
+                    if (isNaN(payment) == false) $("#interestmsg").html(payment);
+                    $("#interestmsg1").val(2681);
+                    $("#txtUseService").val("true");
+                } else {
+                    $('#txtRate').val('').removeAttr('disabled').attr('name', 'rate').css('background', 'none');
+                    $("#interestmsg1").val(2880);
+                    $("#txtUseService").val("false");
+                }
+            });
+            
+
+            $("#btnPublish").click(function() {
+                //验证form
+                
+                $('#txtTitle,input[name=rate],#txtDescription').blur();
+                $('#BorrowType').change();
+
+                if ($('.Wrong').length > 0) {
+
+                    return;
+                } else {
+                    $("#btnPublish").removeAttr('disabled');
+                }
+                if (1==1) {
+                    $("#btnPublish").attr("disabled", "true");
+                   
+                    if (1==1) {
+                        //判断3个输入域是否被编辑过
+                        var data = {
+                            Type: 1,
+                            Title: $("#txtTitle").val(),
+                            ListAmount: 3000,
+                            Months: $("#Months").val(),
+                            Rate: $("#txtRate").val(),
+                            BorrowType: $("#BorrowType").val(),
+                            Description: $("#txtDescription").val(),
+                            BorrowCredit: 0,
+                            UseService: $("#txtUseService").val(),
+                            Step:"createlist"
+                        };
+                        gateway.postToService(
+                            {
+                                FirstBorrowRequest: data
+                            }, function(e) {
+                                if (e.Message.indexOf("firstdocuments")>=0) {
+                                    var alemess = "<div style='font-size:14px;line-height:18px; margin:10px 0 20px 0;'> 贷款顾问将在三个工作日内通过<span style='font-weight:bold; color:#004098;'>021-31017090</span>与您联系，请您留意接听，避免错失贷款机会。</div><div style='font-size:12px;margin-bottom:10px;'>建议您继续完善资料，以提高贷款成功率和放款速度！</div>";
+                                    $("#publish").PPDfloatDiv({
+                                        floatbgtype: true,
+                                        handertext: '提交成功！',
+                                        context: "<div style='font-size:14px'>" + alemess + "</div>",
+                                        floattruebtn: '去完善资料',
+                                        floatfalsebtn: false,
+                                        btnshow: true,
+                                        truebtnid: "btnpuscecc",
+                                        keyboards: false
+                                    });
+                                    $('#btnpuscecc').live("click", function() {
+                                        location.replace('/ppborrow/addPpBorrow');
+                                    });
+                                    // location = e.message;
+                                } else {
+                                    $("#publish").removeAttr("disabled");
+                                    //错误信息
+                                    if (e.Message.indexOf("<script") >= 0) {
+                                        $("#result").html(e.Message);
+                                    } else {
+                                        alert(e.Message);
+                                        $("#btnPublish").removeAttr("disabled");
+                                    }
+                                    
+                                }
+                               
+                                flag = true;
+
+                            }
+                        );
+                    } else {
+                        //如果没编辑 阻止提交
+                        $("#publish").removeAttr("disabled");
+                        alert("请编辑借款描述后提交");
+                        var errorhtml = "借款描述： 请编辑借款描述后提交";
+                        $.post("/actionlog", { useraction: 'firstuser', functionname: "发标验证未通过", remark: errorhtml });
+                        return false;
+                    }
+                } else {
+                    recordErrorinfo();
+                }
+                return false;
+            });
+        });
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVQ5D8"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PVQ5D8');</script>
+    <!-- End Google Tag Manager -->
+</body>
+</html>

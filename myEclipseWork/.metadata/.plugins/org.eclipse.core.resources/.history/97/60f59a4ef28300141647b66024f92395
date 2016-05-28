@@ -1,0 +1,13 @@
+package com.ss.aop;
+
+public class BingXangAop {
+	public void qian(){
+		System.out.println("欢迎购买...");
+	}
+	public void hou(){
+		System.out.println("欢迎下次光临...");
+	}
+	public void yichang(){
+		System.out.println("购买数量不足");
+	}
+}

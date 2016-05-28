@@ -1,0 +1,12 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+@SuppressWarnings("serial")
+public class Record implements Serializable {
+	private Integer id;
+	private Account fromaccount;
+	private Account toaccount;
+	private Timestamp recordDate;
+}

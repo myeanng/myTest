@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.LoanDao">
+  <select id="queryByParam" resultType="com.ppd.entity.Loan" parameterType="com.ppd.entity.Loan">
+  	select 
+  	loanid,
+	loanuse,
+	title,
+	loanmoney,
+	loantime,
+	service,
+	rate,
+	class_,
+	describe,
+	raise,
+	createtime,
+	accrualtime,
+	status
+  	from loan 
+	<where>
+	<if test="loanid !=null and loanid != ''" >
+		userid = #{users.userid} and  loanid = #{loanid}
+	</if>
+	<if test="status !=null and status != ''" >
+		<if test="status !=99">
+			userid = #{users.userid} and  status = #{status}
+		</if>
+		<if test="status ==99">
+			userid = #{users.userid} and  status in (1,3,4,6,7,8,9)
+		</if>
+	</if>	
+	</where>
+  </select>
+  
+  <select id="findLoanmoney" resultType="double" parameterType="int">
+  	select
+	sum(loanmoney)
+  	from loan 
+	where userid = #{id} and  status in (1,3,4,6,7,9)
+  </select>
+  
+  <resultMap type="com.ppd.entity.Loan" id="loan">
+  	<id column="loanid" property="loanid"/>
+  	<result column="loanuse" property="loanuse"/>
+  	<result column="title" property="title"/>
+  	<result column="loanmoney" property="loanmoney"/>
+  	<result column="loantime" property="loantime"/>
+  	<result column="service" property="service"/>
+  	<result column="rate" property="rate"/>
+  	<result column="class" property="class_"/>
+  	<result column="describe" property="describe"/>
+  	<result column="raise" property="raise"/>
+  	<result column="createtime" property="createtime"/>
+  	<result column="accrualtime" property="accrualtime"/>
+  	<result column="status" property="status"/>
+  </resultMap>
+  
+  
+  <resultMap type="com.ppd.entity.Loan" id="loanMap" extends="loan">
+  	<association property="com.ppd.entity.Users">
+  		<id column="userid" property="userid"/>
+  	</association>
+  </resultMap>
+</mapper>

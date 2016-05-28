@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	">
+
+	<context:component-scan base-package="com.ss.entity"></context:component-scan>
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="oracle.jdbc.OracleDriver">
+		</property>
+		<property name="url"
+			value="jdbc:oracle:thin:@localhost:1521:orcl">
+		</property>
+		<property name="username" value="scott"></property>
+		<property name="password" value="tiger"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.OracleDialect
+				</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<property name="packsToScan" value="com.ss.entity">
+			
+		</property>
+	</bean>
+	<bean id="account" class="com.ss.entity.Account"></bean>
+	<bean id="record" class="com.ss.entity.Record"></bean>
+	<bean id="ad" class="com.ss.dao.impl.AccountDaoImpl">
+	</bean>
+	<bean id="rd" class="com.ss.dao.impl.RecordDaoImpl">
+	</bean>
+	<bean id="bankbiz" class="com.ss.biz.impl.BankBizImpl">
+		<property name="rd" ref="rd"></property>
+		<property name="ad" ref="ad"></property>
+	</bean>
+	<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+		<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="bx" class="com.ss.aop.S4Aop"></bean>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="zz" rollback-for="java.lang.Exception"/>
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut expression="execution(* com.ss.biz.*.*(..))" id="pc"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="pc"/>
+		<aop:aspect id="aopbx" ref="bx">
+			<aop:before method="qian" pointcut-ref="pc"/>
+			<aop:after-returning method="hou" pointcut-ref="pc"/>
+			<aop:after-throwing method="yichang" pointcut-ref="pc"/>
+		</aop:aspect>
+	</aop:config>
+	</beans>

@@ -1,0 +1,321 @@
+.my-frame {
+	WIDTH: 1200px
+}
+.my-f-right {
+	WIDTH: 978px
+}
+.w600 {
+	WIDTH: 250px; BACKGROUND: #f8f8f8; HEIGHT: 155px
+}
+.my-ac-users {
+	FONT-SIZE: 0px
+}
+.my-ac-userInfo {
+	WIDTH: 250px; DISPLAY: inline-block; FLOAT: left; MARGIN-LEFT: 10px; FONT-SIZE: 14px; VERTICAL-ALIGN: top
+}
+.my-ac-userHead {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 4px; WIDTH: 150px; PADDING-RIGHT: 4px; DISPLAY: inline-block; FLOAT: left; FONT-SIZE: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+.my-ac-userHead > A {
+	WIDTH: 150px; DISPLAY: block; HEIGHT: 150px
+}
+.my-ac-ps-one {
+	MARGIN-TOP: 30px; HEIGHT: 33px
+}
+.my-ac-ps-one > * {
+	VERTICAL-ALIGN: middle
+}
+.my-ac-ps-two > * {
+	VERTICAL-ALIGN: middle
+}
+.my-ac-ps-one LABEL.taJustify {
+	TEXT-ALIGN: justify
+}
+.my-ac-ps-two LABEL.taJustify {
+	TEXT-ALIGN: justify
+}
+.my-ac-ps-two {
+	MARGIN-TOP: 24px
+}
+.my-ac-vfr {
+	TEXT-ALIGN: center; MARGIN: 0px; HEIGHT: 24px; PADDING-TOP: 5px
+}
+.my-ac-vfr A {
+	MARGIN: 0px 12px; WIDTH: 26px; HEIGHT: 22px
+}
+.my-ac-vphone {
+	BACKGROUND-POSITION: -2px -55px
+}
+.my-ac-vphoneh {
+	BACKGROUND-POSITION: -2px -81px
+}
+.my-ac-vid {
+	BACKGROUND-POSITION: -103px -56px
+}
+.my-ac-vidh {
+	BACKGROUND-POSITION: -103px -82px
+}
+.my-ac-vvideoh {
+	BACKGROUND-POSITION: -50px -81px
+}
+.my-ac-vvideo {
+	BACKGROUND-POSITION: -50px -55px
+}
+.my-bor-frame {
+	MARGIN-TOP: 10px
+}
+.my-ac-info {
+	MARGIN-TOP: 15px; PADDING-LEFT: 60px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/remind.png) no-repeat 22px 0px; COLOR: #ff0000
+}
+.my-ac-qiandao {
+	BACKGROUND-IMAGE: none; BORDER-BOTTOM: #39a1ea 2px solid; BORDER-LEFT: #39a1ea 2px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 2px; WIDTH: 118px; PADDING-RIGHT: 2px; HEIGHT: 25px; FONT-SIZE: 0px; BORDER-TOP: #39a1ea 2px solid; BORDER-RIGHT: #39a1ea 2px solid; PADDING-TOP: 2px; border-radius: 2px
+}
+.my-ac-qiandao > SPAN {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 23px; PADDING-LEFT: 20px; WIDTH: 39px; DISPLAY: inline-block; FLOAT: left; HEIGHT: 23px; COLOR: #666666; FONT-SIZE: 14px; VERTICAL-ALIGN: top; CURSOR: pointer
+}
+.my-ac-qiandao > SPAN.signIn {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/signIn.jpg) no-repeat 10px center
+}
+.my-ac-qiandao > SPAN.hover.signIn {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/signIn_hover.jpg) no-repeat 0px 0px; COLOR: #fff
+}
+.my-ac-qiandao > SPAN.exchange {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/exchange.jpg) no-repeat 6px center
+}
+.my-ac-qiandao > SPAN.hover.exchange {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/exchange_hover.jpg) no-repeat 0px 0px; COLOR: #fff
+}
+.my-ac-qiandao > SPAN.hover.exchange A {
+	COLOR: #fff
+}
+.pt18 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.pl35 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.jr13 {
+	POSITION: relative
+}
+.my-ac-paisafty {
+	WIDTH: 260px
+}
+.jr_h01 {
+	OVERFLOW: hidden
+}
+.jrp {
+	POSITION: absolute; MARGIN: 0px; TOP: 120px; LEFT: 20px
+}
+.my-ac-ctTitle {
+	BORDER-BOTTOM-STYLE: none
+}
+.my-ac-userverfy {
+	BORDER-BOTTOM-STYLE: none
+}
+.my-ac-paisafty {
+	BORDER-RIGHT-STYLE: none
+}
+.jr_13 {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 548px; BACKGROUND: #ffffff; FLOAT: right; HEIGHT: 190px; OVERFLOW: hidden; BORDER-TOP: #e0e0e0 1px solid; TOP: 5px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.jr_13ei {
+	POSITION: relative; WIDTH: 300px; FLOAT: left
+}
+.jr_13tit {
+	LINE-HEIGHT: 48px; PADDING-LEFT: 10px; BACKGROUND: #f8f8f8; HEIGHT: 48px; COLOR: #333333; FONT-SIZE: 18px
+}
+.jr_13tit01 {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 45px; PADDING-LEFT: 10px; WIDTH: 236px; MARGIN-BOTTOM: 25px; BACKGROUND: #f8f8f8; HEIGHT: 45px
+}
+.jr_13hr {
+	BACKGROUND: #f8f8f8; HEIGHT: 100%; BORDER-RIGHT: #dddddd 1px solid
+}
+.jr_t01 {
+	PADDING-LEFT: 10px
+}
+.jr_t03 {
+	PADDING-LEFT: 10px
+}
+.jr_t02 {
+	PADDING-LEFT: 10px
+}
+.jr_t02 {
+	LINE-HEIGHT: 34px; HEIGHT: 34px; COLOR: #666666; FONT-SIZE: 22px
+}
+.cf7971a.jr_t02 {
+	COLOR: #f7971a
+}
+.jr_t03 {
+	LINE-HEIGHT: 22px; HEIGHT: 22px; COLOR: #666666; FONT-SIZE: 14px; paddint-top: 8px
+}
+.jr_t01 {
+	LINE-HEIGHT: 22px; HEIGHT: 22px; COLOR: #666666; FONT-SIZE: 14px; paddint-top: 8px
+}
+.jr_t02 {
+	PADDING-BOTTOM: 5px; PADDING-TOP: 3px
+}
+.lh50 {
+	TEXT-ALIGN: center
+}
+.my-ac-ps-yue {
+	FONT-SIZE: 26px
+}
+.jr_m01 {
+	WIDTH: 263px
+}
+.jr_mlist {
+	WIDTH: 263px
+}
+.jr_m02 {
+	PADDING-LEFT: 15px; WIDTH: 385px
+}
+.jr_minfo {
+	POSITION: relative; WIDTH: 385px
+}
+.jr_mnowinfo {
+	WIDTH: 260px
+}
+.jr_m03 {
+	PADDING-LEFT: 15px; WIDTH: 245px
+}
+.jr_mlist {
+	MARGIN-TOP: 15px; PADDING-LEFT: 15px
+}
+.jr_minfo {
+	MARGIN-TOP: 15px; PADDING-LEFT: 15px
+}
+.jr_mnowinfo {
+	MARGIN-TOP: 15px; PADDING-LEFT: 15px
+}
+.jr_mlist P {
+	TEXT-ALIGN: center; PADDING-TOP: 20px
+}
+.jr_mlist01 A {
+	COLOR: #0087e6; FONT-SIZE: 14px
+}
+SPAN {
+	COLOR: #0087e6; FONT-SIZE: 14px
+}
+.jr_mlist A {
+	PADDING-RIGHT: 15px
+}
+.jr_mlist02 A {
+	PADDING-RIGHT: 15px
+}
+.jr_mlist02 A {
+	COLOR: #333333
+}
+SPAN {
+	COLOR: #333333
+}
+.jr_minfo01 {
+	PADDING-BOTTOM: 20px; OVERFLOW: hidden
+}
+.jr_minod_01 {
+	LINE-HEIGHT: 52px; DISPLAY: block; FLOAT: left; HEIGHT: 52px; COLOR: #666666
+}
+.jr_minod_02 {
+	LINE-HEIGHT: 52px; DISPLAY: block; FLOAT: left; HEIGHT: 52px; COLOR: #666666
+}
+.jr_minod_03 {
+	LINE-HEIGHT: 52px; DISPLAY: block; FLOAT: left; HEIGHT: 52px; COLOR: #666666
+}
+.jr_minod_01 {
+	
+}
+.jr_minod_01 {
+	FONT-SIZE: 16px; VERTICAL-ALIGN: baseline
+}
+EM {
+	FONT-SIZE: 16px; VERTICAL-ALIGN: baseline
+}
+.jr_minod_02 {
+	PADDING-LEFT: 45px; COLOR: #ff0000; FONT-SIZE: 30px
+}
+.jr_listin {
+	MARGIN-BOTTOM: 15px
+}
+.jr_minod_03 {
+	PADDING-LEFT: 45px
+}
+.jr_minod_03 EM {
+	DISPLAY: block; COLOR: #0087e6
+}
+.jr_minod_03 EM A {
+	COLOR: #0087e6; FONT-SIZE: 16px
+}
+.jr_mnowt01 {
+	PADDING-LEFT: 10px
+}
+.jr_minfotj {
+	TEXT-ALIGN: center; PADDING-TOP: 79px
+}
+.jr_minfo {
+	BORDER-LEFT: #dddddd 1px solid; BORDER-RIGHT: #dddddd 1px solid
+}
+.jr_rhm {
+	TEXT-ALIGN: center; LINE-HEIGHT: 45px; MARGIN: 0px 5px; WIDTH: 132px; DISPLAY: inline-block; FONT-FAMILY: 'Microsoft YaHei'; BACKGROUND: #39a1ea; LETTER-SPACING: 5px; HEIGHT: 45px; COLOR: #ffffff; FONT-SIZE: 18px; border-radius: 4px
+}
+.jr_rhm:hover {
+	BACKGROUND: #1088dd
+}
+.jr_rhlist {
+	TEXT-ALIGN: center; LINE-HEIGHT: 45px; MARGIN: 0px 5px; WIDTH: 132px; DISPLAY: inline-block; BACKGROUND: #f3a500; LETTER-SPACING: 5px; HEIGHT: 45px; COLOR: #ffffff; FONT-SIZE: 18px; border-radius: 4px
+}
+.jr_rhlist:hover {
+	BACKGROUND: #e19e0f
+}
+.jr_mnowinfo {
+	PADDING-TOP: 15px
+}
+.jr_mnowinfo P {
+	LINE-HEIGHT: 25px; COLOR: #666666; FONT-SIZE: 14px
+}
+.jr_mnowinfo .jr_shtit {
+	PADDING-LEFT: 10px; COLOR: #f7971a
+}
+.jr_djs {
+	MARGIN: 35px auto auto; WIDTH: 170px; BACKGROUND: #9e9e9d; HEIGHT: 155px
+}
+.jr_hkd {
+	TEXT-ALIGN: center; LINE-HEIGHT: 45px; MARGIN: auto; WIDTH: 170px; BACKGROUND: #39a1ea; HEIGHT: 45px; COLOR: #ffffff
+}
+.jr_hkdd {
+	TEXT-ALIGN: center; LINE-HEIGHT: 100px; MARGIN: auto; WIDTH: 170px; BACKGROUND: #f8f8f8; HEIGHT: 100px; FONT-SIZE: 100px
+}
+.jr_hkdt {
+	COLOR: #666666; FONT-SIZE: 24px
+}
+.jr_ein {
+	MARGIN-TOP: 8px; FLOAT: left; MARGIN-LEFT: 5px
+}
+.jr_ein1 {
+	PADDING-RIGHT: 15px; FLOAT: right; PADDING-TOP: 20px
+}
+.jr_jd_outer {
+	POSITION: absolute; BOTTOM: 25px; RIGHT: 15px
+}
+.jr_jdl A {
+	COLOR: #0087e6; MARGIN-LEFT: 18px; FONT-SIZE: 14px
+}
+.jr_mjtit {
+	COLOR: #666666
+}
+.jr_mjtit {
+	DISPLAY: block; FLOAT: left
+}
+.jr_mjimg {
+	DISPLAY: block; FLOAT: left
+}
+.lc-ts-frame .ts {
+	MARGIN: auto auto 20px; WIDTH: auto
+}
+.gd_hbg {
+	BORDER-TOP: #e0e0e0 1px solid
+}
+.taCenter {
+	TEXT-ALIGN: center
+}
+.my-bor-ops A {
+	MARGIN: 0px 27px; DISPLAY: inline-block; FLOAT: none
+}

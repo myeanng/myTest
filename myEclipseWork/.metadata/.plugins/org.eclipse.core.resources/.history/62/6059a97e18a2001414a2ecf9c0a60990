@@ -1,0 +1,23 @@
+package com.test.dao.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.test.dao.BookDao;
+import com.test.entity.Book;
+import com.test.util.BaseDao;
+@Component
+public class BookDaoImpl extends BaseDao  {
+
+	public List<Book> queryAll() {
+		// TODO Auto-generated method stub
+		return getSession().createCriteria("from Book").list();
+	}
+
+	public void save(Book entity) {
+		// TODO Auto-generated method stub
+		getSession().save(entity);
+	}
+
+}

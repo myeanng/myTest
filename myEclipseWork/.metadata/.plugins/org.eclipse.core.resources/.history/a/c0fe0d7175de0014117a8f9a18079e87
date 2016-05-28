@@ -1,0 +1,15 @@
+package com.ppd.service;
+
+import java.util.Map;
+
+
+import com.ppd.entity.Account;
+import com.ppd.entity.Users;
+
+public interface AaaService {
+	//提现和充值返回用户账户信息
+	Map uPaccount(Users users,float money);
+	Map upUsers(Users users);
+	Map zjjl(Users users);
+	Map wdjk(Users users);
+}

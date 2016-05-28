@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="book" location="0,0" size="0,0">
+    <action name="book_*" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="list.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="jisuans" location="0,0" size="0,0">
+    <action name="jisuan_*" location="0,0" size="0,0">
+      <result name="result">
+        <resourceEdge source="result" routing="0" target="jisuan.jsp" />
+      </result>
+      <result name="cuo">
+        <resourceEdge source="cuo" routing="0" target="error.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="errortwo.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="adminpackage" location="0,0" size="0,0">
+    <action name="admin_*" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="adminlist.jsp" />
+      </result>
+      <result name="cuo">
+        <resourceEdge source="cuo" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="textpackage" location="0,0" size="0,0">
+    <action name="textaction" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="word.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+      <result name="invalid.token">
+        <resourceEdge source="invalid.token" routing="0" target="word.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="timepackage" location="0,0" size="0,0">
+    <action name="timeaction" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="time.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="treepackge" location="0,0" size="0,0">
+    <action name="treeaction" location="0,0" size="0,0">
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="tree.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/list.jsp" location="0,0" size="0,0" />
+  <webResource name="jisuan.jsp" path="/jisuan.jsp" location="0,0" size="0,0" />
+  <webResource name="error.jsp" path="/error.jsp" location="0,0" size="0,0" />
+  <webResource name="adminlist.jsp" path="/adminlist.jsp" location="0,0" size="0,0" />
+  <webResource name="errortwo.jsp" path="/errortwo.jsp" location="0,0" size="0,0" />
+  <webResource name="word.jsp" path="/word.jsp" location="0,0" size="0,0" />
+  <webResource name="time.jsp" path="/time.jsp" location="0,0" size="0,0" />
+  <webResource name="tree.jsp" path="/tree.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

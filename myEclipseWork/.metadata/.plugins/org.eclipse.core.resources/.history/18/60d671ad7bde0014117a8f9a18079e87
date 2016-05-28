@@ -1,0 +1,8 @@
+package com.ppd.service;
+
+import com.ppd.entity.Users;
+
+public interface AaaService {
+	//提现和充值返回用户账户信息
+	Users uPaccount(Users users,float money);
+}

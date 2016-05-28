@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="H7package" extends="struts-default">
+		<action name="h7Action_*" method="{1}" class="com.ss.action.H7Action">
+			<result name="showType">/showType.jsp</result>
+			<result name="add">/add.jsp</result>
+			<result name="find">/find.jsp</result>
+			<result name="message">/message.jsp</result>
+			<result name="showMessage">/showMessage.jsp</result>
+		</action>
+		
+		<action name="h8admin_*" method="{1}" class="com.ss.action.H8AdminAction">
+			<result name="login" type="redirect">/H8/login.jsp</result>
+			<result name="main" type="redirect">/H8/main.jsp</result>
+		</action>
+		<action name="h8vote_*" method="{1}" class="com.ss.action.H8VoteAction">
+			<result name="listVote">/H8/listVote.jsp</result>
+			<result name="touVote">/H8/touVote.jsp</result>
+			<result name="touVotecontext">/H8/touVotecontext.jsp</result>
+			<result name="updateVote">/H8/updateVote.jsp</result>
+			<result name="addVotecontext">/H8/addVotecontext.jsp</result>
+		</action>
+		<action name="h8votecontext_*" method="{1}" class="com.ss.action.H8VotecontextAction">
+			<result name="listVote">/H8/listVote.jsp</result>
+			<result name="updateVote">/H8/updateVote.jsp</result>
+		</action>
+	</package>
+</struts>    

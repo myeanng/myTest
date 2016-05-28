@@ -1,0 +1,28 @@
+package com.ss.dao.impl;
+import com.ss.dao.PersonDao;
+import com.ss.entity.Person;
+
+
+public class PersonDaoImpl implements PersonDao {
+
+	public int add(Person person) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int del(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Person sel(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int upd(Person person) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

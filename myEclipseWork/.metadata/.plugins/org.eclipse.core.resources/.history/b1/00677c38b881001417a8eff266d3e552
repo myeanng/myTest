@@ -1,0 +1,7 @@
+package com.ss.service;
+
+import com.ss.dao.CxDao;
+
+public class ServiceImpl {
+	private CxDao cx;
+}

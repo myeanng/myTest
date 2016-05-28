@@ -1,0 +1,104 @@
+package com.ppd.entity;
+
+/**
+ * Account entity. @author MyEclipse Persistence Tools
+ */
+
+public class Account implements java.io.Serializable {
+
+	// Fields
+
+	private Integer accountid;
+	private Users users;
+	private String accountpassword;
+	private Float allmoney;
+	private Float outmoney;
+	private Float inmoney;
+	private Float allinvest;
+	private Float allloan;
+
+	// Constructors
+
+	/** default constructor */
+	public Account() {
+	}
+
+	/** full constructor */
+	public Account(Users users, String accountpassword, Float allmoney,
+			Float outmoney, Float inmoney, Float allinvest, Float allloan) {
+		this.users = users;
+		this.accountpassword = accountpassword;
+		this.allmoney = allmoney;
+		this.outmoney = outmoney;
+		this.inmoney = inmoney;
+		this.allinvest = allinvest;
+		this.allloan = allloan;
+	}
+
+	// Property accessors
+
+	public Integer getAccountid() {
+		return this.accountid;
+	}
+
+	public void setAccountid(Integer accountid) {
+		this.accountid = accountid;
+	}
+
+	public Users getUsers() {
+		return this.users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String getAccountpassword() {
+		return this.accountpassword;
+	}
+
+	public void setAccountpassword(String accountpassword) {
+		this.accountpassword = accountpassword;
+	}
+
+	public Float getAllmoney() {
+		return this.allmoney;
+	}
+
+	public void setAllmoney(Float allmoney) {
+		this.allmoney = allmoney;
+	}
+
+	public Float getOutmoney() {
+		return this.outmoney;
+	}
+
+	public void setOutmoney(Float outmoney) {
+		this.outmoney = outmoney;
+	}
+
+	public Float getInmoney() {
+		return this.inmoney;
+	}
+
+	public void setInmoney(Float inmoney) {
+		this.inmoney = inmoney;
+	}
+
+	public Float getAllinvest() {
+		return this.allinvest;
+	}
+
+	public void setAllinvest(Float allinvest) {
+		this.allinvest = allinvest;
+	}
+
+	public Float getAllloan() {
+		return this.allloan;
+	}
+
+	public void setAllloan(Float allloan) {
+		this.allloan = allloan;
+	}
+
+}

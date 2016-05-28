@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.UserinfoDao">
+
+  
+  <resultMap type="com.ppd.entity.Userinfo" id="userinfo">
+  	<id column="userinfoid" property="userinfoid"/>
+  	<result column="realname" property="realname"/>
+  	<result column="ic" property="ic"/>
+  	<result column="marriage" property="marriage"/>
+  	<result column="education" property="education"/>
+  	<result column="address" property="address"/>
+  	<result column="homephone" property="homephone"/>
+  	<result column="property" property="property"/>
+  	<result column="company" property="company"/>
+  	<result column="worktime" property="worktime"/>
+  	<result column="workaddress" property="workaddress"/>
+  	<result column="companyphone" property="companyphone"/>
+  	<result column="department" property="department"/>
+  	<result column="job" property="job"/>
+  </resultMap>
+  <select id="queryById" resultMap="userinfo" parameterType="int">
+  	select * from userinfo
+  	where 
+  	userinfo.userid = #{userid}
+  </select>
+</mapper>

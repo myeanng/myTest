@@ -1,0 +1,363 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://www.iteye.com/tags/pager" prefix="w"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+   <title>我要投资</title>
+    <meta name="description" content="新手安全标区,我要借出，拍拍贷-中国领先互联网金融P2P网贷平台 提供网络贷款，投资理财 小额贷款,短期贷款,个人贷款,无抵押贷款服务 拍拍贷理财借贷投资，获得高年收益率回报，超低门槛，超高收益" />
+    <meta name="keywords" content="新手安全标区,我要借出,拍拍贷" />
+    
+   
+    
+    <link rel="stylesheet" href="easyui/themes/ui-cupertino/easyui.css" type="text/css"></link>
+  <link rel="stylesheet" href="easyui/themes/icon.css" type="text/css"></link>
+  <script type="text/javascript" src="easyui/jquery.min.js"></script>
+  <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+  <!--以上使用easyui -->
+    
+    
+    <link rel="stylesheet" type="text/css" href="./ppd_bid_files/basic.css" />
+    <link rel="stylesheet" type="text/css" href="./ppd_bid_files/layout.css" />
+    <link href="./ppd_bid_files/validation-min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./ppd_bid_files/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="ppd_js/jquery-1.7.2.js"></script>   
+    <link rel="stylesheet" type="text/css" href="./ppd_bid_files/borrow.css" />
+	<script type="text/javascript" src="ppd_js/jquery-1.8.3.js"></script>
+</head>
+<body>
+    <div class="top PPD_header_nav">
+        <div class="top_inner w1188center clearfix PPD_login_status">
+        </div>
+    </div> 
+   
+ 
+ <!--头部开始-->
+    <div class="mainNav">
+        <div class="mainNav_inner clearfix w1000center">
+            <h1 class="logo">
+                <a href="http://www.ppdai.com/"><img src="./ppd_bid_files/logo.png" alt="" /></a>
+            </h1>
+            <ul id="tabIcon">
+                <li class="hasSubMenu">
+                    <a href="findAll.action"  category="Lend">我要投资</a>
+                    <div class="subMenu">
+                        <a href="findAll.action">我要投资</a>
+                       
+                        <a href="http://www.ppdai.com/debtdeal/AlldebtList/DebtList">债权交易</a>
+                        <a href="http://www.ppdai.com/howtolend">如何投资</a>
+                        <a href="http://www.ppdai.com/help/principalprotection">本金保障</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu">
+                    <a href="http://www.ppdai.com/borrow"  category="Borrow">我要借款</a>
+                    <div class="subMenu">
+                        <a href="http://www.ppdai.com/borrow">我要借款</a>
+                        <a href="http://www.ppdai.com/help/howtoborrow">如何借款</a>
+                        <a href="http://www.ppdai.com/borrow/interestcalculate">利息计算器</a>
+                    </div>
+                </li>
+
+                <li class="hasSubMenu">
+                    <a href="http://www.ppdai.com/account"  category="Account">我的账户</a>
+                    <div class="subMenu">
+                        <a href="http://www.ppdai.com/account/borrow">借款账户</a>
+                        <a href="http://www.ppdai.com/account/lend">投资账户</a>
+                    </div>
+                </li>
+                <li class="hasSubMenu">
+                    <a href="http://www.ppdai.com/help/aboutus"  category="About">关于我们</a>
+                    <div class="subMenu">
+                        <a href="http://www.ppdai.com/help/aboutus">关于我们</a>
+                        <a href="http://www.ppdai.com/help/howworks">工作原理</a>
+                        <a href="http://www.ppdai.com/help/fees">资费说明</a>
+                      	<a href="http://www.ppdai.com/job">招贤纳士</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--头部结束-->
+
+    
+
+
+<div class="main">
+    <!--面包屑-->
+    <div class="lendnavbar clearfix">
+        
+<div>
+    <ul class="breadcrumb" style="border: none !important;">
+        <li><a href="http://www.ppdai.com">首页</a> <span class="divider">&gt;</span></li>
+                    <li><a href="findAll.action">我要投资</a> </li>
+            </ul>
+</div>
+
+
+       <!--   <div class="posppb">
+            
+            <a href="/loan/lend_12" class="ppb" onclick="switchvosion(0)">回到旧版分区&gt;</a>
+
+            <a href="http://invest.ppdai.com/product/rainbow" class="ppb">前往彩虹计划&gt;</a>
+        </div>-->
+    </div>
+    <!--面包屑-->
+
+    <div class="w1000center">
+        <!--借出流程-->
+
+        <!--借出流程结束-->
+      <!--  
+        <div class="borrowListContent">
+            <ul class="borrowItem clearfix" id="tabNav">
+                <li class="first nobd current" style="width:199px"><a href="/loan/list_safe">新手安全标专区</a></li>
+                <li class="" style="width:199px"><a href="/loan/list_payfor" class="hot" style="background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) -100px -229px no-repeat">逾期就赔区</a></li>
+                <li class="" style="width:199px"><a href="/loan/list_riskmiddle">中风险收益区</a></li>
+                <li class="" style="width:199px"><a href="/loan/list_riskhigh">高风险收益区</a></li>
+                <li class="w163 last " style="width:198px"><a href="/loan/list_bd">合作专区</a></li>
+            </ul>
+-->
+
+            <!--seo div+css-->
+            <div class="outerBorrowList">
+                    <div class="manjp">
+                        <a href="http://www.ppdai.com/debtdeal/AlldebtList/DebtList" style="font-weight: normal; color: #39A1EA; float: right; font-size: 14px;">债权交易，高收益低风险，前去查看&gt;</a>
+                        <p>拍拍贷预先审核，借款人应收账款为保障的项目。低风险、高效收益。至今投资0%损失。</p>
+                    </div>
+
+                <div class="tabth">
+                    <ul class="clearfix">
+                        <li style="cursor: pointer;" class="reload w110" sort="5">信用等级<i class="up"></i></li>
+                        <li class="w230">标题</li>
+                        <li style="cursor: pointer;" class="reload w110" sort="3">当前利率<i class="up"></i></li>
+                        <li class="w90">金额</li>
+                        <li style="cursor: pointer;" class="reload w82" sort="9">期限<i class="up"></i></li>
+                        <li style="cursor:pointer;" class="reload w140" sort="1">进度<i class="up"></i></li>
+                    </ul>
+                </div>
+                <div class="wapBorrowList clearfix">
+                      
+                        
+                     <!--   借款循环分页
+                        -->
+                      
+                      
+                        	<c:forEach items="${dictPage.result}" var="jk">
+                       
+                          <ol class="clearfix">
+                            <li class="clearfix">
+                                <div class="w110 info">
+                                    <a href="http://help.ppdai.com/Home/List/12" target="_blank" rank="8">
+                                        <i class="creditRating AAA" title="魔镜等级：AAA至F等级依次降低，等级越高逾期率越低。点击等级了解更多。"></i>
+
+                                    </a>
+                                </div>
+                                <div class="w230 listtitle">
+                                    <a class="title ell" href="" >${jk.ppUsers.username}${jk.borrowtitle}</a>
+                                    <p class="userInfo clearfix">
+                                    
+                                        <a target="_blank" href="">${jk.ppUsers.username}</a>
+                                        
+                                        <i class="an" title="应收款安全标：借入者由用户提供的应收款进行保障"></i>
+                                    </p>
+                                </div>
+                               
+                                <div class="w110 brate">
+                                    ${jk.yearrate}<span>%</span>
+                                </div>
+                                <div class="w90 sum">
+                                    <span>¥</span>${jk.borrowmoney}
+                                </div>
+                                <div class="w82 limitTime">
+                                    ${jk.borrowdeadline}<span>个月</span>
+                                </div>
+
+                                <div class="w140 process">
+                                    <div class="processBar">
+                                  
+                                        <div class="inner" id="persentsb1">
+                                    </div>
+                                    <p>
+                                  
+                                    <br/>
+                                        已完成<span id="persentsb"></span>%</p>
+                                        
+                                 
+                                </div>
+									<script type="text/javascript">
+                                  
+                                  	var chu=${jk.borrowmoney};
+                                  	var bei=${jk.bidmoney};
+                                    var jie;
+                                  if(chu!=0||bei!=0){
+                                	  jie=(bei/chu)*100;
+                                	 $("#persentsb").text(jie.toFixed(1))
+                         			$("#persentsb1").css("width",""+jie.toFixed(1)+"px")
+                                  }
+                                  </script>
+                                <div class="w140 operate"><!--
+                               			 判断按钮的状态
+                                		去loan_info.jsp
+                                            -->
+ 
+                                            <c:if test="${jk.borrowsta==2}">
+                                            <a style="cursor: default;"   href="ValidateEdu.action?borrowid=${jk.borrowid}&userid=${jk.ppUsers.userid}">投标</a>
+											</c:if>
+						
+						
+						<c:if test="${jk.borrowsta==0}">
+							 <a style="cursor: default;"    href="">待审核</a>
+						</c:if>
+						<c:if test="${jk.borrowsta==1}">
+							 <a style="cursor: default;"  href="">未通过</a>
+						</c:if>
+						<c:if test="${jk.borrowsta==3}">
+							 <a style="cursor: default;"   href="">已完成</a>
+						</c:if>
+						<c:if test="${jk.borrowsta==4}">
+							 <a style="cursor: default;"   href="">流标</a>
+						</c:if>
+                                </div>
+                            </li>
+                        </ol>
+                       </c:forEach>
+                       
+                       <!-- 分页脚 -->
+                       
+                    <div style="margin-right: 370px;"> <w:pager pageSize="${dictPage.pageSize}" pageNumber="${dictPage.pageNum}" url="findAll" recordCount="${dictPage.total}"/></div>
+
+                       
+               
+          
+          
+                </div>
+            </div>
+            <!--seo div+css结束-->
+        </div>
+    </div>
+</div>
+
+
+ <!--底部-->
+    <div class="footer">
+        <div class="footer_footerBottom">
+            <ul class="footer_footerBottomNav clearfix">
+                <li><span class="webindex"></span><a href="http://www.ppdai.com/">网站首页</a>|</li>
+                <li><span class="aboutus"></span><a href="http://www.ppdai.com/help/aboutus">关于我们</a>|</li>
+                <li><span class="mapsite"></span><a href="http://www.ppdai.com/home/sitemap">网站地图</a>|</li>
+                <li><span class="webservice"></span><a href="http://www.ppdai.com/consult">客服中心</a>|</li>
+                <li class="nomr"><span class="onlneserve"></span><a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyNzUzNV8xODAzNjBfODAwMDI3NTM1XzJf" target="_blank">在线咨询</a></li>
+            </ul>
+            <p>Copyright Reserved 2007-2015©拍拍贷（www.ppdai.com）&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备05063398号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;上海拍拍贷金融信息服务有限公司</p>
+        </div>
+    </div>
+    <!--底部结束-->
+
+    <script src="./ppd_bid_files/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bid_files/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bid_files/servicestack-min.js"></script>
+     <!--<script src="http://www.ppdaicdn.com/js/jquery.cookie.js"></script>
+    <script src="http://ac.ppdai.com/status?v=2014" type="text/javascript"></script>-->
+    <script src="./ppd_bid_files/newRefer.js"></script>
+    <script>
+        $(".my-f-l-list li a.on").closest(".my-f-l-list").prev(".my-f-l-nav").addClass("my-f-l-nav-sd");
+        try {
+            $("#tabIcon a[category='" + breadcrumbCategory + "']").addClass("tabon");
+        } catch (e) {
+
+        }
+    </script>
+    
+    <script src="./ppd_bid_files/bootstrap.js"></script>
+    <script src="./ppd_bid_files/customize.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bid_files/dialog.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bid_files/bid.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ppd_bid_files/borrow.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.reload').click(function() {
+                var url = "";
+                url = "/loan/list_" + 'Safe' + "_s" + $(this).attr("sort") + "_p" + 1;
+                window.location = url;
+            });
+            
+            //反馈
+            $(document).PPDqustion({ BtnId: 'submitbtn', TextId: 'Description', tit: '亲爱的拍友们，为了给您提供最好的服务，请留下您宝贵的意见和建议，以便我们改正。' });
+            $("#submitbtn").click(function () {
+                
+ 
+                var description = $("#Description").val() + "〖 手机号码：" +  + ",QQ号码:" +  + " 〗";
+
+                $.post("/common/FeedBack", { description: description, categoryId: "110" }, function (e) {
+                    $(".fankui_emsg").html(e.Message);
+                    $("#Description").val(""); //清空内容
+                });
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        //切换新旧版投标区
+        function switchvosion(ver) {
+            try {
+                $.cookie('newpartition', ver, { expires: 30, path: '/', domain: 'www.ppdai.com', secure: false });
+                $.cookie('newpartition', ver, { expires: -100, path: '/', domain: '.ppdai.com', secure: false });
+            } catch (err) {
+                //
+            }
+        }
+        $(function() {
+         
+
+            //开通用户投标权限
+            $(".openUserTrustCreditRank").click(function() {
+                var data = {
+                    //data 是Request DTO 定义的参数
+                    ActionName: "middle"
+                };
+                $.post("/bid/SetUserTrustCreditRank", data, function(response) {
+                    if (response.Code == 1) {
+                        alert(response.Content);
+                        window.location.reload();
+                    } else if (response.Code == -1) {
+                        alert(response.Content);//未登录
+                        window.location.href = "http://ac.ppdai.com/User/Login?redirect=http://www.ppdai.com/loan/list_riskmiddle";
+
+                    }else {
+                        if (response.Content == "") {
+                            alert("开通失败");
+                        }
+                        else {
+                            alert(response.Content);                        
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVQ5D8"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PVQ5D8');</script>
+    <!-- End Google Tag Manager -->
+</body>
+</html>

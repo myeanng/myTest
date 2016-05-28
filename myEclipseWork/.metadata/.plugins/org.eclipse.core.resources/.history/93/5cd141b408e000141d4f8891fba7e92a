@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://ac.ppdai.com/userbind/miniuserbind2014 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手机绑定</title>
+<style type="text/css">
+body{margin:0px;}
+.huoqu_btn{padding:0 10px;height:26px;margin:0px 0px 3px 4px;display:inline-block;background:#39a1ea;font:15px/30px 'Microsoft Yahei';color:#fff;text-align:center;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;border:0;cursor:pointer;box-shadow:none;-webkit-box-shadow:none;line-height:26px;}
+.huoqu_btn:hover{background:#1d83ca;}
+.txt01{width:200px;height:24px;background:#fff;border:1px solid #e4e4e4;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;padding:0px 0 0px 12px;font:14px/24px 'Microsoft Yahei';color:#666;display:block;float:left;}
+.my_contactway{height:auto;}
+.my_contactway em{width:115px;display:block;text-align:right;font:14px/26px 'Microsoft Yahei';color:#333;float:left;margin:0px;}
+.my_contactway ul{margin:0px;padding:0 0 0 30px;list-style:none;}
+.my_contactway ul li{height:26px;margin:0 0 20px 0;}
+.info_title { height: 28px; background: #f7f7f7; display: block; padding-left: 30px;font: 14px/28px 'Microsoft Yahei';color: #666;margin-bottom: 24px; }
+.bdphone{height:28px;background:#f7f7f7;display:block;padding-left:30px;font:14px/28px 'Microsoft Yahei';color:#666;margin:0px;}
+.bdphone a{color:#0087e6;text-decoration:none;}
+.create_list_info{margin:0px;}
+</style>
+</head>
+<body>
+    <div class="create_list_info">
+        <span class="info_title">绑定手机</span>
+            <!-- 已绑定手机 显示信息 -->
+            <p class="bdphone" id="mphone-info">手机号码绑定成功,如果您更换了手机号码，请<a href="http://ac.ppdai.com/UserBind/BindMobile" target="_blank">点击此处修改</a></p>
+    </div>
+
+    <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ppd_ac_utils.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script type="text/javascript">var acUtils = new PPDAcUtils("v1.0");</script>
+    <script type="text/javascript">
+        $(function () {
+            var remainTimeKey = 'Add_bindmobile_remainTime';
+            var cookieObj = { expires: 1 / 24 / 60, path: '/', domain: '.ac.ppdai.com', secure: false };
+
+            function checkRemainTime(obj, remainTimeKey) {
+                if (jQuery.cookie(remainTimeKey) && jQuery.cookie(remainTimeKey).length > 0) {
+                    acUtils.remainTime(obj, jQuery.cookie(remainTimeKey), null, '秒后重新发送', remainTimeKey, cookieObj);
+                }
+            }
+
+            //获取验证码
+            $("#btnValidateCode").click(function () {
+                //$('#btnValidateCode').attr("disabled", true);
+                var mobile = $('#MobilePhone').val();
+                var datastep = 'Add';
+                var sendFor = 'UpdateMobilePhone';
+                $.post("/userbind/sendsmsvalidatecode", { mobile: mobile, step: datastep, sendFor: sendFor }, function (res) {
+                    if (res != null) {
+                        $('#endtime').html(res.Message);
+                        if (res.Code == 0) {
+                            //alert(res.Message);
+                            //$this.attr("disabled", false);
+                        } else {
+                            //alert(res.Message);
+                            acUtils.remainTime($("#btnValidateCode"), 60, null, '秒后重新发送', remainTimeKey, cookieObj);
+                        }
+                    }
+                });
+            });
+
+            //提交
+            $("#btnSubmitValidateCode").click(function () {
+                //$('#btnSubmitValidateCode').attr("disabled", true);
+                var data = { Step: "Add", Mobile: $("#MobilePhone").val(), ValidateCode: $("#txtValidateCode").val() };
+                $.post('/UserBind/MiniUserBind2014', data, function (res) {
+                    if (res.Code == 0) {
+                        alert(res.Message);
+                    } else {
+                        alert(res.Message);
+                        location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

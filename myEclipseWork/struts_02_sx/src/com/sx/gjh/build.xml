@@ -1,0 +1,9 @@
+<project>
+<target name="i18n">
+<native2ascii dest="com\\sx\\gjh"
+	src="com.sx.gjh.temp"
+	includes=".properties"
+	encoding="utf-8"
+	></native2ascii>
+</target>
+</project>

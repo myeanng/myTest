@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.UsersDao">
+  <select id="queryById" resultType="com.ppd.entity.Users" parameterType="int">
+  	select username, tel, email, loginpassword, headpicture, createtime,
+  	lastlogintime, lastloginip, credit,
+	integral, status from users where userid = #{id}
+  </select>
+  
+  <update id="up" parameterType="com.ppd.entity.Users">
+  	update users 
+		<set>
+			<if test="username !=null and username!= ''">username = #{username} ,</if>
+			<if test="tel !=null and tel!=''">tel = #{tel} ,</if>
+			<if test="email !=null and email!=''">email = #{email} ,</if>
+			<if test="loginpassword !=null and loginpassword!=''">loginpassword = #{loginpassword} ,</if>
+			<if test="headpicture !=null and headpicture!=''">headpicture = #{headpicture} ,</if>
+			<if test="createtime !=null and createtime!= ''">createtime = #{createtime} ,</if>
+			<if test="lastlogintime !=null and lastlogintime!=''">lastlogintime = #{lastlogintime} ,</if>
+			<if test="lastloginip !=null and lastloginip!=''">lastloginip = #{lastloginip} ,</if>
+			<if test="credit !=null and credit!=''">credit = #{credit} ,</if>
+			<if test="integral !=null and integral!=''">integral = #{integral} ,</if>
+			<if test="status !=null and status!=''">status = #{status} </if>
+		</set>
+	where userid = #{userid}
+  </update>
+  <!--
+  联合查找的借款项目和账户余额表
+  -->
+  <resultMap type="com.ppd.entity.Users" id="users">
+  	<id column="userid" property="userid"/>
+  	<result column="username" property="username"/>
+  	<result column="tel" property="tel"/>
+  	<result column="email" property="email"/>
+  	<result column="loginpassword" property="loginpassword"/>
+  	<result column="headpicture" property="headpicture"/>
+  	<result column="createtime" property="createtime"/>
+  	<result column="lastlogintime" property="lastlogintime"/>
+  	<result column="lastloginip" property="lastloginip"/>
+  	<result column="credit" property="credit"/>
+  	<result column="integral" property="integral"/>
+  	<result column="status" property="status"/>
+  </resultMap>
+  
+  <resultMap type="com.ppd.entity.Users" id="usersLoanMap" extends="users">
+  	<collection property="loans" resultMap="com.ppd.dao.LoanDao.loan"/>
+  	<collection property="accounts" resultMap="com.ppd.dao.AccountDao.account"/>
+  </resultMap>
+  
+  <resultMap type="com.ppd.entity.Users" id="usersDueinMap" extends="users">
+  	<collection property="loans" resultMap="com.ppd.dao.DueinDao.duein"/>
+  	<collection property="accounts" resultMap="com.ppd.dao.AccountDao.account"/>
+  </resultMap>
+  
+  <resultMap type="com.ppd.entity.Users" id="usersUserinfosMap" extends="users">
+  	<collection property="userinfos" resultMap="com.ppd.dao.UserinfoDao.userinfo"/>
+  </resultMap>
+  
+  <select id="findUserLoanAccount" resultMap="usersLoanMap" parameterType="int">
+  	select * from users u , loan l , account a 
+  	where 
+  	u.userid = #{id} and u.userid=l.userid and u.userid=a.userid and l.status in(3,4,6,7,9)
+  </select>
+  <select id="findUserDueinAccount" resultMap="usersDueinMap" parameterType="int">
+  	select * from users u , duein d , account a 
+  	where 
+  	u.userid = #{id} and u.userid=d.userid and u.userid=a.userid and d.status in(1,2)
+  </select>
+  <select id="findUserAndUserinfo" resultMap="usersDueinMap" parameterType="int">
+  	select * from users u , duein d , account a 
+  	where 
+  	u.userid = #{id} and u.userid=d.userid and u.userid=a.userid and d.status in(1,2)
+  </select>
+</mapper>

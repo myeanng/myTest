@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.DueinDao">
+
+  <select id="queryByParam" resultMap="dueinMap" parameterType="com.ppd.entity.Duein">
+  	select * from duein d , loan l
+  	<where>
+		<if test="status=99">
+		userid = #{users.userid} and shouldtime>#{shouldtime} and d.loanid=l.loanid
+		</if>
+		<if test="status!=99">
+		userid = #{users.userid} and shouldtime>#{shouldtime} and status=#{status} and d.loanid=l.loanid
+		</if>
+	</where>
+  </select>
+  <resultMap type="com.ppd.entity.Duein" id="duein">
+  	<id column="dueinid" property="dueinid"/>
+  	<result column="period" property="period"/>
+  	<result column="rate" property="rate"/>
+  	<result column="principal" property="principal"/>
+  	<result column="interest" property="interest"/>
+  	<result column="status" property="status"/>
+  	<result column="fine" property="fine"/>
+  	<result column="shouldtime" property="shouldtime"/>
+  </resultMap>
+  <resultMap type="com.ppd.entity.Duein" id="dueinMap" extends="duein">
+  <association property="com.ppd.dao.LoanDao.loan"></association>
+  </resultMap>
+</mapper>

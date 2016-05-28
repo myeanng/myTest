@@ -1,0 +1,32 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+
+  <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script>
+  </head>
+  
+  <body>
+    <form action="">
+    	<input type="button" value="测试1"><br>
+    	<input type="button" value="测试2"><br>
+    	<div id="cs"></div>
+    	
+    </form>
+    
+     <br>
+     <script type="text/javascript">
+     	$(":button :eq(0)").one({
+		    click: function() {
+		      // do something on click
+		      alert("abc");
+		    }
+		});
+     </script>
+  </body>
+</html>

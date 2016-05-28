@@ -1,0 +1,8 @@
+package com.ss.action;
+
+import com.ss.biz.S5Biz;
+
+public class S5Action {
+	private S5Biz s5biz;
+	
+}

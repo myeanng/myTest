@@ -1,0 +1,26 @@
+package com.test.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.test.dao.BookDao;
+import com.test.entity.Book;
+import com.test.service.BookService;
+@Component@Transactional
+public class BookServiceImpl implements BookService {
+	@Autowired
+	private BookDao bookDao;
+	public void add(Book entity) {
+		// TODO Auto-generated method stub
+		bookDao.save(entity);
+	}
+
+	public List<Book> list() {
+		// TODO Auto-generated method stub
+		return bookDao.queryAll();
+	}
+
+}

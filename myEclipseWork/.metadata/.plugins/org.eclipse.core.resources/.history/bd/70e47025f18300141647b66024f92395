@@ -1,0 +1,6 @@
+package com.ss.dao;
+
+
+public interface BingXangDao {
+	public void goumai();
+}

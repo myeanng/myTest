@@ -1,0 +1,12 @@
+package com.test.util;
+
+import org.hibernate.SessionFactory;
+
+public class BaseDao {
+	private SessionFactory faction;
+	
+	protected Session getSession() {
+		return sessionFaction.gets
+	}
+	
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.AccountDao">
+
+  <select id="queryById" resultType="com.ppd.entity.Account" parameterType="int">
+  	select accountid, accountpassword, allmoney,
+  	outmoney, inmoney, allinvest from account where userid = #{id}
+  </select>
+  
+  <!--通过accountid修改账户的各个信息-->
+  
+  <update id="up" parameterType="com.ppd.entity.Account">
+  	update account 
+		<set>
+			<if test="allmoney !=null and allmoney!= ''">allmoney = #{allmoney} ,</if>
+			<if test="inmoney !=null and inmoney!=''">inmoney = #{inmoney} ,</if>
+			<if test="accountpassword !=null and accountpassword!=''">accountpassword = #{accountpassword} ,</if>
+			<if test="outmoney !=null and outmoney!=''">outmoney = #{outmoney} ,</if>
+			<if test="allinvest !=null and allinvest!=''">allinvest = #{allinvest}</if>
+		</set>
+	where accountid = #{accountid}
+  </update>
+  
+  <resultMap type="com.ppd.entity.Account" id="account">
+  	<id column="accountid" property="accountid"/>
+  	<result column="accountpassword" property="accountpassword"/>
+  	<result column="allmoney" property="allmoney"/>
+  	<result column="outmoney" property="outmoney"/>
+  	<result column="inmoney" property="inmoney"/>
+  	<result column="allinvest" property="allinvest"/>
+  	<result column="allloan" property="allloan"/>
+  </resultMap>
+  
+  <resultMap type="com.ppd.entity.Account" id="accountMap" extends="account">
+  	<association property="com.ppd.entity.Users">
+  		<id column="userid" property="userid"/>
+  	</association>
+  </resultMap>
+</mapper>

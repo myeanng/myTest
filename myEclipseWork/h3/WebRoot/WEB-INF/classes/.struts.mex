@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="forumpackage" location="50,50" size="170,313">
+    <action name="personAction_*" location="10,20" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+      <result name="listCategory">
+        <resourceEdge source="listCategory" routing="0" target="listCategory.jsp" />
+      </result>
+    </action>
+    <action name="categoryAction_*" location="10,120" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addBoard.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="boardAction_*" location="10,220" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="setAdmin.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+      <result name="setAdmin">
+        <resourceEdge source="setAdmin" routing="0" target="setAdmin.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="sel.jsp" path="/sel.jsp" location="350,50" size="150,55" />
+  <webResource name="error.jsp" path="/error.jsp" location="500,50" size="150,55" />
+  <webResource name="show.jsp" path="/show.jsp" location="50,200" size="150,55" />
+  <webResource name="addCategory.jsp" path="/addCategory.jsp" location="200,200" size="150,55" />
+  <webResource name="addBoard.jsp" path="/addBoard.jsp" location="350,200" size="150,55" />
+  <webResource name="addBP.jsp" path="/addBP.jsp" location="500,200" size="150,55" />
+  <webResource name="setAdmin.jsp" path="/setAdmin.jsp" location="50,350" size="150,55" />
+  <webResource name="index.jsp" path="/form/index.jsp" location="0,0" size="0,0" />
+  <webResource name="exception.jsp" path="/exception.jsp" location="0,0" size="0,0" />
+  <webResource name="listCategory.jsp" path="/listCategory.jsp" location="0,0" size="0,0" />
+  <webResource name="indexNew.jsp" path="/indexNew.jsp" location="0,0" size="0,0" />
+  <webResource name="listCategory.jsp" path="/form/listCategory.jsp" location="0,0" size="0,0" />
+  <webResource name="addBoard.jsp" path="/form/addBoard.jsp" location="0,0" size="0,0" />
+  <webResource name="setAdmin.jsp" path="/form/setAdmin.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/index.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

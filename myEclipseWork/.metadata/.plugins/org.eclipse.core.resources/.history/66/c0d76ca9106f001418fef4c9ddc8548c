@@ -1,0 +1,28 @@
+package com.ss.dao.impl;
+
+import com.ss.dao.CategoryDao;
+import com.ss.entity.Category;
+
+public class CategoryDaoImpl implements CategoryDao {
+
+	public int add(Category category) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int del(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Category sel(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int upd(Category category) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

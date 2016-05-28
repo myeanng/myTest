@@ -1,0 +1,31 @@
+package com.test.dao.impl;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.test.dao.BookDao;
+import com.test.entity.Book2;
+@Component
+public class BookDaoImpl implements BookDao {
+	@Autowired
+	private SessionFactory factory;
+	
+	public Session getSession(){
+		return factory.getCurrentSession();
+	}
+	
+	public void addbook(Book2 entity) {
+		// TODO Auto-generated method stub
+		getSession().save(entity);
+	}
+
+	public List<Book2> findall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

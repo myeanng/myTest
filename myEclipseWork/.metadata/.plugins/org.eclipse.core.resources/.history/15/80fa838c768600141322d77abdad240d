@@ -1,0 +1,5 @@
+package com.ss.dao;
+
+public interface EmpDao {
+	void addEmp(Emp emp);
+}

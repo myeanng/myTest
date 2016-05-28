@@ -1,0 +1,5 @@
+package com.ppd.dao;
+
+public interface UserinfoDao extends BaseDao<Userinfo> {
+
+}

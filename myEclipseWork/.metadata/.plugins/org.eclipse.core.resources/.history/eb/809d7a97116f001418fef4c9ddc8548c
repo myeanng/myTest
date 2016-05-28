@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ss.entity">
+	<class name="Category" table="t_person" catalog="scott">
+		<id name="id" type="java.lang.Integer">
+			<column name="id"></column>
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="deleted" type="java.lang.Boolean">  
+			<column name="deleted"/>
+		</property>
+		<property name="dateCreated" type="java.sql.Timestamp">
+			<column name="dateCreated"/>
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="name"/>
+		</property>
+		
+		<property name="version" type="java.lang.Integer">
+			<column name="password"/>
+		</property>
+	</class>
+</hibernate-mapping>

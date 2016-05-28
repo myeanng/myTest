@@ -1,0 +1,5 @@
+package com.ss.factory;
+
+public class SessionFactory {
+
+}

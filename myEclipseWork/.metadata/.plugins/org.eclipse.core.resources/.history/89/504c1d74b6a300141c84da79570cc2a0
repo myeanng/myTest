@@ -1,0 +1,20 @@
+package com.test.dao.impl;
+
+import java.util.List;
+
+import com.test.dao.BookDao;
+import com.test.entity.Book2;
+
+public class BookDaoImpl implements BookDao {
+
+	public void addbook(Book2 entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public List<Book2> findall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

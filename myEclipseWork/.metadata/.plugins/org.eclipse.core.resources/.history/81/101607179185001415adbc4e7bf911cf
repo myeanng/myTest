@@ -1,0 +1,37 @@
+package com.ss.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ss.biz.BankBiz;
+import com.ss.entity.Account;
+import com.ss.entity.Record;
+
+
+public class Test {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+		BankBiz bb=(BankBiz) ac.getBean("bankbiz");
+		/*Account account=(Account)ac.getBean("account");
+		account.setName("wangwu");
+		Float f=(Float) 5000.0f;
+		account.setMoney(f);
+		
+		bb.add(account);
+		Account account2=(Account)ac.getBean("account");
+		account2.setName("wangwu");
+		Float f2=(Float) 1000.0f;
+		account2.setMoney(f2);
+		bb.add(account2);
+		Record record=(Record)ac.getBean("record");*/
+		bb.zz(135, 136, 1000.0f);
+		
+	}
+
+}

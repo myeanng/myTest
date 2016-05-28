@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.custom.i18n.resources" value="application"></constant>
+<package name="book" extends="struts-default">
+<action name="book_*" class="com.sx4.action.QueryAction" method="{1}">
+	<result name="dui" type="dispatcher">/list.jsp</result>
+</action>
+</package>
+<package name="jisuans" extends="struts-default">
+	<interceptors>
+		<interceptor name="myinter1" class="com.ss.interceptor.Jisuan1Interceptor"></interceptor>
+	</interceptors>
+	<action name="jisuan_*" class="com.sx4.action.JisuanAction" method="{1}">
+	<interceptor-ref name="defaultStack"></interceptor-ref>
+	<interceptor-ref name="myinter1"></interceptor-ref>
+		<result name="result" type="dispatcher">/jisuan.jsp</result>
+		<result name="cuo" type="redirect">/error.jsp</result>
+		<result name="error" type="redirect">/errortwo.jsp</result>
+	</action>
+</package>
+<package name="adminpackage" extends="struts-default">
+	<interceptors>
+		<interceptor name="myinter1" class="com.ss.interceptor.AdminInterceptor"></interceptor>
+	</interceptors>
+	<action name="admin_*" class="com.sx4.action.AdminAction" method="{1}">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<interceptor-ref name="myinter1">
+			<param name="excludeMethods">login</param>
+		</interceptor-ref>
+		<result name="dui" type="dispatcher">/adminlist.jsp</result>
+		<result name="cuo" type="redirect">/error.jsp</result>
+	</action>
+</package>
+<package name="textpackage" extends="struts-default">
+	<interceptors>
+		<interceptor name="myinter1" class="com.ss.interceptor.Text1Interceptor"></interceptor>
+		
+	</interceptors>
+	<action name="textaction" class="com.sx4.action.WordAction">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<interceptor-ref name="token"></interceptor-ref>
+		
+		<interceptor-ref name="myinter1"></interceptor-ref>
+		<result name="dui" type="redirect">/word.jsp</result>
+		<result name="error" type="redirect">/error.jsp</result>
+		<result name="invalid.token">/word.jsp</result>
+	</action>
+</package>
+<package name="timepackage" extends="struts-default">
+	<interceptors>
+		<interceptor name="myinter1" class="com.ss.interceptor.Time1Interceptor"></interceptor>
+	</interceptors>
+	<action name="timeaction" class="com.sx4.action.TimeAction">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<interceptor-ref name="myinter1"></interceptor-ref>
+		<result name="dui" type="redirect">/time.jsp</result>
+		<result name="error" type="redirect">/error.jsp</result>
+	</action>
+</package>
+<package name="treepackge" extends="struts-default">
+	<action name="treeaction" class="com.sx4.action.TreeAction">
+		<result name="dui" type="dispatcher">/tree.jsp</result>
+	</action>
+</package>
+</struts>    

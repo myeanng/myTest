@@ -1,0 +1,11 @@
+package com.ss.dao;
+
+import java.util.List;
+
+import com.ss.entity.Emp;
+
+public interface EmpDao {
+	void addEmp(Emp emp);
+	List<Emp> findAllEmp();
+	List<Emp> findAllEmpByPage(final int page,final int size);
+}

@@ -1,0 +1,139 @@
+package com.ss.entity;
+
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * TCategory entity. @author MyEclipse Persistence Tools
+ */
+
+public class TCategory  implements java.io.Serializable {
+
+	// Fields
+
+	private BigDecimal categoryid;
+	private String categoryname;
+	private String categorydesc;
+	private Long id;
+	private Boolean deleted;
+	private Date datecreated;
+	private String name;
+	private Long version;
+	private Set TBoards = new HashSet(0);
+	private Set TBooks = new HashSet(0);
+
+	// Constructors
+
+	/** default constructor */
+	public TCategory() {
+	}
+
+	/** minimal constructor */
+	public TCategory(BigDecimal categoryid, String categoryname,
+			String categorydesc) {
+		this.categoryid = categoryid;
+		this.categoryname = categoryname;
+		this.categorydesc = categorydesc;
+	}
+
+	/** full constructor */
+	public TCategory(BigDecimal categoryid, String categoryname,
+			String categorydesc, Long id, Boolean deleted, Date datecreated,
+			String name, Long version, Set TBoards, Set TBooks) {
+		this.categoryid = categoryid;
+		this.categoryname = categoryname;
+		this.categorydesc = categorydesc;
+		this.id = id;
+		this.deleted = deleted;
+		this.datecreated = datecreated;
+		this.name = name;
+		this.version = version;
+		this.TBoards = TBoards;
+		this.TBooks = TBooks;
+	}
+
+	// Property accessors
+
+	public BigDecimal getCategoryid() {
+		return this.categoryid;
+	}
+
+	public void setCategoryid(BigDecimal categoryid) {
+		this.categoryid = categoryid;
+	}
+
+	public String getCategoryname() {
+		return this.categoryname;
+	}
+
+	public void setCategoryname(String categoryname) {
+		this.categoryname = categoryname;
+	}
+
+	public String getCategorydesc() {
+		return this.categorydesc;
+	}
+
+	public void setCategorydesc(String categorydesc) {
+		this.categorydesc = categorydesc;
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Boolean getDeleted() {
+		return this.deleted;
+	}
+
+	public void setDeleted(Boolean deleted) {
+		this.deleted = deleted;
+	}
+
+	public Date getDatecreated() {
+		return this.datecreated;
+	}
+
+	public void setDatecreated(Date datecreated) {
+		this.datecreated = datecreated;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Long getVersion() {
+		return this.version;
+	}
+
+	public void setVersion(Long version) {
+		this.version = version;
+	}
+
+	public Set getTBoards() {
+		return this.TBoards;
+	}
+
+	public void setTBoards(Set TBoards) {
+		this.TBoards = TBoards;
+	}
+
+	public Set getTBooks() {
+		return this.TBooks;
+	}
+
+	public void setTBooks(Set TBooks) {
+		this.TBooks = TBooks;
+	}
+
+}

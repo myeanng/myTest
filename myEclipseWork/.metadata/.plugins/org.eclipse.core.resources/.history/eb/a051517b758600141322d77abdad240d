@@ -1,0 +1,8 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Emp implements Serializable {
+
+}

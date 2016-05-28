@@ -1,0 +1,10 @@
+package com.test.dao;
+
+import antlr.collections.List;
+
+import com.test.entity.Book;
+
+public interface BookDao {
+	void save(Book entity);
+	List<Book> queryAll();
+}

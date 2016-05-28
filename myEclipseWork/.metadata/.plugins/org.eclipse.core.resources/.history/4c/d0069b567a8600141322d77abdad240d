@@ -1,0 +1,13 @@
+package com.ss.action;
+
+import java.util.List;
+
+import com.ss.biz.S5Biz;
+import com.ss.entity.Emp;
+import com.opensymphony.xwork2.ActionSupport;
+
+@SuppressWarnings("serial")
+public class S5Action extends ActionSupport {
+	private S5Biz s5biz;
+	private List<Emp> list;
+}

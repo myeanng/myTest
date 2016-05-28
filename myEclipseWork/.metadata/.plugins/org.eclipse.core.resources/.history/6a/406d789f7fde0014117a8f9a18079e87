@@ -1,0 +1,12 @@
+package com.ppd.service;
+
+import java.util.Date;
+
+import com.ppd.entity.*;
+
+public interface AaaService {
+	//提现和充值返回用户账户信息
+	Users uPaccount(Users users,float money);
+	//查询资金记录
+	List<Bill> findBill(Date datetime,);
+}

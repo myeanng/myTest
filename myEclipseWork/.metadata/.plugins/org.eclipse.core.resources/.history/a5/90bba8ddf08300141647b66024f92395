@@ -1,0 +1,6 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+
+public interface BingXang extends Serializable {
+}

@@ -1,0 +1,10 @@
+package com.ppd.dao;
+
+import java.util.List;
+
+import com.ppd.entity.Duein;
+
+public interface DueinDao extends BaseDao<Duein> {
+	//根据时间,类型,用户ID,查询待收记录(classType=0时查询所有)
+	List<Duein> findDuein(int classType,int dateType,int userid);
+}

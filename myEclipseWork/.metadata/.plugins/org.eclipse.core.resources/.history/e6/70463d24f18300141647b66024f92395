@@ -1,0 +1,7 @@
+package com.ss.dao;
+
+import java.io.Serializable;
+
+public interface BingXangDao {
+	public void goumai();
+}

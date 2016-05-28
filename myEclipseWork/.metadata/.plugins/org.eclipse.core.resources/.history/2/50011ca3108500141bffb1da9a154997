@@ -1,0 +1,17 @@
+package com.ss.biz;
+
+import java.util.List;
+
+import com.ss.entity.Account;
+import com.ss.entity.Record;
+
+public interface BankBiz {
+	void add(Record record);
+	List<Record> findRecord();
+	
+	void add(Account account);
+	List<Account> findAccount();
+	void update(Account account);
+	
+	String zz(int id,int toid,float money);
+}

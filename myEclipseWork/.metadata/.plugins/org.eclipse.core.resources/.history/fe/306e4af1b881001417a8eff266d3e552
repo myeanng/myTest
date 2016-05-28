@@ -1,0 +1,29 @@
+package com.ss.service;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ss.action.BmAction;
+import com.ss.dao.CxDao;
+import com.ss.entity.BM;
+
+public class ServiceImpl {
+	private CxDao cx;
+	ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+	CxDao cx=(CxDao)context.getBean("service");
+	
+	public List<BM> find(){
+		return cx.findAll();
+	}
+	
+	public CxDao getCx() {
+		return cx;
+	}
+
+	public void setCx(CxDao cx) {
+		this.cx = cx;
+	}
+	
+}

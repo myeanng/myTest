@@ -1,0 +1,21 @@
+package com.test.dao.impl;
+
+import java.util.List;
+
+import com.test.dao.BookDao;
+import com.test.entity.Book;
+import com.test.util.BaseDao;
+
+public class BookDaoImpl extends BaseDao implements BookDao {
+
+	public List<Book> queryAll() {
+		// TODO Auto-generated method stub
+		return ;
+	}
+
+	public void save(Book entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

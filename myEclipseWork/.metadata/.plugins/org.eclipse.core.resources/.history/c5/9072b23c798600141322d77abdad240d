@@ -1,0 +1,83 @@
+package com.ss.biz.impl;
+
+import java.util.List;
+
+import com.ss.biz.S5Biz;
+import com.ss.dao.DempDao;
+import com.ss.dao.EmpDao;
+import com.ss.entity.Demp;
+import com.ss.entity.Emp;
+
+public class S5BizImpl implements S5Biz {
+	private EmpDao ed;
+	private DempDao dd;
+	
+	public void addDemp(Demp demp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void addEmp(Emp emp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void deleteDemp(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void deleteEmp(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public List<Demp> findAllDemp() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Demp> findAllDempByPage(int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Emp> findAllEmp() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Emp> findAllEmpByPage(int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void updateDemp(Demp demp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void updateEmp(Emp emp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public EmpDao getEd() {
+		return ed;
+	}
+
+	public void setEd(EmpDao ed) {
+		this.ed = ed;
+	}
+
+	public DempDao getDd() {
+		return dd;
+	}
+
+	public void setDd(DempDao dd) {
+		this.dd = dd;
+	}
+	
+	
+
+}

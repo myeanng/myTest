@@ -1,0 +1,15 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+
+import com.sun.jmx.snmp.Timestamp;
+
+@SuppressWarnings("serial")
+public class Board implements Serializable {
+	private Integer id;
+	private Category category;
+	private Timestamp dateCreated;
+	private Boolean deleted;
+	private Integer version;
+	private String name;
+}

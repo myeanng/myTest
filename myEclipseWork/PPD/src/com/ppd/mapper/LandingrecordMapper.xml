@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.LandingrecordDao">
+  <select id="queryByParam" resultType="com.ppd.entity.Landingrecord" parameterType="com.ppd.entity.Landingrecord">
+  	select
+  	landingid,
+	landingtime,
+	landingip
+  	from Landingrecord where userid = #{users.userid}
+  </select>
+  
+</mapper>

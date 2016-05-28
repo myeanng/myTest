@@ -1,0 +1,5 @@
+package com.ss.biz;
+
+public interface S5Biz {
+
+}

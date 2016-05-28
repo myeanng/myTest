@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+.main_con { width:998px; margin:5px auto;border:1px solid #e0e0e0;}
+.main_con .title{ height:49px; background:#f7f7f7; display:block; padding-left:30px; font:18px/49px 'Microsoft Yahei'; color:#666;}
+.basic_infor{ margin:5px 0 0px 0;padding-bottom: 20px;}
+.basic_infor p.info{ display:block; height:53px; background:#f7f7f7; font:12px/20px 'Microsoft Yahei'; color:#999; padding:13px 30px 0;}
+.basic_infor p.info i{ display:inline-block; padding-left:59px;}
+.process_info{ height:58px; padding:27px 0 0 195px;}
+.process_info span ,.process_info i{ display:block; float:left; background:url(http://www.ppdaicdn.com/2014/img/img_icons.gif) no-repeat;}
+.process_info span{font:18px/32px 'Microsoft Yahei'; color:#999; padding:0 25px 0 38px; *padding:0 16px 0 38px;}
+.process_info span.one{ background-position:left 4px; }
+.process_info span.cur{ color:#333;}
+.process_info i{ width:12px; height:32px; padding-right:66px;}
+.process_info i.arrow{background-position:15px -63px;}
+.process_info i.cur{ background-position:15px -31px;}
+.process_info span.two{ background-position:left -97px;}
+.process_info span.two.cur{ background-position:left -136px;}
+.process_info span.three{ background-position:left -175px;}
+.process_info span.three.cur{ background-position:left -214px;}
+.information{background:#f7f7f7; padding:30px 0 45px 90px;}
+.information span.user{ display:block; float:left; width:84px; background:url(http://www.ppdaicdn.com/2014/img/users.gif) no-repeat left top; padding-top:92px; text-align:center; font:12px/24px 'Microsoft Yahei'; color:#666; margin-top:162px;}
+.info_con{ display:block; float:left; margin-left:118px;width:700px;}
+.info_con li{ width:100%; padding-bottom:20px;}
+.info_con li em{ width:75px; display:block; text-align:right; font:14px/26px 'Microsoft Yahei'; color:#333; float:left;}
+.info_con li input.txt01{ width:234px; height:24px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; padding:0px 0 0px 12px; font:14px/24px 'Microsoft Yahei'; color:#666; float:left; }
+.info_con li input.num{ font-family:Arial, Helvetica, sans-serif}
+.info_con li input.radios{ display:inline-block; width:12px; height:12px; margin:7px 5px 0 12px;}
+.info_con li label{font:14px/26px 'Microsoft Yahei'; color:#666; vertical-align:middle; margin-right:16px; float:left;}
+.info_con li .selct{ height:26px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; cursor:pointer; padding:0 0px 0 10px; color:#999; float:left}
+.info_con li .selct.txt02{ width:248px;}
+.info_con li .selct.w116{ width:106px; margin-right:10px;}
+.info_con li .selct.w106{ width:106px;}
+.info_con li em i{ display:inline-block; font-style:normal; color:#999; text-align:left;}
+.info_con li label.check{ font:16px/26px 'Microsoft Yahei'; color:#999; margin-right:30px;}
+.info_con li label.cur{ color:#0087e6;}
+.info_con li label.check input{ margin-right:10px; cursor:pointer;}
+.ml75{ margin-left:75px;}
+.info_con li em.f18{ line-height:18px; padding-top:4px;}
+
+.jobs{ margin-top:10px; background:#f7f7f7; padding:30px 0 45px 0px;}
+.works{ padding-bottom:20px;}
+.works span{ margin-left:295px;_margin-left:147px; display:block; float:left;font:14px/26px 'Microsoft Yahei'; color:#333;}
+.position{float:left;}
+.position li{ float:left; vertical-align:middle; font:14px/26px 'Microsoft Yahei'; color:#666; padding-right:30px;}
+.position li label{ cursor:pointer;}
+.position li input{cursor:pointer; display:inline-block; width:12px; height:12px; margin:3px 10px 0 0;}
+div.hide{ display:none;}
+.view{ padding-left:90px;}
+.view span.user{ display:block; float:left; width:84px; background:url(http://www.ppdaicdn.com/2014/img/users.gif) no-repeat left -136px; padding-top:92px; text-align:center; font:12px/24px 'Microsoft Yahei'; color:#666;}
+.mt110{ margin-top:110px;}
+.mt40{ margin-top:40px;}
+.mt50{ margin-top:50px;}
+.mt_50{ margin-top:-50px;}
+.cailizhm input{margin: 7px 6px 0 15px;}
+.view ul{ display:block; float:left; margin-left:96px;width: 700px;}
+.view ul li{ padding-bottom:20px;}
+.view ul li em{ width:95px; display:block; text-align:right; font:14px/26px 'Microsoft Yahei'; color:#333; float:left;}
+.view ul li label{ padding-right:26px; cursor:pointer;font:14px/26px 'Microsoft Yahei'; color:#333; float:left}
+.view ul li label input{cursor:pointer; display:inline-block; width:12px; height:12px; margin:3px 10px 0 0;}
+.view ul li input.txt01{ width:234px; height:24px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; padding:0px 0 0px 12px; font:14px/24px 'Microsoft Yahei'; color:#666; float:left; display:block;}
+.view ul li .selct{ height:26px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; cursor:pointer; padding:0 0px 0 10px; color:#999; float:left}
+.view ul li .selct.txt02{ width:248px;}
+.view ul li .selct.w116{ width:106px; margin-right:10px;}
+.view ul li .selct.w106{ width:106px;}
+.ml95{ margin-left:95px;_margin-left:47px;}
+.view ul li i.zz{ display:inline-block; width:54px; height:25px; border:1px solid #e4e4e4; background:#fff; text-align:center; font:14px/25px 'Microsoft Yahei'; color:#666; cursor:pointer; margin-right:2px; border-radius:1px;-moz-border-radius:1px; -webkit-border-radius:1px;}
+.view ul li i.cur{ border-color:#0087e6; color:#0087e6;}
+.view ul li input.money{ width:186px; height:25px; background:url(http://www.ppdaicdn.com/2014/img/money_txt.gif) no-repeat; border:0;font:14px/25px 'Microsoft Yahei'; color:#666;padding:2px 50px 0 12px;}
+
+.next_Btn{ width:250px; height:50px; margin:40px auto 100px; display:block; background:#39a1ea; font:18px/50px 'Microsoft Yahei'; color:#fff; text-align:center; border-radius:5px;-moz-border-radius:5px; -webkit-border-radius:5px; border:0; cursor:pointer;}
+.next_Btn:hover{ background:#1d83ca;}
+
+
+/*发布借款信息*/
+.basic_infor .info_title{ height:28px; background:#f7f7f7; display:block; padding-left:30px; font:14px/28px 'Microsoft Yahei'; color:#666; margin-bottom:24px;}
+.basic_conment{ padding:0 0 10px 25px;}
+.basic_conment li{ padding-bottom:20px; font:14px/26px 'Microsoft Yahei'; color:#666;}
+.basic_conment li em{width:75px; display:block; text-align:right; font:14px/26px 'Microsoft Yahei'; color:#666; float:left;}
+.basic_conment li .selct{ height:26px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; cursor:pointer; padding:0 0px 0 10px; color:#999; float:left; display:block;}
+.basic_conment li .selct.txt02{ width:248px;}
+.basic_conment li .selct.txt04{ width:112px;}
+.basic_conment li input.txt03{ width:441px; height:24px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; padding:0px 0 0px 12px; font:14px/24px 'Microsoft Yahei'; color:#666; display:block; float:left;}
+.basic_conment li .service_con{ width:187px; height:67px; display:block; background:url(http://www.ppdaicdn.com/2014/img/service.gif) no-repeat 0 100%; margin-left:20px; text-align:center; float:left; cursor:pointer;}
+.basic_conment li .service_con.cur{background:url(http://www.ppdaicdn.com/2014/img/service.gif) no-repeat 0 0; color:#0087e6;}
+.basic_conment li .service_con em{ width:100%; font:16px/26px 'Microsoft Yahei'; color:#666; text-align:center;}
+.basic_conment li .service_con i{ font-style:normal; font:12px/18px 'Microsoft Yahei'; color:#999;}
+.pl55{ padding-left:55px;}
+.basic_conment li input.w98{ width:98px;}
+.basic_conment li p{ background:url(http://www.ppdaicdn.com/2014/img/icon1.gif) no-repeat 5px center; padding-left:30px;}
+.jk_info{ width:916px; height:98px; display:block; background:#fff; border:1px solid #e6e6e6; margin:0 auto 20px; border-radius:5px;-moz-border-radius:5px; -webkit-border-radius:5px; padding:5px 10px; font:14px/20px 'Microsoft Yahei'; color:#c4c4c4;}
+
+
+/*资质审核*/
+.basic_infor .bdphone{ font:14px/18px 'Microsoft Yahei'; color:#666; padding:0 0 35px 30px;}
+.basic_infor .bdphone a{ color:#0087e6;}
+.basic_infor .bdphone a:hover{ text-decoration:underline;}
+.audit_L ,.audit_R{ width:469px; float:left;}
+.audit_info ul{ padding-left:30px;}
+.audit_info ul li{ margin-bottom:20px; font:14px/26px 'Microsoft Yahei'; color:#333;}
+.audit_info li em{ width:115px; display:block; text-align:right; font:14px/26px 'Microsoft Yahei'; color:#333; float:left;}
+.audit_info li input.txt01{ width:234px; height:24px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; padding:0px 0 0px 12px; font:14px/24px 'Microsoft Yahei'; color:#666; display:block; float:left;}
+.audit_info li .selct{ width:248px; height:26px; background:#fff; border:1px solid #e4e4e4; border-radius:2px;-moz-border-radius:2px; -webkit-border-radius:2px; cursor:pointer; padding:0 0px 0 10px; color:#999; display:block; float:left;}
+.audit_info .audit_R li em{ width:45px;}
+.audit_info ul.audit_R li{ margin-bottom:66px;}
+.save_btn{ width:114px; height:30px; margin:0px auto 30px; display:block; background:#39a1ea; font:15px/30px 'Microsoft Yahei'; color:#fff; text-align:center; border-radius:3px;-moz-border-radius:3px; -webkit-border-radius:3px; border:0; cursor:pointer;}
+.save_btn:hover{ background:#1d83ca;}
+.data_info thead{ height:28px; background:#f8f8f8;}
+.data_info thead th{ text-align:center; font:14px/28px 'Microsoft Yahei'; color:#666;}
+.data_info td{ text-align:center; border-right:1px solid #dddddd;}
+.data_info td.noline{border-right:0;}
+.data_info td i{ display:inline-block; font:14px/28px 'Microsoft Yahei'; color:#666;}
+.data_info td i.date{ font-family:Arial;}
+.data_info td i.blue{ color:#0087e6;}
+.data_info td a{ display:inline-block; font:14px/28px 'Microsoft Yahei'; color:#666;}
+.data_info td a.blue{ color:#0087e6;}
+.data_info td a.red{ color:#ff2400;}
+.data_info td p{ text-align:left; width:240px; margin-left:30px; padding:5px 0 10px 0; font:12px/18px 'Microsoft Yahei'; color:#666;}
+.data_info td i.f12{ font-size:12px; color:#ff2400; padding-bottom:5px;}
+.data_info td a.phoneico{ width:12px; height:22px; text-indent:-999em; background:url(http://www.ppdaicdn.com/2014/img/icon2.jpg) no-repeat 0 6px;}
+
+.borrowbtnconfirm{text-align: center;position: relative;width:1000px;margin:0 auto;}
+.borrowconfirmbtn{display: inline-block;}
+.cE1E1E1{background: #e1e1e1;color: #666;letter-spacing:4px;margin-left: 70px;}
+.cE1E1E1:hover{background: #D4D4D4;}
+.borrowbtnconfirm span{position: absolute;top: 71px;left: 800px;color: #666;}
+
+
+
+.modal-body {
+    padding: 8px 0 0 27px;
+    max-width: 652px;
+}
+
+.modal-header {
+    padding: 12px 15px 12px 22px;
+    height: 24px;
+}
+
+.modal-header h3 {
+    color: #666666;
+    font-size: 20px;
+}
+
+#form_download .downtitle {
+    background: url(http://www.ppdaicdn.com/img/upload/downloadApp.png) no-repeat 438px 0;
+    clear: left;
+    color: #666666;
+    font-weight: normal;
+    height: 79px;
+    line-height: 79px;
+    position: relative;
+}
+#form_download .anytiemtrans {
+    float: left;
+    font-size: 38px;
+}
+
+#form_download .twodimensional {
+    border-bottom: medium none;
+    border-right: 1px dashed #b1b1b1;
+    border-top: medium none;
+    float: left;
+}
+
+.dimensionalcode {
+    color: #004098;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: left;
+}
+
+#form_download .pl27 {
+    padding-left: 27px;
+    width: 215px;
+    float: left;
+}
+
+#form_download .downTwo {
+    color: #004098;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: left;
+}
+#form_download .mlt17 {
+    height: 80px;
+    margin-top: 13px;
+}
+#form_download .downmoblie {
+    background-position: 0 0;
+    height: 40px;
+    width: 26px;
+    float: left;
+}
+#form_download .downmoblie, #form_download .downmocomputer {
+    background: url(http://www.ppdaicdn.com/img/upload/phonecomputer.png) no-repeat 0 0;
+}
+
+#form_download .phonenumber {
+    border: 1px solid #004098;
+    height: 33px;
+    line-height: 33px;
+    margin: 0 0 9px 20px;
+    padding: 0 0 0 8px;
+    width: 142px;
+    display: inline-block;
+    color: #555;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+#form_download .dimensionalimg {
+    height: 150px;
+    margin: 2px 40px 0 60px;
+    width: 150px;
+}
+#form_download .sendmobile {
+    color: #fff;
+    display: block;
+    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 20px;
+    padding: 0;
+    width: 151px;
+}
+#form_download .downmocomputer {
+    background-position: -30px 0;
+    height: 33px;
+    width: 38px;
+    float: left;
+    display: inline;
+}
+#form_download .mlt15 {
+    margin-top: 15px;
+}
+
+#form_download .clickdown {
+    color: #fff;
+    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    width: 151px;
+}
+
+#form_download .friendlind {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+
+.Correct,.Wrong,.Exp{margin-left:10px;height:20px;line-height:19px;padding:0 5px 2px 2em;font-size:12px}
+.Correct{background:url(http://www.ppdaicdn.com/2014/img/formcorrect.png) center center no-repeat;}
+.Wrong{background:url(http://www.ppdaicdn.com/2014/img/formerror.png) no-repeat;color:#db0101;}
+.Exp{color:#999;padding-left: 0;}
+#create_list_formtip_-t-e-x-t-a-r-e-a-1{margin-left: 30px;}
+.checkformrate .Correct{background: none;}
+

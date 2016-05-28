@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping package="com.ss.entity">
+	<class name="Person" table="t_person" catalog="forum">
+		<id name="id" type="java.lang.Integer">
+			<column name="id"></column>
+			<generator class="sequence">
+				<param name="sequence">SEQ_ID</param>
+			</generator>
+		</id>
+		<property name="deleted" type="java.lang.Boolean">
+			<column name="deleted" not-null="true"/>
+		</property>
+		<property name="dateCreated" type="java.sql.Timestamp">
+			<column name="dateCreated" length="0"/>
+		</property>
+		<property name="" type="">
+			<column name=""/>
+		</property>
+	</class>
+</hibernate-mapping>

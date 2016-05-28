@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="adminpackage" extends="struts-default">
+		<action name="adminaction_*" method="{1}" class="com.ss.action.AdminAction">
+			<result type="redirect">/main.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="exit" type="redirect">/index.jsp</result>
+			<result name="list" type="redirect">/userlist.jsp</result>
+		</action>
+		<action name="publisheraction_*" method="{1}" class="com.ss.action.PublisherAction">
+			<result name="error">/error.jsp</result>
+			<result name="list" type="redirect">/publisher.jsp</result>
+		</action>
+		<action name="categoryaction_*" method="{1}" class="com.ss.action.CategoryAction">
+			<result name="error">/error.jsp</result>
+			<result name="list" type="redirect">/category.jsp</result>
+		</action>
+		<action name="findaction_*" method="{1}" class="com.ss.action.FindAction">
+			<result name="error">/error.jsp</result>
+			<result name="buy">/bookbuy.jsp</result>
+			<result name="sale">/booksale.jsp</result>
+			<result name="nownum">/booknownum.jsp</result>
+			<result name="buyList">/buylist.jsp</result>
+			<result name="saleList">/salelist.jsp</result>
+			<result name="bookList">/booklist.jsp</result>
+		</action>
+		<action name="bookaction_*" method="{1}" class="com.ss.action.BookAction">
+			<result name="error" type="redirect">/error.jsp</result>
+			<result>/body.jsp</result>
+			<result name="buy" type="redirect">/buy.jsp</result>
+			<result name="sale" type="redirect">/sale.jsp</result>
+		</action>
+	</package>
+</struts>    

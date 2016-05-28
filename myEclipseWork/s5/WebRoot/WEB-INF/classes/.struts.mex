@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="test" location="0,0" size="0,0">
+    <action name="s5action_*" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list.jsp" />
+      </result>
+      <result name="add">
+        <resourceEdge source="add" routing="0" target="index.jsp" />
+      </result>
+      <result name="addEmp">
+        <resourceEdge source="addEmp" routing="0" target="addEmp.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/list.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/index.jsp" location="0,0" size="0,0" />
+  <webResource name="addEmp.jsp" path="/addEmp.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

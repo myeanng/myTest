@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.DueinDao">
+
+  <select id="queryByParam" resultMap="dueinMap" parameterType="com.ppd.entity.Duein">
+  	select 
+	d.DUEINID, d.USERID, d.LOANID, d.PERIOD, d.RATE, d.PRINCIPAL, d.INTEREST, d.STATUS, d.FINE, d.SHOULDTIME, l.LOANID, l.USERID, l.LOANUSE, l.TITLE, l.LOANMONEY, l.LOANTIME, l.SERVICE, l.RATE, l.CLASS, l.DESCRIBE, l.RAISE, l.CREATETIME, l.ACCRUALTIME, l.STATUS
+    from duein d , loan l
+  	<where>
+		<if test="status=99">
+		d.userid = #{users.userid} and d.shouldtime>#{shouldtime} and d.loanid=l.loanid
+		</if>
+		<if test="status!=99">
+		d.userid = #{users.userid} and d.shouldtime>#{shouldtime} and d.status=#{status} and d.loanid=l.loanid
+		</if>
+	</where>
+  </select>
+  <resultMap type="com.ppd.entity.Duein" id="duein">
+  	<id column="dueinid" property="dueinid"/>
+  	<result column="period" property="period"/>
+  	<result column="rate" property="rate"/>
+  	<result column="principal" property="principal"/>
+  	<result column="interest" property="interest"/>
+  	<result column="status" property="status"/>
+  	<result column="fine" property="fine"/>
+  	<result column="shouldtime" property="shouldtime"/>
+  </resultMap>
+  <resultMap type="com.ppd.entity.Duein" id="dueinMap" extends="duein">
+  	<id column="d.dueinid" property="dueinid"/>
+  	<result column="d.period" property="period"/>
+  	<result column="d.rate" property="rate"/>
+  	<result column="d.principal" property="principal"/>
+  	<result column="d.interest" property="interest"/>
+  	<result column="d.status" property="status"/>
+  	<result column="d.fine" property="fine"/>
+  	<result column="d.shouldtime" property="shouldtime"/>
+  	<association property="com.ppd.dao.LoanDao.loan2">
+  		</association>
+  </resultMap>
+</mapper>

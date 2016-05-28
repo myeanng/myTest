@@ -1,0 +1,2964 @@
+.fs18 {
+	FONT-SIZE: 18px
+}
+.fl {
+	DISPLAY: inline; FLOAT: left
+}
+.fr {
+	DISPLAY: inline; FLOAT: right
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.clearfix {
+	DISPLAY: inline-block
+}
+* HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
+.ml20 {
+	MARGIN-LEFT: 20px
+}
+.w100per {
+	WIDTH: 100%
+}
+.ml10 {
+	MARGIN-LEFT: 10px
+}
+.mt12 {
+	MARGIN-TOP: 12px
+}
+.ml8 {
+	MARGIN-LEFT: 21px
+}
+.ml08 {
+	MARGIN-LEFT: 8px
+}
+.ml26 {
+	MARGIN-LEFT: 26px
+}
+.ml50 {
+	MARGIN-LEFT: 50px
+}
+.ml160 {
+	MARGIN-LEFT: 160px
+}
+.mlr7 {
+	MARGIN: 0px 7px
+}
+.w180 {
+	WIDTH: 180px
+}
+.cf7971a {
+	COLOR: #f7971a
+}
+.c39a1ea {
+	COLOR: #39a1ea
+}
+.cf7971a {
+	COLOR: #f7971a
+}
+.c666666 {
+	COLOR: #666666
+}
+.c999999 {
+	COLOR: #999999
+}
+.c333333 {
+	COLOR: #333333
+}
+.cff6600 {
+	COLOR: #ff6600
+}
+.c0088cc {
+	COLOR: #0088cc
+}
+.cc4c4c4 {
+	COLOR: #c4c4c4
+}
+.cffffff {
+	COLOR: #ffffff
+}
+.bgf8 {
+	BACKGROUND: #f8f8f8
+}
+.lh50 {
+	LINE-HEIGHT: 50px
+}
+.fs19 {
+	FONT-SIZE: 19px
+}
+.lh40 {
+	LINE-HEIGHT: 40px
+}
+.lh30 {
+	LINE-HEIGHT: 30px
+}
+.dib {
+	DISPLAY: inline-block
+}
+.dn {
+	DISPLAY: none
+}
+.db {
+	DISPLAY: block
+}
+.maintop {
+	HEIGHT: 20px
+}
+.fz16 {
+	FONT-SIZE: 16px
+}
+.breadcrumb {
+	PADDING-LEFT: 21px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/breadcrumb.png) no-repeat 0px 18px
+}
+.breadcrumb LI {
+	LINE-HEIGHT: 16px; DISPLAY: inline; FONT-SIZE: 14px
+}
+.my-frame {
+	MARGIN: 0px auto 10px; WIDTH: 1000px; BACKGROUND: #ffffff
+}
+.my-f-left {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 200px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.my-f-l-nav {
+	LINE-HEIGHT: 47px; PADDING-LEFT: 26px; BACKGROUND: #f3f3f3; HEIGHT: 47px; COLOR: rgb(85,85,85); FONT-SIZE: 18px
+}
+.my-f-l-nav-sd {
+	BACKGROUND: #39a1ea; COLOR: #ffffff
+}
+.my-f-l-list {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fafafa; PADDING-TOP: 0px
+}
+.my-f-l-list LI {
+	POSITION: relative; LIST-STYLE-TYPE: none; HEIGHT: 40px; COLOR: rgb(102,102,102)
+}
+.my-f-l-list LI A {
+	BORDER-LEFT: #fafafa 4px solid; LINE-HEIGHT: 28px; MARGIN: 6px 0px; OUTLINE-STYLE: none; PADDING-LEFT: 26px; WIDTH: 170px; DISPLAY: inline-block; HEIGHT: 28px; COLOR: rgb(102,102,102); FONT-SIZE: 14px
+}
+.my-f-l-list LI A:hover {
+	BORDER-LEFT: #39a1ea 4px solid; LINE-HEIGHT: 28px; MARGIN: 6px 0px; PADDING-LEFT: 26px; DISPLAY: inline-block; HEIGHT: 28px; COLOR: #000000; FONT-SIZE: 14px
+}
+.my-f-l-list LI A.on {
+	BORDER-LEFT: #39a1ea 4px solid; LINE-HEIGHT: 28px; MARGIN: 6px 0px; PADDING-LEFT: 26px; DISPLAY: inline-block; HEIGHT: 28px; COLOR: #000000; FONT-SIZE: 14px
+}
+.my-f-l-list LI .button_info_border {
+	Z-INDEX: 999; POSITION: absolute; DISPLAY: block; TOP: 3px; CURSOR: pointer; LEFT: 19px
+}
+.my-f-l-list LI .button_info {
+	Z-INDEX: 999; POSITION: absolute; DISPLAY: block; TOP: -17px; LEFT: 110px
+}
+.my-f-l-list LI .button_info_close {
+	Z-INDEX: 999; POSITION: absolute; DISPLAY: block; TOP: -19px; CURSOR: pointer; LEFT: 319px
+}
+.my-f-right {
+	WIDTH: 778px
+}
+.my-f-r-top {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.my-f-r-title {
+	LINE-HEIGHT: 47px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 47px; COLOR: rgb(102,102,102); FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.my-investmark {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/investmark.jpg) no-repeat 0px 20px; PADDING-TOP: 0px
+}
+.my-zj-mark {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/chongzhi.png) no-repeat 0px 18px; PADDING-TOP: 0px
+}
+.my-f-r-detail {
+	MARGIN-TOP: 21px; WIDTH: 258px; HEIGHT: 85px
+}
+.br-lr {
+	BORDER-LEFT: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.my-f-r-d-top {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px; HEIGHT: 40px; COLOR: rgb(102,102,102); FONT-SIZE: 14px
+}
+.my-f-r-d-bt {
+	TEXT-ALIGN: center; LINE-HEIGHT: 50px; FONT-FAMILY: "Arial"; HEIGHT: 50px; COLOR: rgb(102,102,102); FONT-SIZE: 30px
+}
+.my-f-r-main {
+	BORDER-BOTTOM: #e0e0e0 1px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-BOTTOM: 8px; MARGIN-TOP: 17px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.my-f-r-m-tab {
+	LINE-HEIGHT: 42px; HEIGHT: 42px; FONT-SIZE: 16px
+}
+.my-f-r-m-tab LI {
+	TEXT-ALIGN: center; WIDTH: 154px; BACKGROUND: #f8f8f8; FLOAT: left; COLOR: #999999; CURSOR: pointer; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.my-f-r-m-tab LI A {
+	DISPLAY: block; COLOR: #999999; FONT-SIZE: 16px
+}
+.my-f-r-m-tab LI A.on {
+	BACKGROUND: #ffffff; COLOR: #39a1ea; FONT-SIZE: 16px
+}
+.my-f-r-m-tab LI.on {
+	BACKGROUND: #ffffff; COLOR: #39a1ea
+}
+.my-f-r-m-tab LI.hei {
+	BORDER-RIGHT-STYLE: none; WIDTH: 155px
+}
+.my-f-r-m-tab6 LI {
+	WIDTH: 129px
+}
+.my-f-r-m-tab6 LI.hei {
+	BORDER-RIGHT-STYLE: none; WIDTH: 126px
+}
+.my-f-r-m-tab LI.threeli {
+	WIDTH: 258px
+}
+.my-f-r-m-tab LI.threehei {
+	BORDER-RIGHT-STYLE: none; WIDTH: 260px
+}
+.my-f-r-m-tab LI.twoli {
+	WIDTH: 388px
+}
+.my-f-r-m-tab LI.twolihei {
+	BORDER-RIGHT-STYLE: none; WIDTH: 389px
+}
+.my-f-r-m-tab-search {
+	MARGIN-TOP: 12px; BACKGROUND: #f3f3f3; HEIGHT: 50px
+}
+.my-f-r-m-tab-sf {
+	MARGIN-TOP: 12px; PADDING-LEFT: 30px
+}
+.my-f-r-m-tab-txt {
+	BORDER-BOTTOM: #e4e4e4 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e4e4e4 1px solid; WIDTH: 120px; HEIGHT: 25px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.my-f-r-m-tab-btn {
+	BORDER-BOTTOM-STYLE: none; TEXT-ALIGN: center; LINE-HEIGHT: 27px; BORDER-RIGHT-STYLE: none; WIDTH: 60px; BORDER-TOP-STYLE: none; BACKGROUND: #39a1ea; HEIGHT: 27px; COLOR: #ffffff; MARGIN-LEFT: 16px; BORDER-LEFT-STYLE: none; CURSOR: pointer
+}
+.my-f-r-m-tab-btn:hover {
+	BACKGROUND: #1d83ca
+}
+.my-f-r-m-tab-benxi {
+	BORDER-LEFT: #e0e0e0 1px solid; LINE-HEIGHT: 34px; MARGIN-TOP: 8px; PADDING-RIGHT: 30px; HEIGHT: 34px
+}
+.my-f-r-m-tab-bxtxt {
+	PADDING-LEFT: 20px; COLOR: rgb(153,153,153)
+}
+.my-f-r-m-tab-bxnum {
+	FONT-FAMILY: 'Arial'; COLOR: rgb(247,151,26); FONT-SIZE: 30px
+}
+.receivetab {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND: #ffffff; BORDER-TOP: #e0e0e0 1px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.receivetab-inner {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND: #ffffff; BORDER-TOP: #e0e0e0 1px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.receivetab-inner {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.receivetab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.receivetab-inner TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.receivetab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; HEIGHT: 48px
+}
+.receivetab .receivetab-inner TD {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BACKGROUND: #f8f8f8; HEIGHT: 42px; BORDER-LEFT-STYLE: none
+}
+.my-f-r-udlist {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.my-over-dynamicuser {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 400px; PADDING-RIGHT: 10px; DISPLAY: block; MARGIN-BOTTOM: 10px; BACKGROUND: #f4f4f4; BORDER-TOP: #ccc 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 10px; border-radius: 6px; -moz-border-radius: 6px
+}
+.my-f-r-userdynamic {
+	MARGIN-LEFT: 8px
+}
+.my-f-r-userdynamic LI {
+	BORDER-BOTTOM: #e0e0e0 1px dashed; PADDING-TOP: 18px
+}
+.my-f-r-ud-username {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 14px; PADDING-RIGHT: 16px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/username.png) no-repeat; HEIGHT: 16px; COLOR: #39a1ea; PADDING-TOP: 0px
+}
+.my-f-r-ud-lid {
+	LINE-HEIGHT: 32px; MARGIN-BOTTOM: 8px
+}
+.my-f-r-ud-dymark {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 13px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/dynamicmark.png) no-repeat; HEIGHT: 13px; MARGIN-LEFT: -8px; TOP: 13px
+}
+.my-paid-list {
+	
+}
+.my-paid {
+	PADDING-TOP: 10px
+}
+.my-paid-usergray {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 18px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/usernamegray.png) no-repeat
+}
+.my-paiddetail-mark {
+	PADDING-LEFT: 20px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/paydetailmark.png) no-repeat 0px 3px; COLOR: #39a1ea; MARGIN-LEFT: 4px; CURSOR: pointer
+}
+.my-paidbb {
+	BORDER-BOTTOM: #e0e0e0 1px dashed
+}
+.my-paidframe {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #d5d5d5 1px; BORDER-RIGHT: #d5d5d5 1px solid; PADDING-TOP: 0px
+}
+.repaytab {
+	BORDER-BOTTOM: #f8f8f8 1px solid; WIDTH: 100%; DISPLAY: none; BORDER-COLLAPSE: collapse; BACKGROUND: #ffffff
+}
+.repaytab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.repaytab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; BACKGROUND: #f8f8f8; HEIGHT: 40px
+}
+.repaystatus {
+	PADDING-LEFT: 20px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/rhgfdghdfg.png) no-repeat 0px 3px
+}
+.repay-status1 {
+	BACKGROUND-POSITION: 0px -46px
+}
+.repay-status2 {
+	BACKGROUND-POSITION: 0px -92px
+}
+.repay-status3 {
+	BACKGROUND-POSITION: 0px -135px
+}
+.repay-status4 {
+	BACKGROUND-POSITION: 0px -178px
+}
+.repay-status5 {
+	BACKGROUND-POSITION: 0px -222px
+}
+.dtable {
+	DISPLAY: table
+}
+.my-hn-user {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/blacklistbg1.png) no-repeat; HEIGHT: 13px; MARGIN-LEFT: 4px; CURSOR: pointer
+}
+.my-hn-userstatu2 {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/blacklistbg2.png) no-repeat; HEIGHT: 13px; MARGIN-LEFT: 4px; CURSOR: pointer
+}
+.my-hn-mark {
+	WIDTH: 30px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/heiname.png) no-repeat; HEIGHT: 26px
+}
+.dtr {
+	DISPLAY: table-row
+}
+.my-hn-tip {
+	PADDING-LEFT: 30px; HEIGHT: 80px; PADDING-TOP: 10px
+}
+.my-hn-tip P {
+	LINE-HEIGHT: 24px
+}
+.my-f-r-safty {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.my-f-r-sf-title {
+	LINE-HEIGHT: 42px; PADDING-LEFT: 30px; BACKGROUND: #f3f3f3; HEIGHT: 42px; FONT-SIZE: 16px
+}
+.my-f-r-sf-degree {
+	LINE-HEIGHT: 42px; PADDING-LEFT: 30px; BACKGROUND: #f3f3f3; HEIGHT: 42px; FONT-SIZE: 16px
+}
+.my-f-r-sf-degree {
+	LINE-HEIGHT: 42px; HEIGHT: 42px; COLOR: #999999
+}
+.my-f-r-sflist {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+.my-f-r-sflist LI {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; PADDING-BOTTOM: 0px; LINE-HEIGHT: 64px; PADDING-LEFT: 24px; PADDING-RIGHT: 15px; PADDING-TOP: 0px
+}
+.my-f-r-sflist LI .fw {
+	COLOR: #333333; FONT-SIZE: 16px; FONT-WEIGHT: bold; MARGIN-RIGHT: 40px
+}
+.my-f-r-sflist LI.btnone {
+	BORDER-BOTTOM-STYLE: none
+}
+.my-f-r-sflist .icons {
+	PADDING-LEFT: 64px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/saftycenter.png) no-repeat; COLOR: #666666
+}
+.my-f-r-sflist .icon1 {
+	BACKGROUND-POSITION: -10px -5px
+}
+.my-f-r-sflist .icon1-gy {
+	BACKGROUND-POSITION: -10px -502px
+}
+.my-f-r-sflist .icon2 {
+	BACKGROUND-POSITION: -10px -70px
+}
+.my-f-r-sflist .icon2-gy {
+	BACKGROUND-POSITION: -10px -567px
+}
+.my-f-r-sflist .icon3 {
+	BACKGROUND-POSITION: -10px -135px
+}
+.my-f-r-sflist .icon3-gy {
+	BACKGROUND-POSITION: -10px -632px
+}
+.my-f-r-sflist .icon4 {
+	BACKGROUND-POSITION: -10px -200px
+}
+.my-f-r-sflist .icon4-gy {
+	BACKGROUND-POSITION: -10px -697px
+}
+.my-f-r-sflist .icon5 {
+	BACKGROUND-POSITION: -10px -265px
+}
+.my-f-r-sflist .icon5-gy {
+	BACKGROUND-POSITION: -10px -762px
+}
+.my-f-r-sflist .icon6 {
+	BACKGROUND-POSITION: -10px -330px
+}
+.my-f-r-sflist .icon6-gy {
+	BACKGROUND-POSITION: -10px -827px
+}
+.my-f-r-sflist .icon7 {
+	BACKGROUND-POSITION: -10px -395px
+}
+.my-f-r-sflist .icon7-gy {
+	BACKGROUND-POSITION: -10px -892px
+}
+.my-f-r-sflist .icon8 {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/icon8-nogy.png) no-repeat 7px 22px
+}
+.my-f-r-sflist .icon8-gy {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/icon8-gy.png) no-repeat 7px 22px
+}
+.my-f-r-ppb {
+	LINE-HEIGHT: 42px; BACKGROUND: #f8f8f8; HEIGHT: 42px; COLOR: #999999; FONT-SIZE: 16px
+}
+.my-f-r-ppb .keeping {
+	TEXT-ALIGN: center; WIDTH: 388px
+}
+.my-f-r-ppb .outed {
+	TEXT-ALIGN: center; BORDER-LEFT: #d5d5d5 1px solid; WIDTH: 387px
+}
+.my-f-r-ppb .on {
+	BACKGROUND: #ffffff; COLOR: #39a1ea
+}
+.keeping A {
+	DISPLAY: block
+}
+.outed A {
+	DISPLAY: block
+}
+.keeping A:hover {
+	COLOR: #39a1ea; TEXT-DECORATION: none
+}
+.outed A:hover {
+	COLOR: #39a1ea; TEXT-DECORATION: none
+}
+.my-autobid-mark {
+	WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/autobid.png) no-repeat; HEIGHT: 16px
+}
+.mt0 {
+	MARGIN-TOP: 0px
+}
+.my-ac-haowai {
+	LINE-HEIGHT: 40px; COLOR: #ff2400
+}
+.my-ac-users {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #f8f8f8; PADDING-TOP: 4px
+}
+.my-ac-username {
+	FONT-FAMILY: "Arial"; COLOR: rgb(51,51,51); FONT-SIZE: 24px
+}
+.my-ac-userverfy {
+	BORDER-BOTTOM: #e9e9e9 1px solid; LINE-HEIGHT: 42px; HEIGHT: 42px
+}
+.my-ac-paisafty {
+	WIDTH: 338px; HEIGHT: 105px; BORDER-RIGHT: #e9e9e9 1px solid
+}
+.my-ac-ps-one {
+	LINE-HEIGHT: 24px; MARGIN-TOP: 23px; HEIGHT: 24px
+}
+.my-ac-ps-one > .my-ac-ps-one {
+	MARGIN-TOP: 0px
+}
+.my-ac-ps-two {
+	LINE-HEIGHT: 18px; MARGIN-TOP: 10px; HEIGHT: 18px
+}
+.my-ac-dgvip {
+	MARGIN-TOP: 4px; WIDTH: 31px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat; HEIGHT: 30px; MARGIN-LEFT: 10px
+}
+.my-ac-dgvip1 {
+	BACKGROUND-POSITION: -10px -12px
+}
+.my-ac-dgvip2 {
+	BACKGROUND-POSITION: -48px -12px
+}
+.my-ac-dgvip3 {
+	BACKGROUND-POSITION: -86px -12px
+}
+.my-ac-vfr {
+	MARGIN-TOP: 2px; HEIGHT: 36px
+}
+.my-ac-vfs {
+	DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat
+}
+.my-ac-vphoneh {
+	MARGIN-TOP: 10px; WIDTH: 11px; BACKGROUND-POSITION: -10px -79px; HEIGHT: 22px
+}
+.my-ac-vphone {
+	MARGIN-TOP: 10px; WIDTH: 11px; BACKGROUND-POSITION: -10px -55px; HEIGHT: 22px
+}
+.my-ac-vvideoh {
+	MARGIN-TOP: 11px; WIDTH: 17px; BACKGROUND-POSITION: -55px -82px; HEIGHT: 21px
+}
+.my-ac-vvideo {
+	MARGIN-TOP: 11px; WIDTH: 17px; BACKGROUND-POSITION: -55px -55px; HEIGHT: 21px
+}
+.my-ac-vidh {
+	MARGIN-TOP: 13px; WIDTH: 26px; BACKGROUND-POSITION: -104px -84px; HEIGHT: 17px
+}
+.my-ac-vid {
+	MARGIN-TOP: 13px; WIDTH: 26px; BACKGROUND-POSITION: -104px -58px; HEIGHT: 17px
+}
+.my-sc-vvideofr {
+	BORDER-LEFT: #ebebeb 1px solid; MARGIN: 0px 14px; WIDTH: 46px; HEIGHT: 36px; BORDER-RIGHT: #ebebeb 1px solid
+}
+.ml14 {
+	MARGIN-LEFT: 14px
+}
+.ml17 {
+	MARGIN-LEFT: 17px
+}
+.mt16 {
+	MARGIN-TOP: 21px
+}
+.bank-tab TABLE TR TD.firtd {
+	WIDTH: 60px
+}
+.my-yellow-btn {
+	BORDER-BOTTOM: #f3a500 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #f3a500 1px solid; BACKGROUND: #f3a500; COLOR: #ffffff; BORDER-TOP: #f3a500 1px solid; CURSOR: pointer; BORDER-RIGHT: #f3a500 1px solid; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px
+}
+.my-yellow-btn:hover {
+	BACKGROUND: #ef8f01
+}
+.error {
+	PADDING-LEFT: 10px; COLOR: red; FONT-SIZE: 12px; PADDING-TOP: 21px
+}
+.my-ac-recharge-amount {
+	LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+.my-blue-btnbk {
+	TEXT-ALIGN: center; LINE-HEIGHT: 50px; WIDTH: 250px; DISPLAY: inline-block; HEIGHT: 50px; MARGIN-LEFT: 100px; FONT-SIZE: 18px; CURSOR: pointer
+}
+.my-ac-rc-felaccount {
+	TEXT-ALIGN: right; WIDTH: 98px; PADDING-RIGHT: 10px; DISPLAY: inline-block
+}
+.my-f-r-ppb .iteming {
+	TEXT-ALIGN: center; BORDER-LEFT: #d5d5d5 1px solid; WIDTH: 259px
+}
+.my-f-r-ppb .itemouted {
+	TEXT-ALIGN: center; BORDER-LEFT: #d5d5d5 1px solid; WIDTH: 258px
+}
+UNKNOWN {
+	BORDER-LEFT-STYLE: none
+}
+UNKNOWN {
+	BORDER-LEFT-STYLE: none
+}
+.my-ac-recharge .card_nav .bank_navbk .bank {
+	DISPLAY: block; OVERFLOW: hidden
+}
+.my-ac-recharge .card_nav .bank_navbk .bank .titlebk {
+	MARGIN-TOP: 25px; FLOAT: left; COLOR: #333333; MARGIN-RIGHT: 10px
+}
+.my-ac-recharge .card_nav .cardbk .titlebk {
+	LINE-HEIGHT: 49px; FLOAT: left; COLOR: #333333; MARGIN-RIGHT: 10px
+}
+.my-ac-recharge .card_nav .cardbk IMG {
+	WIDTH: 150px; HEIGHT: 46px
+}
+.my-ac-recharge .card_nav .bank_navbk .p1 TABLE {
+	MARGIN-LEFT: 0px
+}
+.my-ac-recharge .card_nav .bank_navbk .p1 TABLE TD INPUT {
+	MARGIN: 0px 5px 0px 13px
+}
+.my-ac-recharge .card_nav .bank_navbk .p2 .instant_ok_banklist_navbk {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 1px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 1px; WIDTH: 613px; PADDING-RIGHT: 1px; BORDER-TOP-STYLE: none; MARGIN-LEFT: -1px; BORDER-LEFT-STYLE: none; PADDING-TOP: 1px
+}
+.instant_ok_banklist_navbk {
+	BORDER-BOTTOM: #ccc 1px solid; PADDING-BOTTOM: 0px; MARGIN: 20px 0px 0px; PADDING-LEFT: 0px; WIDTH: 810px; PADDING-RIGHT: 0px; DISPLAY: block; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.instant_ok_banklist_navbk LI {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; LINE-HEIGHT: 48px; MARGIN: -1px 0px 0px -1px; WIDTH: 152px; FLOAT: left; HEIGHT: 48px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.instant_ok_banklist_navbk .active {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.instant_ok_banklist_navbk INPUT[type='radio'] {
+	MARGIN: 9px 2px 0px 0px; WIDTH: 14px; DISPLAY: none; FLOAT: left
+}
+.instant_ok_banklist_navbk .icon {
+	WIDTH: 152px; FLOAT: left; HEIGHT: 48px
+}
+.instant_ok_banklist_navbk IMG {
+	BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid; WIDTH: 150px; HEIGHT: 46px; BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #fff 1px solid
+}
+.instant_ok_banklist_navbk .icon:hover IMG {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.instant_ok_banklist_navbk .icon .rt {
+	POSITION: absolute; WIDTH: 23px; BOTTOM: 1px; DISPLAY: none; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/rt.png) no-repeat; HEIGHT: 25px; RIGHT: 1px
+}
+.cardbk .rt {
+	POSITION: absolute; WIDTH: 23px; BOTTOM: 1px; DISPLAY: none; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/rt.png) no-repeat; HEIGHT: 25px; RIGHT: 1px
+}
+.instant_ok_banklist_navbk .icon:hover .rt {
+	DISPLAY: block
+}
+.cardbk .rt {
+	DISPLAY: block
+}
+.instant_ok_banklist_navbk IMG {
+	
+}
+.instant_ok_banklist_navbk .icon-info {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 0px solid; WIDTH: 16px; DISPLAY: block; BACKGROUND: #d2eef7; HEIGHT: 30px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.instant_ok_banklist_navbk EM {
+	LINE-HEIGHT: 15px; FLOAT: left; MARGIN-LEFT: 0px !important
+}
+.qicon {
+	PADDING-LEFT: 5px
+}
+.qtag {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: none; BACKGROUND: #f8f8f8; MARGIN-LEFT: 5px; FONT-SIZE: 12px; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 0px
+}
+.banklist_navbk {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 8px; MARGIN-TOP: 14px; WIDTH: 778px; FONT-SIZE: 14px; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.my-ac-rc-otherbk {
+	LINE-HEIGHT: 29px; WIDTH: 141px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/otherrecharge.png) no-repeat 68px 50%; HEIGHT: 29px; COLOR: #39a1ea; CURSOR: pointer
+}
+.bank-tab {
+	MARGIN-LEFT: 107px
+}
+.bank-tab TABLE {
+	BORDER-BOTTOM: #f8f8f8 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #f8f8f8 1px solid; WIDTH: 500px; BORDER-TOP: #f8f8f8 1px solid; BORDER-RIGHT: #f8f8f8 1px solid
+}
+.bank-tab TABLE TR:first-child {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BACKGROUND: #f8f8f8; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.bank-tab TABLE TR TD.onecols {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.bank-tab TABLE TR TD {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.bank-tab .infor {
+	MARGIN: 8px 0px
+}
+.bank-tab UL {
+	PADDING-BOTTOM: 0px; MARGIN: 30px; PADDING-LEFT: 0px; WIDTH: 324px; PADDING-RIGHT: 0px; HEIGHT: 42px; BORDER-TOP: red 1px solid; BORDER-RIGHT: red 1px solid; PADDING-TOP: 0px
+}
+.bank-tab UL LI {
+	BORDER-BOTTOM: red 1px solid; TEXT-ALIGN: center; BORDER-LEFT: red 1px solid; LIST-STYLE-TYPE: none; WIDTH: 80px; DISPLAY: block; FLOAT: left; HEIGHT: 20px
+}
+.my-ac-recharge .card_nav .cardbk TABLE TD INPUT {
+	MARGIN: 0px 5px 0px 20px; DISPLAY: none
+}
+.recharge_bk {
+	BORDER-BOTTOM: #ff0000 1px solid; BORDER-LEFT: #ff0000 1px solid; BORDER-TOP: #ff0000 1px solid; BORDER-RIGHT: #ff0000 1px solid
+}
+.instant_ok_banklist_navbk1 {
+	PADDING-BOTTOM: 0px; MARGIN: 20px 0px 0px; PADDING-LEFT: 0px; WIDTH: 650px; PADDING-RIGHT: 0px; DISPLAY: block; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.instant_ok_banklist_navbk1 LI {
+	LINE-HEIGHT: 48px; WIDTH: 150px; FLOAT: left; HEIGHT: 48px
+}
+.instant_ok_banklist_navbk1 INPUT[type='radio'] {
+	MARGIN: 9px 2px 0px 0px; WIDTH: 14px; DISPLAY: none; FLOAT: left
+}
+.instant_ok_banklist_navbk1 LI {
+	POSITION: relative; MARGIN: 5px
+}
+.instant_ok_banklist_navbk1 LI.mr {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.instant_ok_banklist_navbk1 LI.active {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.instant_ok_banklist_navbk1 LI.active I.rtbk {
+	POSITION: absolute; WIDTH: 23px; BOTTOM: 0px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/rt.png) no-repeat; HEIGHT: 25px; RIGHT: 0px
+}
+.titlebk {
+	MARGIN-TOP: 0px; FLOAT: left; COLOR: #333333; MARGIN-RIGHT: 5px
+}
+.mt15 INPUT {
+	FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 18px
+}
+.my-ac-rc-error {
+	MARGIN: 5px; DISPLAY: inline-block; FONT-FAMILY: 'Î¢ÈíÑÅºÚ'; COLOR: #ff0000; FONT-SIZE: 16px
+}
+.my-ac-recharge-amountbk {
+	LINE-HEIGHT: 30px; FONT-FAMILY: Arial; HEIGHT: 30px; COLOR: #fbab00; FONT-SIZE: 16px
+}
+.txo {
+	TEXT-ALIGN: center; MARGIN: 8px
+}
+.txo .txcol {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #39a1ea; PADDING-TOP: 8px
+}
+.my-ac-recharge .card_nav .bank_navplat {
+	HEIGHT: 80px
+}
+.my-ac-recharge .card_nav .bank_navplat .bank {
+	DISPLAY: block; OVERFLOW: hidden
+}
+.my-ac-recharge .card_nav .bank_navplat .bank .titlebk {
+	MARGIN-TOP: 25px; FLOAT: left; COLOR: #333333; MARGIN-RIGHT: 5px
+}
+.my-ac-recharge .card_nav .bank_navplat .p1 TABLE {
+	MARGIN-LEFT: 0px
+}
+.my-ac-recharge .card_nav .bank_navplat .p1 TABLE TD INPUT {
+	MARGIN: 0px 5px 0px 13px
+}
+.my-ac-recharge .card_nav .bank_navplat .p2 .instant_ok_banklist_navbk {
+	WIDTH: 619px; BORDER-BOTTOM-WIDTH: 0px
+}
+.my-ac-recharge .card_nav TABLE.zcfu {
+	MARGIN-TOP: 16px
+}
+.my-ac-non-step .threeway {
+	BACKGROUND-POSITION: 0px -17px; COLOR: #999
+}
+.my-ac-non-step .twogay {
+	BACKGROUND-POSITION: 0px -55px; COLOR: #999
+}
+.my-ac-recharge .card_nav TABLE TR TD {
+	POSITION: relative
+}
+.my-ac-recharge .card_nav TABLE SPAN.active I.rt {
+	POSITION: absolute; WIDTH: 23px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/rt.png) no-repeat; HEIGHT: 25px; TOP: 23px; RIGHT: 0px
+}
+.my-ac-recharge .card_nav TABLE SPAN.plat_zhifu {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: 150px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/zfb.png) no-repeat; HEIGHT: 47px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.my-ac-recharge .card_nav TABLE SPAN.plat_caifu {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: 150px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cft.png) no-repeat; HEIGHT: 47px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.my-ac-recharge .card_nav TABLE SPAN.active {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.cardbk INPUT {
+	DISPLAY: none
+}
+.rtplat {
+	POSITION: absolute; WIDTH: 23px; BOTTOM: 0px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/rt.png) no-repeat; HEIGHT: 25px; RIGHT: 2px
+}
+.lh101 {
+	LINE-HEIGHT: 94px
+}
+.lh102 {
+	LINE-HEIGHT: 34px
+}
+.my-ac-non-pay {
+	LINE-HEIGHT: 25px; MARGIN-TOP: 30px; FLOAT: left
+}
+.zfb {
+	MARGIN-LEFT: 10px
+}
+.ewm {
+	LINE-HEIGHT: 25px; MARGIN-TOP: 30px
+}
+.zfbor {
+	LINE-HEIGHT: 100px; MARGIN-TOP: 30px; WIDTH: 100px; FLOAT: left; HEIGHT: 100px
+}
+.ewmpay {
+	WIDTH: 357px; FLOAT: right
+}
+.mt46zfb {
+	MARGIN-TOP: 50px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: -96px
+}
+.recharge-over {
+	TEXT-ALIGN: center; LINE-HEIGHT: 52px; COLOR: #39a1ea; FONT-SIZE: 18px
+}
+#recharge-over .doOther {
+	TEXT-ALIGN: center; PADDING-TOP: 20px
+}
+#recharge-over .doOther SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT: 14px/20px Microsoft Yahei; COLOR: #666666; PADDING-TOP: 0px
+}
+#recharge-over .doOther A {
+	FONT: 14px/20px Microsoft Yahei; COLOR: #39a1ea; TEXT-DECORATION: none
+}
+.my-ac-credittotalFr {
+	BORDER-BOTTOM: #e0e0e0 1px; BORDER-LEFT: #e0e0e0 1px solid; PADDING-BOTTOM: 17px; MARGIN-TOP: 20px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BACKGROUND: #f8f8f8; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid; PADDING-TOP: 0px; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.my-ac-ctTitle {
+	BORDER-BOTTOM: #e0e0e0 1px solid; LINE-HEIGHT: 45px; HEIGHT: 45px
+}
+.my-ac-ctList {
+	TEXT-ALIGN: center; HEIGHT: 145px; PADDING-TOP: 23px
+}
+.myaccounttab {
+	BORDER-BOTTOM: #e0e0e0 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND: #ffffff
+}
+.myaccounttab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.myaccounttab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; BACKGROUND: #f8f8f8; HEIGHT: 40px
+}
+.my-ac-ps-yue {
+	FONT-FAMILY: "Arial"; COLOR: rgb(51,51,51); FONT-SIZE: 18px
+}
+.my-blue-btn {
+	BORDER-BOTTOM: #39a1ea 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #39a1ea 1px solid; BACKGROUND: #39a1ea; COLOR: #ffffff; BORDER-TOP: #39a1ea 1px solid; CURSOR: pointer; BORDER-RIGHT: #39a1ea 1px solid; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px
+}
+.my-blue-btn:hover {
+	BACKGROUND: #1d83ca
+}
+.my-gray-btn {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #cccccc 1px solid; BACKGROUND: #cccccc; COLOR: #ffffff; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px
+}
+.my-ac-btns {
+	LINE-HEIGHT: 28px; WIDTH: 83px; DISPLAY: inline-block; HEIGHT: 28px
+}
+.my-ac-btns1 {
+	LINE-HEIGHT: 28px; WIDTH: 123px; DISPLAY: inline-block; HEIGHT: 28px
+}
+.ml16 {
+	MARGIN-LEFT: 16px
+}
+.w178 {
+	WIDTH: 178px
+}
+.bre7e7e7 {
+	BORDER-RIGHT: #e7e7e7 1px solid
+}
+.w193 {
+	WIDTH: 193px
+}
+.my-ac-cl-one {
+	LINE-HEIGHT: 34px; HEIGHT: 34px; FONT-SIZE: 16px
+}
+.my-ac-cl-two {
+	LINE-HEIGHT: 60px; FONT-FAMILY: "Arial"; HEIGHT: 60px; COLOR: rgb(102,102,102); FONT-SIZE: 26px
+}
+.cc39 {
+	COLOR: #39a1ea
+}
+.cf3a {
+	COLOR: #f3a500
+}
+.my-ac-cl-three {
+	LINE-HEIGHT: 20px; HEIGHT: 20px; FONT-SIZE: 14px
+}
+.w600 {
+	WIDTH: 600px
+}
+.pl35 {
+	PADDING-LEFT: 35px
+}
+.lh28 {
+	LINE-HEIGHT: 28px
+}
+.my-ac-daishoufr {
+	BORDER-BOTTOM: #e0e0e0 1px; BORDER-LEFT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.my-ac-ds-title {
+	PADDING-LEFT: 15px; HEIGHT: 50px
+}
+.my-ac-ds-tleft {
+	MARGIN-TOP: 18px; FONT-SIZE: 18px
+}
+.pt18 {
+	PADDING-TOP: 18px
+}
+.lh50 {
+	LINE-HEIGHT: 50px
+}
+.ml28 {
+	MARGIN-LEFT: 28px
+}
+.my-ac-qiandao {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; WIDTH: 120px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/qiandao.png) #ffffff no-repeat
+}
+.my-ac-qdq {
+	BACKGROUND-POSITION: 0px 0px
+}
+.my-ac-qdh {
+	BACKGROUND-COLOR: #39a1ea; BACKGROUND-POSITION: 0px -43px; COLOR: #ffffff
+}
+.my-ac-qdsignb {
+	COLOR: #39a1ea; CURSOR: pointer
+}
+.my-ac-qdsigna {
+	COLOR: #666666; CURSOR: default
+}
+.my-ac-ps-twomark {
+	WIDTH: 94px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/saftydg.png) no-repeat; HEIGHT: 18px
+}
+.my-ac-ps-twomark:hover {
+	BACKGROUND-IMAGE: url(http://www.ppdaicdn.com/2014/img/myaccount/saftydg_hover.png)
+}
+.my-ac-ps-twok1 {
+	BACKGROUND-POSITION: 0px -11px
+}
+.my-ac-ps-twok2 {
+	BACKGROUND-POSITION: 0px -45px
+}
+.my-ac-ps-twok3 {
+	BACKGROUND-POSITION: 0px -76px
+}
+.mr10 {
+	MARGIN-RIGHT: 10px
+}
+.my-ac-ds-rlist {
+	BORDER-BOTTOM: #39a1ea 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #39a1ea 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 10px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; HEIGHT: 25px; COLOR: #666; MARGIN-LEFT: 10px; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid; PADDING-TOP: 0px
+}
+.my-ac-ds-rlist .close {
+	WIDTH: 17px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/close.png) no-repeat; HEIGHT: 23px; CURSOR: pointer
+}
+.mt15 {
+	MARGIN-TOP: 15px
+}
+.mr20 {
+	MARGIN-RIGHT: 20px
+}
+.mr30 {
+	MARGIN-RIGHT: 30px
+}
+.my-ac-balance {
+	LINE-HEIGHT: 66px; MARGIN-TOP: 5px; PADDING-LEFT: 25px; BACKGROUND: #f8f8f8; HEIGHT: 66px; COLOR: #666666; FONT-SIZE: 16px
+}
+.my-ac-tx-balance {
+	LINE-HEIGHT: 66px; MARGIN-TOP: 5px; PADDING-LEFT: 25px; BACKGROUND: #f8f8f8; HEIGHT: 66px; COLOR: #666666; FONT-SIZE: 16px
+}
+.my-ac-balanceNum {
+	FONT-FAMILY: "Arial"; COLOR: rgb(57,161,234); FONT-SIZE: 30px
+}
+.my-ac-recharge {
+	PADDING-LEFT: 25px; COLOR: #333333
+}
+.my-ac-rc-or {
+	MARGIN: 12px 7px 0px 22px
+}
+.my-ac-rc-other {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; LINE-HEIGHT: 29px; MARGIN-TOP: 19px; PADDING-LEFT: 43px; WIDTH: 141px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/otherrecharge.png) no-repeat; HEIGHT: 29px; COLOR: #39a1ea; MARGIN-LEFT: 42px; BORDER-TOP: #39a1ea 1px solid; CURSOR: pointer; BORDER-RIGHT: #39a1ea 1px solid
+}
+.my-ac-rc-way {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: 169px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/zhifu.png) no-repeat; HEIGHT: 37px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.my-ac-rc-way1 {
+	BACKGROUND-POSITION: 0px -69px
+}
+.my-ac-rc-way2 {
+	BACKGROUND-POSITION: 0px -31px
+}
+.my-ac-rc-fel {
+	TEXT-ALIGN: right; WIDTH: 90px; PADDING-RIGHT: 10px; DISPLAY: inline-block
+}
+.my-ac-recharge .card_nav TABLE {
+	MARGIN-TOP: 28px
+}
+.my-ac-recharge .card_nav TABLE SPAN {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: 169px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/zhifu.png) no-repeat; HEIGHT: 37px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.my-ac-recharge .card_nav TABLE .bankcard {
+	BACKGROUND-POSITION: 0px 6px
+}
+.my-ac-recharge .card_nav TABLE .t_caifu {
+	BACKGROUND-POSITION: 0px -31px
+}
+.my-ac-recharge .card_nav TABLE .zhifu {
+	BACKGROUND-POSITION: 0px -69px
+}
+.my-ac-recharge .card_nav TABLE .shengfu {
+	BACKGROUND-POSITION: 0px -105px
+}
+.my-ac-recharge .card_nav TABLE TD {
+	HEIGHT: 48px
+}
+.my-ac-recharge .card_nav TABLE TD INPUT {
+	MARGIN: 0px 5px 0px 20px
+}
+.my-ac-recharge .card_nav TABLE TD DIV {
+	MARGIN-LEFT: 25px; CURSOR: pointer
+}
+.my-ac-recharge .card_nav TABLE TD DIV IMG {
+	MARGIN-BOTTOM: 4px; MARGIN-LEFT: 4px
+}
+.my-ac-recharge .card_nav TABLE TD DIV.mm {
+	MARGIN-TOP: -4px
+}
+.my-ac-recharge .card_nav .bank_nav {
+	HEIGHT: 453px
+}
+.my-ac-recharge .card_nav .bank_nav .bank {
+	DISPLAY: block; OVERFLOW: hidden
+}
+.my-ac-recharge .card_nav .bank_nav .bank .title {
+	BORDER-BOTTOM: #ccc 1px solid; LINE-HEIGHT: 27px; HEIGHT: 25px; COLOR: #333333; FONT-WEIGHT: bold
+}
+.my-ac-recharge .card_nav .bank_nav .p1 TABLE {
+	MARGIN-LEFT: 0px
+}
+.my-ac-recharge .card_nav .bank_nav .p1 TABLE TD INPUT {
+	MARGIN: 0px 5px 0px 13px
+}
+.my-ac-recharge .card_nav .bank_nav .p2 .instant_ok_banklist_nav {
+	WIDTH: 652px; BORDER-BOTTOM-WIDTH: 0px
+}
+.instant_ok_banklist_nav {
+	BORDER-BOTTOM: #ccc 1px solid; PADDING-BOTTOM: 0px; MARGIN: 20px 0px 0px; PADDING-LEFT: 0px; WIDTH: 810px; PADDING-RIGHT: 0px; DISPLAY: block; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.instant_ok_banklist_nav LI {
+	LINE-HEIGHT: 50px; WIDTH: 162px; FLOAT: left; HEIGHT: 50px
+}
+.instant_ok_banklist_nav INPUT[type='radio'] {
+	MARGIN: 9px 2px 0px 0px; WIDTH: 14px; FLOAT: left
+}
+.instant_ok_banklist_nav .icon {
+	FLOAT: left
+}
+.instant_ok_banklist_nav IMG {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.instant_ok_banklist_nav .icon-info {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 0px solid; WIDTH: 16px; DISPLAY: block; BACKGROUND: #d2eef7; HEIGHT: 30px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.instant_ok_banklist_nav EM {
+	LINE-HEIGHT: 15px; FLOAT: left; MARGIN-LEFT: 0px !important
+}
+.lh32 {
+	LINE-HEIGHT: 32px
+}
+.my-ac-rc-jine {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; PADDING-LEFT: 6px; WIDTH: 136px; DISPLAY: inline-block; FONT: 18px/30px Arial; HEIGHT: 30px; COLOR: #666666; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.my-ac-rc-yuan {
+	TEXT-ALIGN: center; LINE-HEIGHT: 32px; WIDTH: 32px; DISPLAY: inline-block; BACKGROUND: #999999; HEIGHT: 32px; COLOR: #ffffff
+}
+.my-ac-rc-error {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; DISPLAY: none; FONT: 12px/30px Microsoft Yahei; FLOAT: left; COLOR: #f00; PADDING-TOP: 0px
+}
+#aibankform .my-acrecharge-amount-money {
+	FONT-FAMILY: Arial; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.instant_recharge_three {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; PADDING-BOTTOM: 10px; MARGIN-TOP: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 10px; BACKGROUND: #fff; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid; PADDING-TOP: 10px
+}
+.instant_recharge_three LI {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 25px
+}
+.instant_recharge_three DIV {
+	PADDING-LEFT: 45px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/war.png) no-repeat 23px -33px
+}
+.my-ac-pig {
+	LINE-HEIGHT: 43px; MARGIN-TOP: 4px; PADDING-LEFT: 68px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/pig.png) #f8f8f8 no-repeat 25px 50%; HEIGHT: 43px
+}
+.my-ac-non-step {
+	LINE-HEIGHT: 30px; MARGIN: 33px auto 20px; WIDTH: 580px; HEIGHT: 30px; FONT-SIZE: 18px
+}
+.my-ac-non-step LABEL {
+	PADDING-LEFT: 39px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/nonrecharge.png) no-repeat
+}
+.my-ac-non-step .one {
+	BACKGROUND-POSITION: 0px -144px
+}
+.my-ac-non-step .twogay {
+	BACKGROUND-POSITION: 0px -55px
+}
+.my-ac-non-step .two {
+	BACKGROUND-POSITION: 0px -190px
+}
+.my-ac-non-step .threegay {
+	BACKGROUND-POSITION: 0px -17px
+}
+.my-ac-non-step .three {
+	BACKGROUND-POSITION: 0px -101px
+}
+.my-ac-non-step .dayu {
+	MARGIN: 0px 50px 0px 28px; PADDING-LEFT: 0px; WIDTH: 24px; BACKGROUND-POSITION: 0px -235px; HEIGHT: 24px
+}
+.my-ac-non-step .dayugay {
+	MARGIN: 0px 50px 0px 28px; PADDING-LEFT: 0px; WIDTH: 24px; BACKGROUND-POSITION: 0px -268px; HEIGHT: 24px
+}
+.fs12 {
+	FONT-SIZE: 12px
+}
+.fs16 {
+	FONT-SIZE: 16px
+}
+.fs14 {
+	FONT-SIZE: 14px
+}
+.lh26 {
+	LINE-HEIGHT: 26px
+}
+.mt40 {
+	MARGIN-TOP: 40px
+}
+.pr10 {
+	PADDING-RIGHT: 10px
+}
+.ml120 {
+	MARGIN-LEFT: 120px
+}
+.nonrechargetab {
+	BORDER-BOTTOM: #e5e5e5 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e5e5e5 1px solid; MARGIN: 0px 0px 10px 50px; WIDTH: 258px; BORDER-COLLAPSE: collapse; HEIGHT: 98px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid
+}
+.nonrechargetab TH {
+	BACKGROUND: #f8f8f8
+}
+.nonrechargetab TD {
+	BORDER-BOTTOM: #e5e5e5 1px solid; BORDER-LEFT: #e5e5e5 1px solid; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid
+}
+.my-ac-non-nextstep {
+	TEXT-ALIGN: center; LINE-HEIGHT: 50px; WIDTH: 250px; ZOOM: 1; DISPLAY: inline; HEIGHT: 50px; FONT-SIZE: 18px
+}
+.my-ac-nongt-nextstep {
+	TEXT-ALIGN: center; LINE-HEIGHT: 50px; WIDTH: 250px; ZOOM: 1; DISPLAY: inline; HEIGHT: 50px; COLOR: #999999; FONT-SIZE: 18px
+}
+.my-ac-non-grtxt {
+	LINE-HEIGHT: 16px; MARGIN: 14px auto 0px; WIDTH: 250px; FONT-SIZE: 12px
+}
+.mt46 {
+	MARGIN-TOP: 46px
+}
+.mt30 {
+	MARGIN-TOP: 30px
+}
+.mb30 {
+	MARGIN-BOTTOM: 30px
+}
+.my-ac-non-pc {
+	LINE-HEIGHT: 40px; MARGIN-TOP: 30px
+}
+.my-ac-non-zfway {
+	MARGIN: 0px 15px; PADDING-LEFT: 120px; OVERFLOW: visible; BORDER-TOP: #ececec 1px solid
+}
+.mt46zfbbk {
+	MARGIN-TOP: 50px; MARGIN-BOTTOM: 10px
+}
+.my-ac-non-zfwaybk {
+	TEXT-ALIGN: center; MARGIN: 0px 15px; OVERFLOW: hidden; BORDER-TOP: #ececec 1px solid
+}
+.my-ac-non-paybk {
+	TEXT-ALIGN: center; LINE-HEIGHT: 25px; MARGIN-TOP: 30px; ZOOM: 1; DISPLAY: inline; VERTICAL-ALIGN: top
+}
+.zfborbk {
+	TEXT-ALIGN: center; LINE-HEIGHT: 100px; MARGIN-TOP: 30px; WIDTH: 100px; ZOOM: 1; DISPLAY: inline; HEIGHT: 100px; VERTICAL-ALIGN: top
+}
+.pl80 {
+	PADDING-LEFT: 80px
+}
+.my-ac-non-zfway .left {
+	TEXT-ALIGN: right; WIDTH: 160px; PADDING-RIGHT: 15px; FONT-SIZE: 16px
+}
+.my-ac-non-bsorder {
+	MARGIN-TOP: 30px
+}
+.lh100 {
+	LINE-HEIGHT: 100px
+}
+.my-ac-non-djo-tip {
+	LINE-HEIGHT: 36px; COLOR: #ff0000; FONT-SIZE: 12px
+}
+.alert-error {
+	MARGIN: 0px auto; WIDTH: 250px; FONT-SIZE: 12px
+}
+.my-ac-non-p1 {
+	Z-INDEX: 10; POSITION: absolute; DISPLAY: none
+}
+.my-ac-non-p1bk {
+	Z-INDEX: 999; POSITION: absolute; DISPLAY: none; MARGIN-LEFT: -450px; LEFT: 50%
+}
+.my-ac-non-djo-ortxt {
+	TEXT-ALIGN: left; LINE-HEIGHT: 30px; WIDTH: 303px; HEIGHT: 30px
+}
+.my-ac-non-suc {
+	TEXT-ALIGN: center; LINE-HEIGHT: 82px; COLOR: #fbab00; FONT-SIZE: 18px
+}
+.my-non-addframe {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; PADDING-BOTTOM: 10px; MARGIN-TOP: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MARGIN-BOTTOM: 10px; BACKGROUND: #ffffff; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid; PADDING-TOP: 10px
+}
+.my-non-addP {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px
+}
+.nonresucesstab {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: center; WIDTH: 100%; BORDER-COLLAPSE: collapse; COLOR: #666666; FONT-SIZE: 12px
+}
+.nonresucesstab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 28px
+}
+.nonresucesstab TD {
+	BORDER-BOTTOM: #e5e5e5 1px dashed; HEIGHT: 41px
+}
+.txc {
+	TEXT-ALIGN: center
+}
+.clearb {
+	CLEAR: both
+}
+.my-ac-tx-rframe {
+	
+}
+.my-ac-tx-balance {
+	
+}
+.my-ac-tx-add {
+	LINE-HEIGHT: 26px; PADDING-LEFT: 23px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/tx-add.png) no-repeat; HEIGHT: 26px
+}
+.my-ac-tx-record {
+	BORDER-LEFT: #ececec 2px solid; LINE-HEIGHT: 26px; PADDING-LEFT: 10px; HEIGHT: 26px; MARGIN-LEFT: 5px
+}
+.my-ac-tx-rframe .cardbox_nav {
+	MARGIN-TOP: 30px; WIDTH: 778px
+}
+.my-ac-tx-rframe .tit {
+	MARGIN: 53px 11px 0px 39px; COLOR: #333333; FONT-SIZE: 14px
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list {
+	WIDTH: 670px
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_you {
+	BORDER-BOTTOM: #cfcfcf 1px solid; BORDER-LEFT: #cfcfcf 1px solid; MARGIN-TOP: 10px; WIDTH: 228px; HEIGHT: 98px; BORDER-TOP: #cfcfcf 1px solid; MARGIN-RIGHT: 14px; BORDER-RIGHT: #cfcfcf 1px solid
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_wu {
+	BORDER-BOTTOM: #cfcfcf 1px solid; BORDER-LEFT: #cfcfcf 1px solid; MARGIN-TOP: 10px; WIDTH: 228px; HEIGHT: 98px; BORDER-TOP: #cfcfcf 1px solid; CURSOR: pointer; MARGIN-RIGHT: 14px; BORDER-RIGHT: #cfcfcf 1px solid
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_you .boximg {
+	BORDER-BOTTOM: #cfcfcf 1px solid; TEXT-ALIGN: center; LINE-HEIGHT: 63px; WIDTH: 228px; HEIGHT: 63px
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_wu .boximg {
+	BORDER-BOTTOM: #cfcfcf 1px solid; WIDTH: 228px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cardbox.png) no-repeat 96px 19px; HEIGHT: 63px
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_wu .boxname {
+	TEXT-ALIGN: center; LINE-HEIGHT: 34px
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list A:hover .cardbox_wu .boxname {
+	TEXT-DECORATION: underline
+}
+.my-ac-tx-rframe .cardbox_nav .cardbox_list .cardbox_you .boxname {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 34px; PADDING-LEFT: 43px; PADDING-RIGHT: 43px; HEIGHT: 34px; PADDING-TOP: 0px
+}
+.my-ac-tx-rframe .cardbox_nav .ps {
+	LINE-HEIGHT: 29px; COLOR: #ccc; MARGIN-LEFT: 16px; FONT-SIZE: 14px
+}
+.cd-add {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.ui-pentagon {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.cd-item .cd-action .managespan {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.cd-item .cd-action .manage-hoverspan {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.cd-item .cd-action .cs-split {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.cd-title-add {
+	BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cdbank.png)
+}
+.cd-title-add {
+	PADDING-LEFT: 22px; BACKGROUND-POSITION: 0px -124px; CURSOR: pointer
+}
+.cd-title-split {
+	MARGIN: 0px 10px
+}
+.cd-add {
+	LINE-HEIGHT: 48px; PADDING-LEFT: 70px; BACKGROUND-POSITION: -156px -53px; HEIGHT: 48px; CURSOR: pointer; TEXT-DECORATION: none
+}
+.cd-list {
+	POSITION: relative
+}
+.cd-cscard {
+	TEXT-ALIGN: right; LINE-HEIGHT: 48px; WIDTH: 94px; PADDING-RIGHT: 10px; FONT-SIZE: 14px
+}
+.cd-items {
+	POSITION: relative; WIDTH: 670px
+}
+.cd-item {
+	Z-INDEX: 100; BORDER-BOTTOM: #ececec 2px solid; POSITION: absolute; BORDER-LEFT: #ececec 2px solid; PADDING-BOTTOM: 7px; PADDING-LEFT: 6px; WIDTH: 618px; PADDING-RIGHT: 6px; ZOOM: 1; BACKGROUND: #fcfcfd; HEIGHT: 32px; BORDER-TOP: #ececec 2px solid; CURSOR: pointer; BORDER-RIGHT: #ececec 2px solid; PADDING-TOP: 7px; LEFT: 0px; border-radius: 3px 3px
+}
+.cd-itembg {
+	Z-INDEX: 100; BORDER-BOTTOM: #ececec 2px solid; POSITION: absolute; BORDER-LEFT: #ececec 2px solid; PADDING-BOTTOM: 7px; PADDING-LEFT: 6px; WIDTH: 618px; PADDING-RIGHT: 6px; ZOOM: 1; BACKGROUND: #fcfcfd; HEIGHT: 32px; BORDER-TOP: #ececec 2px solid; CURSOR: pointer; BORDER-RIGHT: #ececec 2px solid; PADDING-TOP: 7px; LEFT: 0px; border-radius: 3px 3px
+}
+.cd-item .b-raido {
+	LINE-HEIGHT: 32px; PADDING-LEFT: 4px; WIDTH: 20px; FLOAT: left; HEIGHT: 32px
+}
+.cd-item .b-raido INPUT {
+	_margin-top: 6px
+}
+.cd-item .icon {
+	DISPLAY: block; FLOAT: left; OVERFLOW: hidden
+}
+.cd-item .icon-bank {
+	MARGIN: 8px 3px 7px 0px; WIDTH: 25px; HEIGHT: 15px
+}
+.cd-item .b-logo {
+	PADDING-BOTTOM: 1px; LINE-HEIGHT: 30px; PADDING-LEFT: 0px; WIDTH: 245px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 30px; COLOR: #030303; MARGIN-LEFT: 5px; FONT-SIZE: 14px; PADDING-TOP: 1px
+}
+.cd-item .b-logo .bank {
+	LINE-HEIGHT: 30px; DISPLAY: inline-block; FLOAT: left
+}
+.cd-item .b-logo .num {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 10px; DISPLAY: inline-block; FLOAT: left; COLOR: #363c47
+}
+.cd-item .cd-time {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 22px; PADDING-LEFT: 0px; WIDTH: 260px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 22px; PADDING-TOP: 8px
+}
+.ui-pentagon {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 14px; DISPLAY: inline; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px -29px; HEIGHT: 22px; MARGIN-LEFT: 8px; FONT-SIZE: 12px; OVERFLOW: hidden; _display: inline
+}
+.ui-pentagon-text {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; DISPLAY: inline-block; BACKGROUND: #aecaf1; COLOR: #fefefe; PADDING-TOP: 1px
+}
+.cd-item-select {
+	BORDER-BOTTOM-COLOR: #39a1ea; PADDING-BOTTOM: 7px; BORDER-TOP-COLOR: #39a1ea; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND: #ffffff; HEIGHT: 32px; BORDER-RIGHT-COLOR: #39a1ea; BORDER-LEFT-COLOR: #39a1ea; PADDING-TOP: 7px
+}
+.cd-item-hover {
+	BORDER-BOTTOM-COLOR: #39a1ea; PADDING-BOTTOM: 7px; BORDER-TOP-COLOR: #39a1ea; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND: #ffffff; HEIGHT: 32px; BORDER-RIGHT-COLOR: #39a1ea; BORDER-LEFT-COLOR: #39a1ea; PADDING-TOP: 7px
+}
+.cd-item-select {
+	CURSOR: text
+}
+.choose-list-bg {
+	BORDER-BOTTOM-COLOR: #dedede; BORDER-TOP-COLOR: #dedede; DISPLAY: none; BACKGROUND: #ffffff; BORDER-RIGHT-COLOR: #dedede; BORDER-LEFT-COLOR: #dedede; CURSOR: pointer
+}
+.choose-more {
+	POSITION: absolute; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: none; HEIGHT: 20px; FONT-SIZE: 14px; TOP: 60px; PADDING-TOP: 8px; LEFT: 0px
+}
+.choose-more .link {
+	LINE-HEIGHT: 29px; PADDING-LEFT: 43px; WIDTH: 107px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/otherrecharge.png) no-repeat; HEIGHT: 29px; CURSOR: pointer
+}
+.choose-more .link:hover {
+	COLOR: #39a1ea; TEXT-DECORATION: none
+}
+.cd-action {
+	POSITION: relative; WIDTH: 58px; FLOAT: left; HEIGHT: 30px; MARGIN-LEFT: 8px; FONT-SIZE: 14px; PADDING-TOP: 2px
+}
+.cd-item .cd-action .cd-action-list {
+	BORDER-BOTTOM: #e1e1e1 1px solid; POSITION: absolute; BORDER-LEFT: #e1e1e1 1px solid; WIDTH: 71px; ZOOM: 1; DISPLAY: none; BACKGROUND: #fff; BORDER-TOP: #e1e1e1 1px; TOP: 28px; BORDER-RIGHT: #e1e1e1 1px solid; LEFT: -12px
+}
+.cd-item_select .cd-action .cd-action-list {
+	DISPLAY: block
+}
+.cd-item .cd-action .cd-action-list LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; ZOOM: 1; DISPLAY: none; VERTICAL-ALIGN: middle
+}
+.cd-item .cd-action .manage {
+	POSITION: absolute; MARGIN-TOP: 5px; DISPLAY: none; HEIGHT: 32px; COLOR: #888888; CURSOR: pointer; TEXT-DECORATION: none
+}
+.cd-item .cd-action .manage-hover {
+	DISPLAY: block
+}
+.cd-item .cd-action .manage-select {
+	DISPLAY: block
+}
+.cd-item .cd-action .managehover {
+	DISPLAY: block; COLOR: #1a53a4
+}
+.cd-item .cd-action .managespan {
+	POSITION: absolute; WIDTH: 10px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px -73px; HEIGHT: 10px; TOP: 7px; LEFT: 34px
+}
+.cd-item .cd-action-hover .cd-action-list {
+	WIDTH: 71px; BACKGROUND: #fff
+}
+.cd-item .cd-action-hover .cd-action-list LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; ZOOM: 1; DISPLAY: block; OVERFLOW: hidden
+}
+.cd-item .cd-action .cs-split {
+	POSITION: absolute; WIDTH: 73px; DISPLAY: none; BACKGROUND-POSITION: -1px -6px; HEIGHT: 6px; FONT-SIZE: 0px; TOP: 22px; LEFT: -12px
+}
+.cd-item .cd-action-hover .cs-split {
+	Z-INDEX: 999; DISPLAY: block
+}
+.cd-item .cd-action .cd-action-list LI A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; ZOOM: 1; DISPLAY: block; PADDING-TOP: 0px
+}
+.cd-item .cd-action .cd-action-list A:hover {
+	BACKGROUND: #39a1ea; COLOR: #fefefe; TEXT-DECORATION: none
+}
+.cd-item .cd-action .manage-hoverspan {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px -101px
+}
+.cd-down {
+	POSITION: relative; DISPLAY: none
+}
+.cd-item .cd-action .cd-action-list-show {
+	Z-INDEX: 999; DISPLAY: block
+}
+.cd-item .cd-action .cd-down-show {
+	Z-INDEX: 999; DISPLAY: block
+}
+.cd-delete {
+	CURSOR: pointer
+}
+.my-ac-tx-rframe .amount_nav {
+	MARGIN-TOP: 28px
+}
+.my-ac-tx-rframe .amount_nav .tit {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 25px
+}
+.my-ac-tx-rframe .amount_nav SPAN {
+	COLOR: #ccc
+}
+.my-ac-tx-rframe .paychannel_nav {
+	MARGIN-TOP: 20px; DISPLAY: block; OVERFLOW: hidden
+}
+.my-ac-tx-rframe .paychannel_nav .tit {
+	MARGIN-TOP: 14px; MARGIN-LEFT: 25px
+}
+.my-ac-tx-rframe .paychannel_nav .type1 {
+	BORDER-BOTTOM: #ededed 2px solid; TEXT-ALIGN: center; BORDER-LEFT: #ededed 2px solid; LINE-HEIGHT: 48px; WIDTH: 139px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cardbox.png) #f9f9f9 no-repeat 109px -44px; HEIGHT: 46px; COLOR: #333333; BORDER-TOP: #ededed 2px solid; CURSOR: pointer; MARGIN-RIGHT: 25px; BORDER-RIGHT: #ededed 2px solid
+}
+.my-ac-tx-rframe .paychannel_nav .type2 {
+	BORDER-BOTTOM: #ededed 2px solid; TEXT-ALIGN: center; BORDER-LEFT: #ededed 2px solid; LINE-HEIGHT: 48px; WIDTH: 139px; BACKGROUND: #f9f9f9; HEIGHT: 46px; COLOR: #333333; BORDER-TOP: #ededed 2px solid; CURSOR: pointer; MARGIN-RIGHT: 25px; BORDER-RIGHT: #ededed 2px solid
+}
+.my-ac-tx-rframe .jue {
+	BORDER-BOTTOM: #999999 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #999999 1px solid; LINE-HEIGHT: 38px; WIDTH: 110px; FLOAT: left; HEIGHT: 38px; BORDER-TOP: #999999 1px solid; CURSOR: pointer; MARGIN-RIGHT: 10px; BORDER-RIGHT: #999999 1px solid
+}
+.my-ac-tx-rframe .paychannel_nav .jue {
+	LINE-HEIGHT: 50px; WIDTH: 140px; HEIGHT: 50px
+}
+.my-ac-tx-rframe .jue I {
+	MARGIN-TOP: -50px; WIDTH: 24px; BACKGROUND: url(http://www.ppdaicdn.com/img/recharge/cardbox.png) #f9f9f9 no-repeat -6px -45px; FLOAT: right; HEIGHT: 25px
+}
+.my-ac-tx-rframe .jue_on {
+	BORDER-BOTTOM: #39a1ea 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #39a1ea 1px solid; LINE-HEIGHT: 38px; WIDTH: 110px; BACKGROUND: url(http://www.ppdaicdn.com/img/reg/reg_type.png) no-repeat right bottom; FLOAT: left; HEIGHT: 38px; COLOR: #39a1ea; BORDER-TOP: #39a1ea 1px solid; CURSOR: pointer; MARGIN-RIGHT: 10px; BORDER-RIGHT: #39a1ea 1px solid
+}
+.my-ac-tx-rframe .ruletable {
+	BORDER-BOTTOM: #e5e5e5 1px solid; POSITION: absolute; TEXT-ALIGN: center; BORDER-LEFT: #e5e5e5 1px solid; BORDER-SPACING: 0; DISPLAY: none; BORDER-COLLAPSE: collapse; BACKGROUND: #fff; FONT-SIZE: 12px; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid
+}
+.drawrecord_nav {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; PADDING-BOTTOM: 20px; MARGIN-TOP: 14px; WIDTH: 778px; MARGIN-BOTTOM: 40px; FONT-SIZE: 14px; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.drawrecord_nav .tit {
+	LINE-HEIGHT: 40px; PADDING-LEFT: 25px; BACKGROUND: #f8f8f8; HEIGHT: 40px; COLOR: #666666; FONT-SIZE: 16px
+}
+.drawrecord_nav TABLE {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: center; WIDTH: 100%; COLOR: #333333
+}
+.drawrecord_nav TABLE TH {
+	LINE-HEIGHT: 27px; BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-SIZE: 14px
+}
+.drawrecord_nav TABLE TD {
+	BORDER-BOTTOM: #cfcfcf 1px dashed; HEIGHT: 38px
+}
+.drawrecord_nav TABLE TD INPUT {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; WIDTH: 77px; DISPLAY: inline-block; HEIGHT: 24px; CURSOR: pointer
+}
+.my-ac-txs-gx {
+	TEXT-ALIGN: center; LINE-HEIGHT: 86px; FONT-SIZE: 20px
+}
+.my-ac-txs-attention {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px; COLOR: #f3a001; FONT-SIZE: 12px
+}
+.my-ac-txs-op {
+	TEXT-ALIGN: center; LINE-HEIGHT: 15px; WIDTH: 129px; DISPLAY: inline-block
+}
+.my-ac-txs-opz {
+	BORDER-LEFT: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.ml40 {
+	MARGIN-LEFT: 40px
+}
+.my-ac-db-fm {
+	
+}
+.my-ac-db-desc {
+	LINE-HEIGHT: 43px; MARGIN: 10px 13px; PADDING-LEFT: 18px; BACKGROUND: #fff5e9; HEIGHT: 43px; COLOR: #666666; FONT-SIZE: 12px
+}
+.my-f-r-top .bgnon {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.danbaotab {
+	BORDER-BOTTOM: #f8f8f8 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP-STYLE: none; BACKGROUND: #ffffff
+}
+.danbaotab TH {
+	BACKGROUND: #f1f1f1; HEIGHT: 27px
+}
+.danbaotab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; BACKGROUND: #f8f8f8; HEIGHT: 48px
+}
+.lendtotal_nav {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; MARGIN-TOP: 14px; WIDTH: 778px; MARGIN-BOTTOM: 40px; FONT-SIZE: 14px; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.lendtotaltab {
+	BORDER-BOTTOM: #f8f8f8 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #f8f8f8 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP: #f8f8f8 1px solid; BORDER-RIGHT: #f8f8f8 1px solid
+}
+.lendtotaltab TH {
+	TEXT-ALIGN: left; PADDING-LEFT: 40px; BACKGROUND: #f1f1f1; HEIGHT: 40px; COLOR: #333; FONT-SIZE: 16px
+}
+.lendtotaltab TD {
+	BORDER-BOTTOM: #e1e1e1 1px dashed; PADDING-LEFT: 40px; BACKGROUND: #f8f8f8; HEIGHT: 45px; COLOR: #666666
+}
+.mt10 {
+	MARGIN-TOP: 10px
+}
+.benjinbztab {
+	BORDER-BOTTOM: #f8f8f8 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #f8f8f8 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP: #f8f8f8 1px solid; BORDER-RIGHT: #f8f8f8 1px solid
+}
+.benjinbztab TH {
+	TEXT-ALIGN: left; PADDING-LEFT: 40px; BACKGROUND: #f1f1f1; HEIGHT: 40px; COLOR: #0087e6
+}
+.benjinbztab TD {
+	BORDER-BOTTOM: #e1e1e1 1px dashed; PADDING-LEFT: 40px; BACKGROUND: #f8f8f8; HEIGHT: 45px; COLOR: #666666
+}
+.benjinbztab TR TD.c3 {
+	COLOR: #333
+}
+.benjinbztab TR TD.three {
+	BORDER-BOTTOM: #f2f2f2 1px solid; TEXT-ALIGN: center; BACKGROUND: #f2f2f2; BORDER-TOP: #f2f2f2 1px solid
+}
+.benjinbztab TR TD.four {
+	TEXT-ALIGN: center; BACKGROUND: #f2f2f2
+}
+.my-ac-bnbz-tip {
+	LINE-HEIGHT: 50px
+}
+.my-ac-bnbz-define {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 30px; PADDING-LEFT: 40px; PADDING-RIGHT: 40px; BACKGROUND: #f8f8f8; COLOR: #666666; PADDING-TOP: 8px
+}
+.my-ac-bnbz-static {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 40px; PADDING-RIGHT: 0px; COLOR: #333; FONT-SIZE: 16px; PADDING-TOP: 10px
+}
+.bidhisab {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.bidhisab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.bidhisab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; HEIGHT: 48px
+}
+.repaypubtab {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.repaypubtab TH {
+	TEXT-ALIGN: left; PADDING-LEFT: 30px; BACKGROUND: #f8f8f8; HEIGHT: 40px; FONT-WEIGHT: normal
+}
+.repaypubtab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; PADDING-LEFT: 30px; HEIGHT: 45px
+}
+.publishedtab {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.publishedtab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px; FONT-WEIGHT: normal
+}
+.publishedtab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; HEIGHT: 74px
+}
+.publishedtab .progressing {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cccccc 1px solid; MARGIN-TOP: 6px; WIDTH: 85px; DISPLAY: inline-block; BACKGROUND: #ffffff; HEIGHT: 6px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.publishedtab .prc1 {
+	WIDTH: 85px; DISPLAY: block; BACKGROUND: #cccccc; HEIGHT: 6px
+}
+.publishedtab .prc2 {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; MARGIN-TOP: 6px; WIDTH: 85px; DISPLAY: inline-block; BACKGROUND: #39a1ea; HEIGHT: 6px; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.publishedtab TD .title {
+	WIDTH: 100px; DISPLAY: inline-block
+}
+.publishedtab TD .prtxt {
+	TEXT-ALIGN: left; WIDTH: 130px; DISPLAY: inline-block
+}
+.publishedtab TD .times {
+	WIDTH: 140px; DISPLAY: inline-block
+}
+.w130 {
+	WIDTH: 130px
+}
+.publishedtab TD .txtrim {
+	TEXT-ALIGN: right
+}
+.user_homepage_nav {
+	
+}
+.user_homepage_nav .left_user_nav {
+	PADDING-BOTTOM: 5px; MIN-HEIGHT: 650px; PADDING-LEFT: 27px; WIDTH: 145px; PADDING-RIGHT: 27px; BACKGROUND: #fafafa; PADDING-TOP: 27px
+}
+.user_homepage_nav .left_user_nav UL {
+	MARGIN: 0px; DISPLAY: block; OVERFLOW: hidden
+}
+.user-heaimg {
+	BORDER-BOTTOM: #e3e3e3 1px solid; BORDER-LEFT: #e3e3e3 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 137px; PADDING-RIGHT: 2px; HEIGHT: 143px; BORDER-TOP: #e3e3e3 1px solid; BORDER-RIGHT: #e3e3e3 1px solid; PADDING-TOP: 2px
+}
+.user-name {
+	TEXT-ALIGN: center; LINE-HEIGHT: 22px; BACKGROUND: #ebebed; HEIGHT: 22px
+}
+.lh30 {
+	LINE-HEIGHT: 30px
+}
+.user_homepage_nav .left_user_nav LI {
+	LINE-HEIGHT: 30px; MARGIN: 10px 0px
+}
+.user_homepage_nav .left_user_nav .level_li {
+	BORDER-BOTTOM: #ddd 1px dashed; PADDING-BOTTOM: 10px; PADDING-LEFT: 24px; HEIGHT: 30px
+}
+.user_homepage_nav .left_user_nav .level_li .user_level {
+	WIDTH: 60px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/img/userinfo/user.png) no-repeat 0px 0px; FLOAT: left; HEIGHT: 30px
+}
+.user_homepage_nav .left_user_nav .honor_li {
+	BORDER-BOTTOM: #ddd 1px dashed
+}
+.user_homepage_nav .left_user_nav .cert_li {
+	BORDER-BOTTOM: #ddd 1px dashed; OVERFLOW: hidden
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav SPAN {
+	MARGIN: 0px 2px 10px 4px; WIDTH: 28px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/img/lends/lend_details_icon.png) no-repeat 0px 0px; FLOAT: left; HEIGHT: 30px
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav .hukou {
+	BACKGROUND-POSITION: -63px -71px
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav .video {
+	BACKGROUND-POSITION: -62px -105px
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav .phone {
+	BACKGROUND-POSITION: -63px -144px
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav .record {
+	BACKGROUND-POSITION: -63px -184px
+}
+.user_homepage_nav .left_user_nav .cert_li .cert_nav {
+	MARGIN: 0px auto; WIDTH: 137px
+}
+.user_homepage_nav .left_user_nav .user_li {
+	BORDER-BOTTOM-STYLE: none
+}
+.user_homepage_nav .left_user_nav .gam_li {
+	WIDTH: 100%
+}
+.user_homepage_nav .left_user_nav .gam_li #WatchUser {
+	MARGIN: 0px; CLEAR: both
+}
+.user_homepage_nav .left_user_nav .reg_login_li {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.user_homepage_nav .left_user_nav .alt_li {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BORDER-LEFT: #e2e2e2 1px solid; PADDING-BOTTOM: 8px; LINE-HEIGHT: 20px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #999; BORDER-TOP: #e2e2e2 1px solid; BORDER-RIGHT: #e2e2e2 1px solid; PADDING-TOP: 8px; border-radius: 6px; -moz-border-radius: 6px
+}
+.user_homepage_nav .user_homepage_righttab {
+	BORDER-BOTTOM: #d7d7d7 1px solid; WIDTH: 794px; BACKGROUND: #ececec; HEIGHT: 40px
+}
+.user_homepage_nav .user_homepage_righttab UL {
+	MARGIN: 0px
+}
+.user_homepage_nav .user_homepage_righttab LI {
+	BORDER-LEFT: #ececec 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FLOAT: left; HEIGHT: 41px; COLOR: #666; FONT-SIZE: 16px; CURSOR: pointer; BORDER-RIGHT: #ececec 1px solid; PADDING-TOP: 0px
+}
+.user_homepage_nav .user_homepage_righttab LI:hover {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT: #d7d7d7 1px solid; BACKGROUND: #fff; BORDER-RIGHT: #d7d7d7 1px solid
+}
+.user_homepage_nav .user_homepage_righttab .lion {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT: #d7d7d7 1px solid; BACKGROUND: #fff; BORDER-RIGHT: #d7d7d7 1px solid
+}
+.user_homepage_nav .user_homepage_righttab .firsttab {
+	BORDER-LEFT-STYLE: none !important
+}
+.user_homepage_nav .borrowinglist {
+	PADDING-LEFT: 40px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 15px
+}
+.borrowinglist {
+	MARGIN-TOP: 20px; OVERFLOW: hidden
+}
+.borrowinglist LI {
+	BORDER-BOTTOM: #ccc 1px dashed; LIST-STYLE-TYPE: none; PADDING-LEFT: 10px; OVERFLOW: hidden
+}
+.borrowinglist LI:unknown {
+	BORDER-BOTTOM-STYLE: none
+}
+.borrowinglist IMG {
+	WIDTH: 84px; DISPLAY: block; HEIGHT: 84px
+}
+.borrowinglist .leftimg {
+	MARGIN: 8px 0px
+}
+.borrowinglist .rightlist {
+	MARGIN: 8px 0px
+}
+.borrowinglist .rightlist {
+	MARGIN-LEFT: 20px
+}
+.borrowinglist .borrowlist_tit {
+	MARGIN-TOP: 3px; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.borrowinglist .borrowlist_tit A {
+	COLOR: #666
+}
+.borrowinglist .borrowlist_tit A:hover {
+	COLOR: #39a1ea
+}
+.borrow_list {
+	WIDTH: 580px
+}
+.borrow_list TABLE {
+	MARGIN-BOTTOM: 10px; COLOR: #999999; FONT-SIZE: 14px
+}
+.borrow_list TH {
+	HEIGHT: 30px
+}
+.borrow_list TD {
+	HEIGHT: 30px
+}
+.borrow_list .progressing {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cccccc 1px solid; MARGIN-TOP: 6px; WIDTH: 85px; DISPLAY: inline-block; BACKGROUND: #ffffff; HEIGHT: 6px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.borrow_list .prc1 {
+	WIDTH: 85px; DISPLAY: block; BACKGROUND: #cccccc; HEIGHT: 6px
+}
+.borrow_list .prc2 {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; MARGIN-TOP: 6px; WIDTH: 85px; DISPLAY: inline-block; BACKGROUND: #39a1ea; HEIGHT: 6px; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.user_homepage_nav #memberinfo_nav {
+	MIN-HEIGHT: 650px; WIDTH: 7784px; FLOAT: left
+}
+.user_homepage_nav #memberinfo_nav .fen_ye_nav {
+	MARGIN-TOP: 25px; MARGIN-BOTTOM: 5px
+}
+.borrowlevellist_nav {
+	BORDER-BOTTOM: #cfcfcf 1px; BORDER-LEFT: #cfcfcf 1px solid; MARGIN: 10px auto; WIDTH: 700px; BORDER-TOP: #cfcfcf 1px solid; BORDER-RIGHT: #cfcfcf 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.borrowlevelalt_nav {
+	PADDING-BOTTOM: 10px; MARGIN-TOP: 10px; PADDING-LEFT: 24px; PADDING-RIGHT: 37px; BACKGROUND: #f8f8f8; FONT-SIZE: 14px; PADDING-TOP: 10px
+}
+.borrowlevelalt_nav .alt_cont {
+	LINE-HEIGHT: 24px; COLOR: #666
+}
+.borrowlevelalt_warning {
+	PADDING-BOTTOM: 10px; MARGIN: 5px auto 0px; PADDING-LEFT: 30px; WIDTH: 640px; PADDING-RIGHT: 10px; COLOR: #666; PADDING-TOP: 10px
+}
+.lendtotal_nav UL LI.hei {
+	WIDTH: 158px
+}
+.lendegreetab {
+	TEXT-ALIGN: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.lendegreetab TH {
+	BORDER-BOTTOM: #dfdfdf 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #dfdfdf 1px solid; PADDING-LEFT: 22px; HEIGHT: 40px; COLOR: #333333; BORDER-TOP: #dfdfdf 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #dfdfdf 1px
+}
+.lendegreetab TH:first-child {
+	BORDER-LEFT-STYLE: none
+}
+.lendegreetab TH.bgf8 {
+	BACKGROUND: #f8f8f8
+}
+.lendegreetab TH.txc {
+	TEXT-ALIGN: center
+}
+.lendegreetab TD {
+	BORDER-BOTTOM: #dfdfdf 1px solid; BORDER-LEFT: #dfdfdf 1px solid; PADDING-LEFT: 10px; HEIGHT: 44px; COLOR: #666666; BORDER-TOP: #dfdfdf 1px solid; BORDER-RIGHT: #dfdfdf 1px solid
+}
+.mb50 {
+	MARGIN-BOTTOM: 50px
+}
+.returnstatictab {
+	TEXT-ALIGN: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.returnstatictab TH {
+	BORDER-BOTTOM: #dfdfdf 1px solid; BORDER-LEFT: #dfdfdf 1px solid; PADDING-LEFT: 22px; HEIGHT: 40px; COLOR: #333333; BORDER-TOP: #dfdfdf 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #dfdfdf 1px
+}
+.returnstatictab TH:first-child {
+	BORDER-LEFT-STYLE: none
+}
+.returnstatictab TH.bgf8 {
+	BACKGROUND: #f8f8f8
+}
+.returnstatictab TD {
+	BORDER-BOTTOM: #dfdfdf 1px solid; BORDER-LEFT: #dfdfdf 1px solid; PADDING-LEFT: 18px; HEIGHT: 44px; COLOR: #666666; BORDER-TOP: #dfdfdf 1px solid; BORDER-RIGHT: #dfdfdf 1px solid
+}
+.create-list-edframe {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; LINE-HEIGHT: 49px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 49px; COLOR: #666666; FONT-SIZE: 14px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.create-list-infoframe {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; MARGIN-TOP: 16px; COLOR: #666666; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.create-list-info {
+	LINE-HEIGHT: 49px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 49px; FONT-SIZE: 18px
+}
+.create-list-msframe {
+	MARGIN-TOP: 16px; COLOR: #666666
+}
+.create-list-ms {
+	LINE-HEIGHT: 27px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 27px; FONT-SIZE: 18px
+}
+.create-list-tab {
+	BACKGROUND-COLOR: transparent; DISPLAY: table; BORDER-COLLAPSE: collapse; COLOR: #666666; MARGIN-LEFT: 30px
+}
+.create-list-tab SELECT {
+	BORDER-BOTTOM: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; PADDING-LEFT: 4px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.create-list-tab INPUT[type='text'] {
+	BORDER-BOTTOM: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; PADDING-LEFT: 4px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.create-list-tab INPUT[type='text'] {
+	BORDER-BOTTOM: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; LINE-HEIGHT: 27px; HEIGHT: 27px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.create-list-tab SELECT {
+	LINE-HEIGHT: 27px; WIDTH: 228px; HEIGHT: 27px
+}
+.create-list-tab TD {
+	HEIGHT: 47px
+}
+.create-list-tab .moneyalt {
+	PADDING-LEFT: 35px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/createlist.png) no-repeat 12px 18px
+}
+#zenz .jue {
+	BORDER-BOTTOM: #dddddd 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #dddddd 1px solid; LINE-HEIGHT: 25px; WIDTH: 185px; HEIGHT: 65px; FONT-SIZE: 16px; BORDER-TOP: #dddddd 1px solid; CURSOR: pointer; MARGIN-RIGHT: 10px; BORDER-RIGHT: #dddddd 1px solid
+}
+#zenz .jue_on {
+	BORDER-BOTTOM: #4f96cf 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #4f96cf 1px solid; BACKGROUND: url(http://www.ppdaicdn.com/img/reg/reg_type2.png) no-repeat right bottom; COLOR: #39a1ea; BORDER-TOP: #4f96cf 1px solid; CURSOR: pointer; MARGIN-RIGHT: 10px; BORDER-RIGHT: #4f96cf 1px solid
+}
+#zenz .jue .alt {
+	LINE-HEIGHT: 20px; FONT-SIZE: 14px
+}
+#zenz .jue LABEL {
+	MARGIN-TOP: 13px; COLOR: #999; CURSOR: pointer
+}
+#zenz .jue P {
+	LINE-HEIGHT: 15px; MARGIN: 0px; COLOR: #999; FONT-SIZE: 12px; CURSOR: pointer
+}
+.about_list {
+	MARGIN: 20px
+}
+.about_list P {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.about_list TEXTAREA {
+	BORDER-BOTTOM: #cccccc 1px solid; MIN-WIDTH: 100%; BORDER-LEFT: #cccccc 1px solid; WIDTH: 100%; MAX-WIDTH: 100%; HEIGHT: 100px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.my-bor-frame {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; MARGIN-TOP: 20px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid; border-radius: 6px; -moz-border-radius: 6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0
+}
+.my-bor-gobidfr {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 0px
+}
+.my-bor-gobid {
+	LINE-HEIGHT: 30px; WIDTH: 105px; DISPLAY: inline-block; HEIGHT: 30px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.ml11 {
+	MARGIN-LEFT: 11px
+}
+.ml36 {
+	MARGIN-LEFT: 36px
+}
+.my-bor-ops {
+	
+}
+.my-bor-ops A {
+	LINE-HEIGHT: 68px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/my-borrow.png) no-repeat; HEIGHT: 68px; FONT-SIZE: 18px
+}
+.my-bor-ops A.op1 {
+	BORDER-BOTTOM: #f3a500 1px solid; BORDER-LEFT: #f3a500 1px solid; PADDING-LEFT: 48px; WIDTH: 136px; BACKGROUND-POSITION: 0px -99px; COLOR: #f3a500; BORDER-TOP: #f3a500 1px solid; BORDER-RIGHT: #f3a500 1px solid
+}
+.my-bor-ops A.op1:hover {
+	BACKGROUND-COLOR: #f3a500; PADDING-LEFT: 48px; WIDTH: 136px; BACKGROUND-POSITION: 3px -17px; COLOR: #ffffff
+}
+.my-bor-ops A.op2 {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; PADDING-LEFT: 71px; WIDTH: 113px; BACKGROUND-POSITION: -200px -105px; COLOR: #39a1ea; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.my-bor-ops A.op2:hover {
+	BACKGROUND-COLOR: #39a1ea; PADDING-LEFT: 71px; WIDTH: 113px; BACKGROUND-POSITION: -200px -19px; COLOR: #ffffff
+}
+.my-bor-ops A.op3 {
+	BORDER-BOTTOM: #f3a500 1px solid; BORDER-LEFT: #f3a500 1px solid; PADDING-LEFT: 42px; WIDTH: 142px; BACKGROUND-POSITION: -396px -94px; COLOR: #f3a500; BORDER-TOP: #f3a500 1px solid; BORDER-RIGHT: #f3a500 1px solid
+}
+.my-bor-ops A.op3:hover {
+	BACKGROUND-COLOR: #f3a500; PADDING-LEFT: 42px; WIDTH: 142px; BACKGROUND-POSITION: -394px -20px; COLOR: #ffffff
+}
+.my-bor-ops A.op4 {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; PADDING-LEFT: 75px; WIDTH: 109px; BACKGROUND-POSITION: -593px -90px; COLOR: #39a1ea; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.my-bor-ops A.op4:hover {
+	BACKGROUND-COLOR: #39a1ea; PADDING-LEFT: 75px; WIDTH: 109px; BACKGROUND-POSITION: -593px -19px; COLOR: #ffffff
+}
+.my-bor-productsFr {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 20px; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.my-bor-prtitle {
+	LINE-HEIGHT: 46px; PADDING-LEFT: 16px; BACKGROUND: #f8f8f8; HEIGHT: 46px; COLOR: #333333; FONT-SIZE: 18px
+}
+.my-bor-products {
+	MARGIN-TOP: 14px
+}
+.my-bor-products A {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; LINE-HEIGHT: 119px; PADDING-LEFT: 179px; WIDTH: 143px; DISPLAY: inline-block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/my-borrow.png) no-repeat; HEIGHT: 119px; COLOR: #333333; FONT-SIZE: 18px; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid; TEXT-DECORATION: none
+}
+.my-bor-products A:hover {
+	BORDER-BOTTOM: #f7c14f 1px solid; BORDER-LEFT: #f7c14f 1px solid; LINE-HEIGHT: 119px; PADDING-LEFT: 179px; WIDTH: 143px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/my-borrow.png) no-repeat; HEIGHT: 119px; COLOR: #f3a500; BORDER-TOP: #f7c14f 1px solid; BORDER-RIGHT: #f7c14f 1px solid
+}
+.my-bor-products A.p1 {
+	BACKGROUND-POSITION: -39px -237px
+}
+.my-bor-products A.p2 {
+	BACKGROUND-POSITION: -410px -237px
+}
+.my-bor-products A.p3 {
+	BACKGROUND-POSITION: -36px -373px
+}
+.my-bor-products A.p4 {
+	BACKGROUND-POSITION: -421px -373px
+}
+.cf3a500 {
+	COLOR: #f3a500
+}
+.c8fc320 {
+	COLOR: #8fc320
+}
+.ml96 {
+	MARGIN-LEFT: 96px
+}
+.ml86 {
+	MARGIN-LEFT: 86px
+}
+.lc-jt {
+	POSITION: relative; WIDTH: 59px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-d2.png) no-repeat; HEIGHT: 34px; TOP: 92px
+}
+.my-bor-lc {
+	MARGIN: 0px auto; WIDTH: 515px; PADDING-TOP: 20px
+}
+.my-bor-lc .lc {
+	
+}
+.my-bor-lc .grxx1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -24px -18px; HEIGHT: 54px
+}
+.my-bor-lc .grxx2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -107px -18px; HEIGHT: 54px
+}
+.my-bor-lc .grxx3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -193px -18px; HEIGHT: 54px
+}
+.my-bor-lc .lc-jt {
+	POSITION: relative; WIDTH: 59px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-d2.png) no-repeat; HEIGHT: 34px; TOP: 92px
+}
+.my-bor-lc .jkxx1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -23px -100px; HEIGHT: 54px; LEFT: -2px
+}
+.my-bor-lc .jkxx2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -107px -100px; HEIGHT: 54px; LEFT: -2px
+}
+.my-bor-lc .jkxx3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -193px -100px; HEIGHT: 54px; LEFT: -2px
+}
+.my-bor-lc .zzsh1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -23px -182px; HEIGHT: 54px; LEFT: -4px
+}
+.my-bor-lc .zzsh2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -109px -182px; HEIGHT: 54px; LEFT: -4px
+}
+.my-bor-lc .zzsh3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -194px -182px; HEIGHT: 54px; LEFT: -4px
+}
+.my-bor-lc .cjzj1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -24px -270px; HEIGHT: 54px; LEFT: -6px
+}
+.my-bor-lc .cjzj2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -110px -270px; HEIGHT: 54px; LEFT: -6px
+}
+.my-bor-lc .cjzj3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 54px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/liucheng.png) no-repeat -193px -270px; HEIGHT: 54px; LEFT: -6px
+}
+.my-bor-lc .lcgay {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-gray.png) no-repeat
+}
+.my-bor-lc .lcgreen {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-green.png) no-repeat
+}
+.my-bor-lc .hxone {
+	Z-INDEX: 1; POSITION: relative; MARGIN-TOP: 20px; WIDTH: 104px; HEIGHT: 13px; LEFT: -1px
+}
+.my-bor-lc .hxtwo {
+	Z-INDEX: 1; POSITION: relative; MARGIN-TOP: 20px; WIDTH: 95px; HEIGHT: 13px; LEFT: -3px
+}
+.my-bor-lc .hxthree {
+	Z-INDEX: 1; POSITION: relative; MARGIN-TOP: 20px; WIDTH: 97px; HEIGHT: 13px; LEFT: -5px
+}
+.my-bor-lc_v1 {
+	TEXT-ALIGN: center; MARGIN: 0px auto; PADDING-TOP: 20px
+}
+.my-bor-lc_v1 .grxx_v1_1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/grxx_green.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .grxx_v1_2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/grxx_yellow.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .grxx_v1_3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/grxx_gray.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .jkxx_v1_1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jksq_green.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .jkxx_v1_2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jksq_yellow.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .jkxx_v1_3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jksq_gray.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .zzsh_v1_1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/zzsh_green.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .zzsh_v1_2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/zzsh_yellow.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .zzsh_v1_3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/zzsh_gray.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .cjzj_v1_1 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jkcg_green.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .cjzj_v1_2 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jkcg_yellow.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .cjzj_v1_3 {
+	Z-INDEX: 100; POSITION: relative; WIDTH: 110px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/jkcg_gray.png) no-repeat center center; HEIGHT: 35px; VERTICAL-ALIGN: middle
+}
+.my-bor-lc_v1 .lcgay_v1 {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/gray_dotted.png) repeat-x 0px center
+}
+.my-bor-lc_v1 .lcgreen_v1 {
+	
+}
+.my-bor-lc_v1 .lcyellow_v1 {
+	
+}
+.my-bor-lc_v1 .hxone_v1 {
+	Z-INDEX: 1; POSITION: relative; MARGIN: 11px 2px 0px; WIDTH: 68px; ZOOM: 1; DISPLAY: inline; HEIGHT: 13px; VERTICAL-ALIGN: middle; LEFT: -1px
+}
+.my-bor-lc_v1 .hxtwo_v1 {
+	Z-INDEX: 1; POSITION: relative; MARGIN: 11px 2px 0px; WIDTH: 68px; ZOOM: 1; DISPLAY: inline; HEIGHT: 13px; VERTICAL-ALIGN: middle; LEFT: -3px
+}
+.my-bor-lc_v1 .hxthree_v1 {
+	Z-INDEX: 1; POSITION: relative; MARGIN: 11px 2px 0px; WIDTH: 68px; ZOOM: 1; DISPLAY: inline; HEIGHT: 13px; VERTICAL-ALIGN: middle; LEFT: -5px
+}
+.my-bor-lc_v1 .lc-jt {
+	POSITION: relative; WIDTH: 59px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-d2.png) no-repeat; HEIGHT: 34px; MARGIN-LEFT: -30px; TOP: 45px; LEFT: 50%
+}
+.lc-ts-frame {
+	MARGIN-TOP: 34px
+}
+.lc-ts-frame .jt1 {
+	LEFT: 85px
+}
+.lc-ts-frame .jt2 {
+	LEFT: 243px
+}
+.lc-ts-frame .jt3 {
+	LEFT: 391px
+}
+.lc-ts-frame .jt4 {
+	LEFT: 537px
+}
+.lc-ts-four-ts {
+	LINE-HEIGHT: 28px; MARGIN: 0px auto; WIDTH: 515px
+}
+.lc-ts-frame P {
+	TEXT-ALIGN: left; PADDING-LEFT: 200px
+}
+.my-bor-frame .lc-ts-frame .ts {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 20px; MARGIN: 0px auto; PADDING-LEFT: 151px; WIDTH: auto; PADDING-RIGHT: 0px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/lc-d1.png) #f8f8f8 repeat-x; PADDING-TOP: 20px
+}
+.lc-ts-frame .lc-ts-frame-message {
+	LIST-STYLE-POSITION: inside; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d5 1px solid; LIST-STYLE-TYPE: disc; ZOOM: 1; DISPLAY: inline; PADDING-TOP: 20px
+}
+.lc-ts-frame .lc-ts-frame-message LI {
+	MARGIN: 0px 0px 20px -2px; FONT: 14px/13px "Microsoft Yahei"; WHITE-SPACE: nowrap; BACKGROUND: #f8f8f8; HEIGHT: 13px; COLOR: #666666
+}
+.lc-ts-frame .lc-ts-frame-message LI.yellow {
+	COLOR: #f7971a
+}
+.lc-ts-frame .lc-ts-frame-message LI SPAN.gray {
+	COLOR: #d5d5d5
+}
+.lc-ts-frame .lc-ts-frame-message LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; FONT: 14px/13px "Microsoft Yahei"; COLOR: #0087e6; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.huankuantab {
+	BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: left; MARGIN: 10px 10px 0px; WIDTH: 756px; BORDER-COLLAPSE: collapse; COLOR: #666666
+}
+.huankuantab TH {
+	TEXT-ALIGN: left; PADDING-LEFT: 20px; HEIGHT: 24px; COLOR: #333333; FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+.huankuantab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: left; PADDING-LEFT: 35px; HEIGHT: 54px
+}
+.huank-frame {
+	PADDING-LEFT: 30px; COLOR: #666666; FONT-SIZE: 16px
+}
+.lh72 {
+	LINE-HEIGHT: 72px
+}
+.lh42 {
+	LINE-HEIGHT: 42px
+}
+.huank-selectbf {
+	BORDER-BOTTOM: #b4b4b4 1px dashed; BORDER-LEFT: #b4b4b4 1px dashed; LINE-HEIGHT: 42px; WIDTH: 532px; BACKGROUND: #fafafa; HEIGHT: 42px; BORDER-TOP: #b4b4b4 1px dashed; BORDER-RIGHT: #b4b4b4 1px dashed
+}
+.huank-selected {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; LINE-HEIGHT: 42px; WIDTH: 532px; BACKGROUND: #ffffff; HEIGHT: 42px; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid
+}
+.huank-radio {
+	MARGIN: 15px 10px 0px; CURSOR: pointer
+}
+.huank-sure {
+	TEXT-ALIGN: center; WIDTH: 135px; DISPLAY: inline-block; MARGIN-BOTTOM: 80px; HEIGHT: 30px; COLOR: #ffffff; MARGIN-LEFT: 112px; CURSOR: pointer
+}
+.cursorp {
+	CURSOR: pointer
+}
+.pl40 {
+	PADDING-LEFT: 40px
+}
+.ml40 {
+	MARGIN-LEFT: 40px
+}
+#viewfile_nav {
+	DISPLAY: block; MARGIN-BOTTOM: 40px; OVERFLOW: hidden
+}
+#viewfile_nav #main {
+	WIDTH: 778px; BACKGROUND: #fff; FLOAT: left; HEIGHT: 590px; MARGIN-LEFT: -5px
+}
+#viewfile_nav .item {
+	POSITION: relative; TEXT-ALIGN: center; MARGIN: 10px 0px 0px 35px; WIDTH: 213px; TEXT-OVERFLOW: ellipsis; DISPLAY: inline; WHITE-SPACE: nowrap; FLOAT: left; OVERFLOW: hidden
+}
+#viewfile_nav .item IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; MARGIN: 10px 3px; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+#viewfile_nav .br {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+#viewfile_nav .text {
+	TEXT-ALIGN: center; LINE-HEIGHT: 20px; TEXT-OVERFLOW: ellipsis; DISPLAY: block; WHITE-SPACE: nowrap; HEIGHT: 20px; COLOR: #0087e6; FONT-SIZE: 13px; OVERFLOW: hidden
+}
+#viewfile_nav .img {
+	DISPLAY: inline !important; MAX-WIDTH: 142px
+}
+.promotiontab {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse; BACKGROUND: #ffffff; BORDER-TOP: #e7e7e7 1px solid
+}
+.promotiontab TH {
+	BACKGROUND: #f8f8f8; HEIGHT: 27px
+}
+.promotiontab TD {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; TEXT-ALIGN: center; HEIGHT: 48px
+}
+.promo-title {
+	LINE-HEIGHT: 42px; PADDING-LEFT: 28px; BACKGROUND: #f8f8f8; COLOR: #666666; FONT-SIZE: 16px
+}
+.promo-urlframe {
+	LINE-HEIGHT: 50px; MARGIN-TOP: 5px; PADDING-LEFT: 30px; BACKGROUND: #fafafa; HEIGHT: 50px; COLOR: #999999
+}
+.promo-hdsm {
+	LINE-HEIGHT: 24px; MARGIN: 27px 0px; PADDING-LEFT: 30px
+}
+.promo-tjnumber {
+	LINE-HEIGHT: 26px; PADDING-LEFT: 30px; BACKGROUND: #f8f8f8
+}
+.promo-tishi {
+	LINE-HEIGHT: 24px; MARGIN-TOP: 30px; COLOR: #999999
+}
+.promo-wxts {
+	PADDING-LEFT: 20px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/tip.png) no-repeat 0px 3px
+}
+.promo-txtint {
+	BORDER-BOTTOM: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; LINE-HEIGHT: 25px; PADDING-LEFT: 10px; WIDTH: 183px; DISPLAY: inline-block; HEIGHT: 25px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.promo-btns {
+	LINE-HEIGHT: 25px; MARGIN-TOP: 10px; WIDTH: 92px; DISPLAY: inline-block; LETTER-SPACING: 2px; COLOR: #ffffff; MARGIN-LEFT: 10px; FONT-SIZE: 15px
+}
+.custom_service {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; MARGIN: 10px auto 0px; WIDTH: 1000px; COLOR: #666666; OVERFLOW: hidden; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid
+}
+.feeshframe {
+	BORDER-BOTTOM: #ededed 1px solid; BORDER-LEFT: #ededed 1px solid; MARGIN: 10px auto 0px; WIDTH: 1000px; COLOR: #666666; OVERFLOW: hidden; BORDER-TOP: #ededed 1px solid; BORDER-RIGHT: #ededed 1px solid
+}
+.custom_service .info_tit {
+	LINE-HEIGHT: 50px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 50px; COLOR: #666666; FONT-SIZE: 18px
+}
+.feeshframe .info_tit {
+	LINE-HEIGHT: 50px; PADDING-LEFT: 30px; BACKGROUND: #f7f7f7; HEIGHT: 50px; COLOR: #666666; FONT-SIZE: 18px
+}
+.custom_service .custom_service_nav {
+	PADDING-BOTTOM: 30px; MARGIN: 0px auto; WIDTH: 966px; COLOR: #666
+}
+.custom_service SELECT {
+	BORDER-BOTTOM: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; WIDTH: 228px; MARGIN-BOTTOM: 0px; HEIGHT: 26px; BORDER-TOP: #e4e4e4 1px solid; BORDER-RIGHT: #e4e4e4 1px solid
+}
+.custom_service TABLE {
+	WIDTH: 100%
+}
+.custom_service TD {
+	HEIGHT: 35px
+}
+.custom_service TD.vt {
+	VERTICAL-ALIGN: top
+}
+.custom_service TD.h47 {
+	HEIGHT: 47px
+}
+.custom_service TD.pl14 {
+	PADDING-LEFT: 14px
+}
+.custom_service TD.txc {
+	TEXT-ALIGN: center
+}
+.custom_service TD TEXTAREA {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: 800px; MAX-WIDTH: 800px; HEIGHT: 170px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.custom_service_alt {
+	LINE-HEIGHT: 50px; MARGIN: 10px 0px; PADDING-LEFT: 14px; DISPLAY: block; BACKGROUND: #fafafa; HEIGHT: 50px; FONT-SIZE: 12px
+}
+.custom_service_btn {
+	LINE-HEIGHT: 29px; MARGIN-TOP: 30px; WIDTH: 112px; DISPLAY: inline-block; HEIGHT: 29px; MARGIN-RIGHT: 20px
+}
+.custom_service #spnMsg {
+	LINE-HEIGHT: 30px; DISPLAY: block; FLOAT: left; HEIGHT: 30px
+}
+.feeshframe {
+	PADDING-BOTTOM: 25px; MARGIN-BOTTOM: 10px; BACKGROUND: #ffffff
+}
+.fees-description {
+	MARGIN: 10px auto; WIDTH: 966px
+}
+.fees-rframe {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 0px
+}
+.fees-ldf {
+	BORDER-BOTTOM: #e7e7e7 1px dashed; LINE-HEIGHT: 56px; HEIGHT: 56px
+}
+.fees-lend {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-lend1 {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-borrow1 {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-mf {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-mf1 {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-borrow {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-bo-ul LI {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-vip {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.feesh-wxtip {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/feeshuoming.png) no-repeat
+}
+.fees-lend {
+	PADDING-LEFT: 33px; WIDTH: 95px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px 15px; COLOR: #333333; MARGIN-LEFT: 40px
+}
+.fees-lend1 {
+	LINE-HEIGHT: 80px; PADDING-LEFT: 33px; WIDTH: 105px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px 27px; HEIGHT: 80px; COLOR: #333333; MARGIN-LEFT: 40px
+}
+.fees-borrow {
+	LINE-HEIGHT: 126px; PADDING-LEFT: 33px; WIDTH: 88px; BACKGROUND-POSITION: 0px -120px; HEIGHT: 126px; COLOR: #333333; MARGIN-LEFT: 40px
+}
+.fees-borrow1 {
+	LINE-HEIGHT: 104px; PADDING-LEFT: 33px; WIDTH: 88px; BACKGROUND-POSITION: 0px -130px; HEIGHT: 104px; COLOR: #333333; MARGIN-LEFT: 40px
+}
+.fees-bo-ul LI {
+	LINE-HEIGHT: 24px; PADDING-LEFT: 16px; BACKGROUND-POSITION: 0px -301px; HEIGHT: 24px
+}
+.fees-bo-ul LI.por {
+	POSITION: relative
+}
+.fees-bo-ul LI SPAN.svip {
+	MARGIN: 0px 20px; DISPLAY: inline-block
+}
+.fees-bo-ul LI.fei {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.fees-bo-ul LI.pl102 {
+	PADDING-LEFT: 102px
+}
+.fees-bo-ul LI.pl155 {
+	PADDING-LEFT: 155px
+}
+.fees-mf {
+	PADDING-LEFT: 33px; WIDTH: 95px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px -412px
+}
+.fees-mf1 {
+	POSITION: absolute; WIDTH: 30px; DISPLAY: inline-block; BACKGROUND-POSITION: 2px -423px; HEIGHT: 30px; TOP: -4px; LEFT: 103px
+}
+.feesh-tab {
+	BORDER-BOTTOM: #e0e0e0 1px solid; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.feesh-tab TH {
+	BORDER-BOTTOM-STYLE: none; TEXT-ALIGN: left; LINE-HEIGHT: 27px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 30px; BORDER-TOP-STYLE: none; BACKGROUND: #f8f8f8; HEIGHT: 27px; COLOR: #666666; BORDER-LEFT-STYLE: none; FONT-WEIGHT: normal
+}
+.feesh-yq {
+	BORDER-BOTTOM-STYLE: none; TEXT-ALIGN: left; LINE-HEIGHT: 27px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 30px; BORDER-TOP-STYLE: none; BACKGROUND: #f8f8f8; HEIGHT: 27px; COLOR: #666666; BORDER-LEFT-STYLE: none; FONT-WEIGHT: normal
+}
+.feesh-tab TD {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.feesh-tab TD:first-child {
+	BORDER-LEFT-STYLE: none
+}
+.feesh-tab TD.first {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 30px; WIDTH: 75px; PADDING-RIGHT: 30px; COLOR: #333333; PADDING-TOP: 0px
+}
+.feesh-tab .mt15 {
+	MARGIN-TOP: 15px
+}
+.feesh-tab .ulm {
+	MARGIN: 25px 0px 25px 50px
+}
+.fees-vip {
+	POSITION: absolute; WIDTH: 30px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px -620px; HEIGHT: 30px; TOP: -4px; LEFT: 103px
+}
+.fees-bo-ul LI SPAN.l308 {
+	LEFT: 308px
+}
+.feesh-yq {
+	MARGIN: 20px 0px 15px
+}
+.feesh-yqp {
+	LINE-HEIGHT: 24px; PADDING-LEFT: 30px
+}
+.feeshframe .pl45 {
+	PADDING-LEFT: 45px
+}
+.feesh-wxtip {
+	LINE-HEIGHT: 30px; MARGIN: 0px auto; PADDING-LEFT: 22px; WIDTH: 978px; BACKGROUND-POSITION: 0px -732px; COLOR: #999999
+}
+.lendMJ {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; MARGIN-TOP: 16px; WIDTH: 320px; FLOAT: right; HEIGHT: 492px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.MJInfo .MJLevel {
+	PADDING-BOTTOM: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 20px
+}
+.MJInfo .MJLevel SPAN {
+	TEXT-ALIGN: center; DISPLAY: block; COLOR: #333; FONT-SIZE: 20px
+}
+.MJInfo .MJLevel I {
+	MARGIN: 15px auto 0px; WIDTH: 45px; DISPLAY: block; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/creditRating.png) no-repeat; HEIGHT: 45px
+}
+.MJInfo .MJLevel I.B {
+	BACKGROUND-POSITION: -94px 0px
+}
+.MJInfo .MJLevel I.C {
+	BACKGROUND-POSITION: -172px 0px
+}
+.MJInfo .MJLevel I.D {
+	BACKGROUND-POSITION: -251px 0px
+}
+.MJInfo .MJLevel I.E {
+	BACKGROUND-POSITION: -331px 0px
+}
+.MJInfo .MJLevel I.AA {
+	BACKGROUND-POSITION: -411px 0px; HEIGHT: 46px
+}
+.MJInfo .MJLevel I.F {
+	BACKGROUND-POSITION: -232px -152px; HEIGHT: 46px
+}
+.MJInfo P {
+	TEXT-ALIGN: center; COLOR: #333; FONT-SIZE: 14px
+}
+.p0 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.pl15 {
+	PADDING-LEFT: 15px
+}
+.ff2400 {
+	COLOR: #ff2400
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.pl50 {
+	PADDING-LEFT: 50px
+}
+.btn39A1EA {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #39a1ea; HEIGHT: 30px; COLOR: #fff; PADDING-TOP: 0px; border-radius: 3px
+}
+.btn39A1EA:hover {
+	BACKGROUND: #1d83ca
+}
+.mt8 {
+	MARGIN-TOP: 8px
+}
+.mr15 {
+	MARGIN-RIGHT: 15px
+}
+.btnf3a500 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #f3a500; HEIGHT: 30px; COLOR: #fff; PADDING-TOP: 0px; border-radius: 3px
+}
+.btnf3a500:hover {
+	BACKGROUND: #ef8f01
+}
+.bdb {
+	BORDER-BOTTOM: #e0e0e0 1px solid
+}
+.pb0 {
+	PADDING-BOTTOM: 0px
+}
+.accountTips-top {
+	BACKGROUND: #f8ecd4; HEIGHT: 40px
+}
+.accountTips-top-inner {
+	Z-INDEX: 1; POSITION: relative; LINE-HEIGHT: 40px; MARGIN: 0px auto; WIDTH: 1000px; HEIGHT: 40px; COLOR: #666; FONT-SIZE: 12px
+}
+.accountTips-top-inner A {
+	COLOR: #ff2400; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.accountTips-top-inner SPAN {
+	POSITION: absolute; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 18px; CURSOR: pointer; RIGHT: 0px
+}
+.safetyTipsDl {
+	PADDING-BOTTOM: 17px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px; BACKGROUND: #fafafa; COLOR: #999; FONT-SIZE: 12px; PADDING-TOP: 22px
+}
+.safetyTipsDl DT {
+	MARGIN-BOTTOM: 5px
+}
+.safetyTipsDl DD {
+	MARGIN-BOTTOM: 5px
+}
+.safetyTipsDl DD A {
+	COLOR: #1488da; FONT-SIZE: 12px
+}
+.lastLoginTime {
+	MARGIN-TOP: 10px
+}
+.lastLoginTime A {
+	COLOR: #39a1ea; MARGIN-LEFT: 15px
+}
+.f3a500 {
+	COLOR: #f3a500
+}
+.h94 {
+	HEIGHT: 94px
+}
+.h280 {
+	HEIGHT: 280px
+}
+.lendindexdltu {
+	WIDTH: 248px
+}
+.dabingtuLeft {
+	FLOAT: left; MARGIN-LEFT: 10px
+}
+.lendindexdltu DL DT {
+	TEXT-ALIGN: right
+}
+.lendindexdltu DL DD {
+	TEXT-ALIGN: right
+}
+.lendindexdltu DL DT {
+	MARGIN-BOTTOM: 10px; HEIGHT: 30px
+}
+.lendindexdltu DL DT I {
+	WIDTH: 10px; DISPLAY: inline-block; HEIGHT: 10px
+}
+.lendindexdltu DL DT SPAN {
+	COLOR: #333; FONT-SIZE: 18px
+}
+.lendindexdltu DL DT SPAN.tu-jine {
+	MARGIN-LEFT: 10px
+}
+.lendindexdltu DL DT SPAN EM {
+	FONT-SIZE: 12px
+}
+.lendindexdltu DL DT {
+	BORDER-BOTTOM: #b3b3b3 1px solid
+}
+.lendindexdltu DL DD {
+	COLOR: #666
+}
+.lendindexdltu DL DD .toubiaijine {
+	MARGIN-LEFT: 20px; FONT-SIZE: 16px
+}
+.lendindexdltu DL DD .toubiaijine EM {
+	FONT-SIZE: 12px
+}
+.lendindexdltu DL DD A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #b2b2b2; COLOR: #fff; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+.mb15 {
+	MARGIN-BOTTOM: 15px
+}
+.mb35 {
+	MARGIN-BOTTOM: 35px
+}
+.dabingtuCenter {
+	Z-INDEX: 1; POSITION: relative; WIDTH: 228px; FLOAT: left; HEIGHT: 258px
+}
+.dabingtuRight {
+	FLOAT: right; MARGIN-RIGHT: 10px
+}
+.xybye {
+	BACKGROUND: #40e0d0
+}
+.pqbye {
+	BACKGROUND: #ff69b4
+}
+.kyje {
+	BACKGROUND: #6495ed
+}
+.cpje {
+	BACKGROUND: #ba55d3
+}
+.dabingtuRight DT I {
+	FLOAT: left
+}
+.dabingtuRight DT .tu-name {
+	FLOAT: left
+}
+.dabingtuRight DT I {
+	MARGIN: 10px 5px 0px 0px
+}
+.lenderTotalMoney {
+	POSITION: absolute; MARGIN-TOP: -30px; WIDTH: 112px; HEIGHT: 60px; TOP: 50%; LEFT: 72px
+}
+.lenderTotalMoney H3 {
+	COLOR: #262626; FONT-SIZE: 16px; FONT-WEIGHT: normal
+}
+.lenderTotalMoney P {
+	COLOR: #000; FONT-SIZE: 20px
+}
+.lenderTotalMoney P SPAN {
+	FONT-SIZE: 12px
+}
+.lenderTotalMoney A {
+	TEXT-ALIGN: center; DISPLAY: block; COLOR: #0087e6
+}
+.calendarLeft {
+	WIDTH: 190px; FLOAT: left
+}
+.calendarLeft H3 {
+	BORDER-BOTTOM: #fff 1px solid; LINE-HEIGHT: 38px; PADDING-LEFT: 20px; HEIGHT: 38px; COLOR: #333; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.calendarLeft DL {
+	PADDING-LEFT: 20px; PADDING-TOP: 20px
+}
+.calendarLeft DL DT {
+	BORDER-LEFT: #a9a9a9 4px solid; PADDING-LEFT: 14px; MARGIN-BOTTOM: 6px
+}
+.calendarLeft DL DD.lihi {
+	COLOR: #f3a500; FONT-SIZE: 24px
+}
+.calendarLeft DL DD {
+	PADDING-LEFT: 18px; MARGIN-BOTTOM: 12px
+}
+.calendarLeft DL DD SPAN {
+	FONT-SIZE: 12px
+}
+.calendarRight {
+	WIDTH: 586px; BACKGROUND: #fff; FLOAT: right; border-radius: 0 6px 0 0
+}
+.calendarRight TABLE {
+	WIDTH: 100%
+}
+.calendarRight TABLE TH {
+	BORDER-BOTTOM: #d5d5d5 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d5 1px solid; PADDING-LEFT: 10px; WIDTH: 82px; HEIGHT: 28px; BORDER-TOP: #d5d5d5 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.calendarRight TABLE TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d5 1px solid; PADDING-LEFT: 10px; HEIGHT: 50px; VERTICAL-ALIGN: top; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.calendarRight TABLE TH.weekend {
+	COLOR: #f4ad49
+}
+.calendarRight TABLE TD.nowDay {
+	BACKGROUND: #f7f7f7; FONT-WEIGHT: bold
+}
+#dtcal {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/lenderIndexBg1.jpg) #f8f8f8 repeat-y 182px 0px
+}
+.calendarRightExp {
+	TEXT-ALIGN: center; LINE-HEIGHT: 38px; BACKGROUND: #f8f8f8; HEIGHT: 38px; COLOR: #999; FONT-SIZE: 12px; border-radius: 0 6px 0 0
+}
+.calendarRightExp A {
+	COLOR: #39a1ea
+}
+.my-ac-info {
+	MARGIN-TOP: 15px; PADDING-LEFT: 60px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/remind.png) no-repeat 22px 0px; COLOR: #ff0000
+}
+.my-ac-info-changeVer {
+	PADDING-LEFT: 10px; COLOR: #39a1ea; TEXT-DECORATION: none
+}
+.my-ac-non-zfway {
+	POSITION: relative
+}
+DIV.info_box {
+	POSITION: absolute; WIDTH: 255px; BOTTOM: 60px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/info_box.png) no-repeat 0px 0px; HEIGHT: 136px; RIGHT: 0px
+}
+DIV.info_box .info_close {
+	POSITION: absolute; WIDTH: 23px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/info_close.png) no-repeat 0px 0px; HEIGHT: 23px; TOP: 0px; CURSOR: pointer; RIGHT: 7px
+}
+DIV.info_box .info_message {
+	PADDING-BOTTOM: 20px; LINE-HEIGHT: 18px; PADDING-LEFT: 65px; WIDTH: 160px; PADDING-RIGHT: 10px; FONT-FAMILY: 'Microsoft YaHei'; HEIGHT: 54px; COLOR: #f3a500; FONT-SIZE: 14px; PADDING-TOP: 22px
+}
+.firstTDLeft TD {
+	WIDTH: 25%
+}
+.firstTDLeft TH {
+	WIDTH: 25%
+}
+.firstTDLeft TD.money {
+	TEXT-ALIGN: right; PADDING-RIGHT: 73px
+}
+.firstTDLeft TH.money {
+	TEXT-ALIGN: right; PADDING-RIGHT: 73px
+}
+.firstTDLeft TD:first-child {
+	TEXT-ALIGN: left; PADDING-LEFT: 25px
+}
+.firstTDLeft TH:first-child {
+	TEXT-ALIGN: left; PADDING-LEFT: 25px
+}
+.mypqb {
+	PADDING-BOTTOM: 0px
+}
+.mypqb.bdb .my-ac-ctTitle {
+	POSITION: relative; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.bdb .my-ac-ctTitle {
+	BORDER-BOTTOM: #e0e0e0 1px solid; POSITION: relative
+}
+.bdb .my-ac-ctTitle DIV.pos.info_box {
+	BOTTOM: 38px; RIGHT: -171px
+}
+.mypqb .my-ac-ctTitle DIV.pos.info_box {
+	BOTTOM: 38px; RIGHT: -208px
+}
+#remindtips {
+	LINE-HEIGHT: 34px; BACKGROUND: #ffe8bc; HEIGHT: 34px; COLOR: #666; FONT-WEIGHT: bold
+}
+#remindtips DIV {
+	Z-INDEX: 1; POSITION: relative; LINE-HEIGHT: 34px; MARGIN: 0px auto; WIDTH: 1200px; HEIGHT: 34px
+}
+#remindtips DIV A {
+	COLOR: #1d83ca
+}
+#remindtips #remindclose {
+	POSITION: absolute; MARGIN-TOP: -7px; WIDTH: 14px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/remindclose.png) no-repeat 0px 0px; HEIGHT: 14px; TOP: 50%; CURSOR: pointer; RIGHT: 0px
+}
+.cover {
+	Z-INDEX: 998; POSITION: fixed; WIDTH: 100%; DISPLAY: none; BACKGROUND: #000; HEIGHT: 100%; TOP: 0px; LEFT: 0px; opacity: 0.7
+}
+.suggestion_box {
+	Z-INDEX: 999; POSITION: fixed; MARGIN: -148px 0px 0px -280px; WIDTH: 560px; DISPLAY: none; BACKGROUND: #fff; HEIGHT: 306px; OVERFLOW: hidden; TOP: 50%; LEFT: 50%; border-radius: 3px
+}
+.suggestion_box .suggestion_close {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 16px; FONT: 20px/16px "Microsoft Yahei"; HEIGHT: 16px; COLOR: #cccccc; TOP: 11px; RIGHT: 15px
+}
+.suggestion_box .suggestion_title {
+	BORDER-BOTTOM: #eeeeee 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; FONT: bold 18px/61px "Microsoft YaHei"; HEIGHT: 64px; COLOR: #333; PADDING-TOP: 0px
+}
+.suggestion_box .suggestion_body {
+	BORDER-BOTTOM: #ddd 1px solid; HEIGHT: 142px; PADDING-TOP: 22px
+}
+.suggestion_box .suggestion_body P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 28px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: bold 16px/20px "Microsoft YaHei"; COLOR: #0074cc; PADDING-TOP: 0px
+}
+.suggestion_box .suggestion_body TEXTAREA {
+	BORDER-BOTTOM: #eee 1px solid; BORDER-LEFT: #eee 1px solid; PADDING-BOTTOM: 9px; MARGIN: 19px 53px 15px 27px; PADDING-LEFT: 12px; WIDTH: 447px; PADDING-RIGHT: 12px; FONT: 12px/18px "Microsoft YaHei"; HEIGHT: 60px; COLOR: #333; BORDER-TOP: #eee 1px solid; BORDER-RIGHT: #eee 1px solid; PADDING-TOP: 9px
+}
+.suggestion_box .suggestion_btnBox {
+	TEXT-ALIGN: center; BACKGROUND: #f5f5f5; HEIGHT: 62px; BORDER-TOP: #fff 1px solid; PADDING-TOP: 12px
+}
+.suggestion_box .suggestion_btnBox INPUT {
+	BORDER-BOTTOM: #797979 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #797979 1px solid; MARGIN: 0px 28px; WIDTH: 191px; FONT: 13px/48px "Microsoft YaHei"; BACKGROUND: #0074cc; HEIGHT: 48px; COLOR: #fff; BORDER-TOP: #797979 1px solid; CURSOR: pointer; BORDER-RIGHT: #797979 1px solid; border-radius: 4px; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+#tabIcon .accountInfo_box {
+	Z-INDEX: 9998; POSITION: absolute; PADDING-LEFT: 53px; WIDTH: 178px; PADDING-RIGHT: 15px; FONT: 17px/22px "Microsoft YaHei"; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/accountInfo_box.png) no-repeat 0px 0px; HEIGHT: 74px; COLOR: #ffa600; TOP: 35px; CURSOR: default; PADDING-TOP: 32px; LEFT: 50%
+}
+#tabIcon .accountInfo_box .accountInfo_box_close {
+	POSITION: absolute; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; WIDTH: 23px; BORDER-TOP-STYLE: none; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/accountInfo_box_close.png) no-repeat 0px 0px; HEIGHT: 23px; BORDER-LEFT-STYLE: none; TOP: 9px; RIGHT: 1px; TEXT-DECORATION: none
+}
+#v2013 {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BACKGROUND: #f5f5f5; COLOR: #0074cc; BORDER-LEFT-STYLE: none; text-shadow: none; box-shadow: none
+}
+#vison {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BACKGROUND: #f5f5f5; COLOR: #0074cc; BORDER-LEFT-STYLE: none; text-shadow: none; box-shadow: none
+}
+:unknown {
+	COLOR: #999999
+}
+:unknown {
+	COLOR: #999999
+}
+:unknown {
+	COLOR: #999999
+}
+.remindInfo {
+	POSITION: relative; PADDING-BOTTOM: 4px; MARGIN-TOP: 14px; PADDING-LEFT: 60px; PADDING-RIGHT: 25px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/hand_pointer.png) #f7f7f7 no-repeat 22px center; PADDING-TOP: 4px
+}
+.remindInfo DIV {
+	BORDER-LEFT: #e2e2e2 1px solid
+}
+.remindInfo DIV UL {
+	PADDING-BOTTOM: 6px; LIST-STYLE-TYPE: disc; MARGIN: 0px 0px 0px 35px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #ff0000; PADDING-TOP: 6px
+}
+.remindInfo DIV UL LI {
+	FONT: 12px/24px "Microsoft Yahei"
+}
+.remindInfo DIV UL LI A {
+	FONT: 12px/24px "Microsoft Yahei"; COLOR: #1488da; TEXT-DECORATION: none
+}
+.userInfo {
+	FONT-SIZE: 0px
+}
+.userInfo > * {
+	FONT-SIZE: 14px
+}
+.userInfo > .userInfo_userHeader {
+	WIDTH: 89px; ZOOM: 1; DISPLAY: inline; HEIGHT: 88px; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_userHeader IMG {
+	WIDTH: 89px; ZOOM: 1; DISPLAY: inline; HEIGHT: 88px; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content {
+	ZOOM: 1; DISPLAY: inline; HEIGHT: 88px; MARGIN-LEFT: 18px; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_userName {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_vip {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_goOldVer {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_pCurrency {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_signIn {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_accountSafe {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_lastLoginTime {
+	MARGIN: 5px 8px 0px 0px; ZOOM: 1; DISPLAY: inline; FONT: 14px/38px "Microsoft Yahei"; VERTICAL-ALIGN: top
+}
+.userInfo > .userInfo_content .userInfo_lastLoginTime > .lastLoginTime {
+	MARGIN: 0px
+}
+.userInfo > .userInfo_content .userInfo_accountSafe {
+	MARGIN-LEFT: 40px
+}
+.userInfo > .userInfo_content .userInfo_lastLoginTime {
+	MARGIN-LEFT: 40px
+}
+.userInfo > .userInfo_content .userInfo_accountSafe > .progressBar {
+	WIDTH: 94px; ZOOM: 1; DISPLAY: inline; HEIGHT: 18px; MARGIN-LEFT: 4px; VERTICAL-ALIGN: middle
+}
+.userInfo > .userInfo_content .userInfo_vip {
+	WIDTH: 31px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat -86px -12px; HEIGHT: 30px
+}
+.userInfo > .userInfo_content .my-ac-dgvip1.userInfo_vip {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat -10px -12px
+}
+.userInfo > .userInfo_content .my-ac-dgvip2.userInfo_vip {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat -48px -12px
+}
+.userInfo > .userInfo_content .my-ac-dgvip3.userInfo_vip {
+	BACKGROUND: url(http://www.ppdaicdn.com/2014/img/myaccount/accounticons.png) no-repeat -86px -12px
+}
+.userInfo > .userInfo_content .userInfo_userName {
+	COLOR: #333
+}
+.userInfo > .userInfo_content .userInfo_goOldVer {
+	COLOR: #39a1ea
+}
+.userInfo > .userInfo_content .userInfo_pCurrency SPAN {
+	PADDING-LEFT: 4px; COLOR: #39a1ea
+}
+.userInfo > .userInfo_content .userInfo_signIn {
+	BORDER-BOTTOM: #39a1ea 1px solid; BORDER-LEFT: #39a1ea 1px solid; MARGIN-TOP: 14px; WIDTH: 88px; HEIGHT: 19px; FONT-SIZE: 0px; OVERFLOW: hidden; BORDER-TOP: #39a1ea 1px solid; BORDER-RIGHT: #39a1ea 1px solid; border-radius: 2px
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN#btnGetPaiMoney {
+	TEXT-ALIGN: center; LINE-HEIGHT: 19px; WIDTH: 50%; DISPLAY: inline-block; BACKGROUND: #fff; FLOAT: left; HEIGHT: 19px; COLOR: #39a1ea; FONT-SIZE: 12px; VERTICAL-ALIGN: top; CURSOR: pointer
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN {
+	TEXT-ALIGN: center; LINE-HEIGHT: 19px; WIDTH: 50%; DISPLAY: inline-block; BACKGROUND: #fff; FLOAT: left; HEIGHT: 19px; COLOR: #39a1ea; FONT-SIZE: 12px; VERTICAL-ALIGN: top; CURSOR: pointer
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN#btnGetPaiMoney {
+	BACKGROUND: #39a1ea; COLOR: #fff
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN#btnGetPaiMoney:hover {
+	BACKGROUND: #1d83ca
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN.my-ac-qdsigna#btnGetPaiMoney {
+	BACKGROUND: #fff; COLOR: #39a1ea
+}
+.userInfo > .userInfo_content .userInfo_signIn SPAN.my-ac-qdsigna {
+	BACKGROUND: #fff; COLOR: #39a1ea
+}
+.stressBox {
+	MARGIN-TOP: 15px; BACKGROUND: #f8f8f8
+}
+.stressBox > .stressBox_message {
+	PADDING-LEFT: 13px; FONT: 14px/28px "Microsoft Yahei"; HEIGHT: 18px; COLOR: #f00
+}
+.col_2 {
+	WIDTH: 48.5%; ZOOM: 1; DISPLAY: inline; VERTICAL-ALIGN: top
+}
+.last.col_2 {
+	FLOAT: right; MARGIN-LEFT: 1%
+}
+.stressBox:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+UNKNOWN {
+	FLOAT: left; MARGIN-RIGHT: 1%
+}
+.accountLimit {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 15px; BACKGROUND: #fff; PADDING-TOP: 15px
+}
+.accountLimit .text {
+	FONT: 14px/50px "Microsoft YaHei"; COLOR: #666666
+}
+.accountLimit .black.text {
+	COLOR: #333333
+}
+.accountLimit .split {
+	PADDING-LEFT: 15px; PADDING-RIGHT: 22px; MARGIN-RIGHT: 22px; BORDER-RIGHT: #9a9a9a 1px solid
+}
+UNKNOWN {
+	BORDER-RIGHT-STYLE: none
+}
+.accountLimit .money {
+	FONT: 20px/50px "Microsoft Yahei"
+}
+.accountLimit .blue.money {
+	COLOR: #0087e6
+}
+.accountLimit .blue.money .symbol {
+	COLOR: #0087e6; FONT-SIZE: 14px
+}
+.accountLimit .yellow.money .symbol {
+	COLOR: #f89820; FONT-SIZE: 14px
+}
+.accountLimit .yellow.money {
+	COLOR: #f89820
+}
+.accountLimit .buttons {
+	HEIGHT: 45px; OVERFLOW: auto
+}
+.accountLimit .borrowButton {
+	TEXT-ALIGN: center; WIDTH: 105px; FONT: 16px/40px "Microsoft Yahei"; BACKGROUND: #39a1ea; FLOAT: right; HEIGHT: 40px; COLOR: #fff; MARGIN-LEFT: 16px; TEXT-DECORATION: none; border-radius: 2px
+}
+.accountLimit .borrowButton:hover {
+	BACKGROUND: #1d83ca
+}
+.accountLimit .moneyButton {
+	BORDER-BOTTOM: #45a7eb 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #45a7eb 1px solid; MARGIN-TOP: 5px; WIDTH: 83px; FONT: 15px/28px "Microsoft Yahei"; BACKGROUND: #fff; FLOAT: right; HEIGHT: 28px; COLOR: #45a7eb; MARGIN-LEFT: 16px; BORDER-TOP: #45a7eb 1px solid; BORDER-RIGHT: #45a7eb 1px solid; TEXT-DECORATION: none; border-radius: 2px
+}
+.accountLimit .moneyButton:hover {
+	BACKGROUND: #45a7eb; COLOR: #fff
+}
+.borrowList {
+	PADDING-BOTTOM: 17px; PADDING-LEFT: 23px; PADDING-RIGHT: 23px; PADDING-TOP: 6px
+}
+.borrowList .text {
+	FONT: 14px/35px "Microsoft Yahei"; COLOR: #666666; MARGIN-RIGHT: 45px
+}
+.borrowList .black.text {
+	COLOR: #333
+}
+.repaymentList {
+	PADDING-BOTTOM: 28px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; DISPLAY: block; WHITE-SPACE: nowrap; FONT-SIZE: 0px; OVERFLOW: hidden; PADDING-TOP: 28px
+}
+.repaymentList > .repaymentCol {
+	TEXT-ALIGN: center; WIDTH: 28.5%; ZOOM: 1; DISPLAY: inline; HEIGHT: 94px; VERTICAL-ALIGN: middle; BORDER-RIGHT: #e5e5e5 1px solid
+}
+.repaymentList > .repaymentCol:unknown {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; WIDTH: 14.5%; BORDER-TOP-STYLE: none; VERTICAL-ALIGN: baseline; BORDER-LEFT-STYLE: none; OVERFLOW: hidden
+}
+.repaymentList > .repaymentCol > .head {
+	FONT: 14px/48px "Microsoft Yahei"; COLOR: #666666
+}
+.repaymentList > .repaymentCol > .data {
+	FONT: 18px/36px "Microsoft Yahei"; COLOR: #333
+}
+.repaymentList > .repaymentCol > .symbol.data {
+	FONT-SIZE: 14px
+}
+.repaymentList > .repaymentCol > .ImmediateRepayment {
+	TEXT-ALIGN: center; MARGIN: 27px 15px 0px 20px; WIDTH: 105px; FONT: 16px/40px "Microsoft Yahei"; BACKGROUND: #f3a500; FLOAT: left; HEIGHT: 40px; COLOR: #fff; TEXT-DECORATION: none; border-radius: 2px
+}
+.repaymentList > .repaymentCol > .ImmediateRepayment:hover {
+	BORDER-BOTTOM-COLOR: #ef8f01; BORDER-TOP-COLOR: #ef8f01; BACKGROUND: #ef8f01; BORDER-RIGHT-COLOR: #ef8f01; BORDER-LEFT-COLOR: #ef8f01
+}
+.airBubble {
+	POSITION: relative; CURSOR: pointer
+}
+.airBubble > IMG {
+	PADDING-BOTTOM: 5px
+}
+.airBubble .tag {
+	BORDER-BOTTOM: #ffbb76 1px solid; POSITION: absolute; TEXT-ALIGN: left; BORDER-LEFT: #ffbb76 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: none; FONT: 14px/28px "Microsoft Yahei"; WHITE-SPACE: nowrap; BACKGROUND: #fffcef; HEIGHT: 28px; COLOR: #f89820; BORDER-TOP: #ffbb76 1px solid; TOP: -43px; BORDER-RIGHT: #ffbb76 1px solid; PADDING-TOP: 0px; LEFT: -12px
+}
+.airBubble .arrow {
+	POSITION: absolute; WIDTH: 40px; BOTTOM: -40px; HEIGHT: 40px; LEFT: 16px
+}
+.airBubble .arrow * {
+	BORDER-BOTTOM: 5px dashed; POSITION: absolute; BORDER-LEFT: 5px dashed; LINE-HEIGHT: 0; DISPLAY: block; FONT-SIZE: 0px; BORDER-TOP: 5px solid; BORDER-RIGHT: 5px dashed
+}
+.airBubble .arrow EM {
+	BORDER-BOTTOM-COLOR: transparent; BORDER-TOP-COLOR: #ffbb76; BACKGROUND: #fffcef; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent
+}
+.airBubble .arrow SPAN {
+	BORDER-BOTTOM-COLOR: transparent; BORDER-TOP-COLOR: #fff; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent; TOP: -1px
+}
+.airBubble:hover .tag {
+	DISPLAY: block
+}
+.remind_withdraw {
+	Z-INDEX: 999; POSITION: fixed; MARGIN: -258px 0px 0px -320px; WIDTH: 640px; BACKGROUND: #fff; OVERFLOW: hidden; TOP: 50%; LEFT: 50%; border-radius: 6px
+}
+.remind_withdraw > .remind_withdraw_title {
+	BORDER-BOTTOM: #dadada 1px solid; PADDING-LEFT: 20px; FONT: 18px/48px "Microsoft YaHei"; HEIGHT: 48px; COLOR: #555555
+}
+.remind_withdraw > .remind_withdraw_content {
+	PADDING-BOTTOM: 14px; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/remind_withdraw_bg.png) #f8f8f8 no-repeat 230px 16px; PADDING-TOP: 8px
+}
+.remind_withdraw > .remind_withdraw_content > .remind_withdraw_content_title {
+	PADDING-LEFT: 35px; FONT: 18px/46px "Microsoft YaHei"; HEIGHT: 46px; COLOR: #004098
+}
+.remind_withdraw > .remind_withdraw_content > .remind_withdraw_content_option {
+	PADDING-LEFT: 40px; FONT: 16px/32px "Microsoft Yahei"; HEIGHT: 32px; COLOR: #666666; VERTICAL-ALIGN: middle
+}
+.remind_withdraw > .remind_withdraw_content > .remind_withdraw_content_option > INPUT {
+	MARGIN-RIGHT: 15px
+}
+.remind_withdraw > .remind_withdraw_content > .remind_withdraw_content_textBox {
+	BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid; MARGIN: 12px auto 0px; WIDTH: 568px; DISPLAY: none; BACKGROUND: #fff; HEIGHT: 80px; BORDER-TOP: #cdcdcd 1px solid; BORDER-RIGHT: #cdcdcd 1px solid
+}
+.remind_withdraw > .remind_withdraw_buttonBox {
+	TEXT-ALIGN: center; BACKGROUND: #fff; HEIGHT: 83px; FONT-SIZE: 0px
+}
+.remind_withdraw > .remind_withdraw_buttonBox > .remind_withdraw_button {
+	TEXT-ALIGN: center; MARGIN: 20px; WIDTH: 96px; ZOOM: 1; DISPLAY: inline; FONT: 16px/44px "Microsoft Yahei"; HEIGHT: 44px; VERTICAL-ALIGN: middle; border-radius: 2px
+}
+.remind_withdraw > .remind_withdraw_buttonBox > .blue.remind_withdraw_button {
+	BACKGROUND: #39a1ea; COLOR: #fff
+}
+.remind_withdraw > .remind_withdraw_buttonBox > .gray.remind_withdraw_button {
+	BACKGROUND: #e1e1e1; COLOR: #666
+}
+.remind_withdraw > .remind_withdraw_close {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 22px; FONT: 24px/22px "Microsoft Yahei"; HEIGHT: 22px; COLOR: #666666; TOP: 13px; RIGHT: 13px
+}
+.remind_withdraw > .remind_withdraw_error {
+	BORDER-BOTTOM: #ffc57b 1px solid; POSITION: absolute; BORDER-LEFT: #ffc57b 1px solid; PADDING-LEFT: 32px; BOTTOM: 72px; PADDING-RIGHT: 8px; DISPLAY: none; FONT: 14px/28px "Microsoft Yahei"; BACKGROUND: url(http://www.ppdaicdn.com/2014/img/warn.png) #fff5e9 no-repeat 6px center; HEIGHT: 28px; COLOR: #666; MARGIN-LEFT: 20px; BORDER-TOP: #ffc57b 1px solid; BORDER-RIGHT: #ffc57b 1px solid; LEFT: 50%
+}

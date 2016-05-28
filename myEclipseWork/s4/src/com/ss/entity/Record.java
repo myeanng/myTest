@@ -1,0 +1,56 @@
+package com.ss.entity;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="t_Spring_s4_record")
+@SuppressWarnings("serial")
+public class Record implements Serializable {
+	private Integer id;
+	private Account fromaccount;
+	private Account toaccount;
+	private Timestamp recordDate;
+	private String remark;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	@ManyToOne
+	public Account getFromaccount() {
+		return fromaccount;
+	}
+	public void setFromaccount(Account fromaccount) {
+		this.fromaccount = fromaccount;
+	}
+	@ManyToOne
+	public Account getToaccount() {
+		return toaccount;
+	}
+	public void setToaccount(Account toaccount) {
+		this.toaccount = toaccount;
+	}
+	public Timestamp getRecordDate() {
+		return recordDate;
+	}
+	public void setRecordDate(Timestamp recordDate) {
+		this.recordDate = recordDate;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public Record() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

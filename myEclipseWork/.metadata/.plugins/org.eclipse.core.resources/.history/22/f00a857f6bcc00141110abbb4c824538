@@ -1,0 +1,590 @@
+.operateProcess{
+	border:1px solid #D6D6D6;
+	margin-bottom: 15px;
+}
+.operateProcess .top{
+	height: 50px;
+	background: #F7F7F7;
+}
+.operateProcess .remainingSum{
+	float: right;
+	border-left: 1px solid #E0E0E0;
+	width: 310px;
+	height: 36px;
+	margin-top: 10px;
+}
+.operateProcess .remainingSum label{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 5px 0 10px;
+	color: #666;
+}
+.operateProcess .remainingSum strong{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	color: #39A1EA;
+	font-size: 18px;
+	padding-right: 18px;
+}
+.operateProcess .remainingSum strong span{
+	font-size: 14px;
+	padding-right: 6px;
+}
+.operateProcess .remainingSum a{
+	float: left;
+	width: 96px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	background: #39A1EA;
+	border-radius: 3px;
+	margin-top: 4px;
+}
+.operateProcess .remainingSum a:hover{
+	background: #1D83CA;
+}
+.operateProcess .operateStep{
+	float: left;
+	height: 36px;
+	margin-top: 10px;
+}
+.operateProcess .operateStep label{
+	float: left;
+	height: 36px;
+	line-height: 40px;
+	padding-left: 26px;
+	color: #666;
+	overflow: hidden;
+}
+.operateProcess .operateStep ul{
+	float: left;
+	padding-left: 18px;
+}
+.operateProcess .operateStep ul li{
+	float: left;
+	height: 36px;
+	font-size: 20px;
+	line-height: 36px;
+	color: #666;
+}
+.operateProcess .operateStep ul li a{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+    cursor: default;
+}
+.operateProcess .operateStep ul li span{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 16px;
+}
+.operateProcess .newGuid p{
+	width: 98px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.operateProcess .newGuid p span,.operateProcess .newGuid p em{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.operateProcess .newGuid p em{
+	color: #39A1EA;
+	font-size: 16px;
+	padding-right: 15px;
+}
+.operateProcess .newGuid p span.up{
+	width: 12px;
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -38px -151px;
+}
+.operateProcess .newGuid p span.down{
+	width: 12px;
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat 0 -151px;
+}
+.operateProcess .newGuid ul{
+	width: 740px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.operateProcess .newGuid ul li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -234px -182px;
+	padding-left: 20px;
+	margin-right: 72px;
+}
+.operateProcess .newGuid ul li a{
+	font-size: 16px;
+}
+.operateProcess .newGuid ul li.nomr{
+	margin-right: 0;
+}
+
+.borrowListContent{
+	border:1px solid #D5D5D5;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 20px;
+}
+.borrowListContent .borrowItem{
+	margin-bottom: 10px;
+}
+.borrowListContent .borrowItem li{
+	height: 40px;
+	float: left;
+	width: 141px;
+	text-align: center;
+	line-height: 40px;
+	background: #F8F8F8;
+	border-left: 1px solid #D4D4D4;
+}
+.borrowListContent .borrowItem li.nobd{
+	border: none;
+}
+.borrowListContent .borrowItem li.current{
+	background: #fff;
+}
+.borrowListContent .borrowItem li.current a {
+    color: #39a1ea;
+}
+.borrowListContent .borrowItem li.w163{
+	width: 146px;
+}
+.borrowListContent .borrowItem li.first{
+	border-radius: 5px 0 0 0;
+}
+.borrowListContent .borrowItem li.last{
+	border-radius: 0 5px 0 0;
+}
+.borrowListContent .borrowItem li a{
+    display: block;
+	color: #999;
+	font-size: 14px;
+    display: block;
+}
+.borrowListContent .borrowItem li a:hover {
+    color: #39a1ea;
+}
+.borrowListContent .borrowItem li a.hot{
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -118px -229px;
+	padding-right: 20px;
+}
+.borrowListContent table{
+	width: 100%;
+}
+.borrowListContent table th{
+	height: 27px;
+	border-bottom: 1px solid #fff;
+	background: #F8F8F8;
+	color: #666;
+	cursor: pointer;
+	font-weight: normal;
+}
+.borrowListContent table th:hover {
+    color: #1d83ca;
+}
+.borrowListContent table th i{
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat 1px -261px;
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	margin-left: 5px;
+}
+.borrowListContent table th i.down{
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat 1px -279px;
+}
+.borrowListContent table th.orangeBg,.borrowListContent table th.orangeBg a{
+	color: #FF982B;
+}
+.borrowListContent table th.orangeBg i{
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -21px -261px;
+}
+.borrowListContent table th.orangeBg i.down{
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -21px -279px;
+}
+.borrowListContent table td{
+	text-align: center;
+	color: #666;
+	height: 102px;
+	border-bottom: 1px dashed #DEDEDE;
+	font-size: 18px;
+}
+.borrowListContent table td i.creditRating{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url(http://www.ppdaicdn.com/2014/img/creditRating.png) no-repeat;
+}
+.borrowListContent table td i.A{
+	background-position: -411px -61px;
+}
+.borrowListContent table td i.B{
+	background-position: -94px 0;
+}
+.borrowListContent table td i.C{
+	background-position: -172px 0;
+}
+.borrowListContent table td i.D{
+	background-position: -251px 0;
+}
+.borrowListContent table td i.E{
+	background-position: -331px 0;
+}
+.borrowListContent table td i.AA{
+	background-position: -411px 0;
+	height: 46px;
+}
+.borrowListContent table td i.AAA{
+	background-position: -239px -255px;
+	height: 46px;
+}
+.borrowListContent table td i.F{
+	background-position: -232px -152px;
+	height: 46px;
+}
+.borrowListContent table td a.title{
+	display: block;
+	width: 210px;
+	margin-bottom: 20px;
+	text-align:left;
+    font-size: 16px;
+}
+.borrowListContent table td a.title:hover {
+    color: #39a1ea;
+}
+.borrowListContent table td p.userInfo a{
+	float: left;
+	background: url(http://www.ppdaicdn.com/2014/img/creditRating.png) no-repeat -437px -128px;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+.borrowListContent table td p.userInfo i{
+	float: left;
+	background: url(http://www.ppdaicdn.com/2014/img/creditRating.png) no-repeat;
+	width: 28px;
+	height: 16px;
+	margin-left: 3px;
+}
+.borrowListContent table td p.userInfo i.an{
+	background-position: 0 -138px;
+}
+.borrowListContent table td p.userInfo i.fei{
+	background-position: 0 -157px;
+}
+.borrowListContent table td p.userInfo i.bao{
+	background-position: 0 -118px;
+}
+.borrowListContent table td p.userInfo i.pei{
+	background-position: 0 -96px;
+}
+.borrowListContent table td p.userInfo i.yushen{
+	background-position: -1px -76px;
+}
+.borrowListContent table td p.userInfo i.zhuxue{
+	background-position: 0 -180px;
+}
+.borrowListContent table td p.userInfo i.nong{
+	background-position: 0 -209px;
+}
+.borrowListContent table td p.userInfo i.che{
+	background-position: 0 -234px;
+}
+.borrowListContent table td p.userInfo i.shuma{
+	background-position: 0 -258px;
+}
+.borrowListContent table td p.userInfo i.xian{
+	background-position: 0 -281px;
+}
+.borrowListContent table td p.userInfo i.fu{
+	background-position: 0 -312px;
+}
+.borrowListContent table td.cert i{
+	float: left;
+	width: 26px;
+	height: 20px;
+	background: url(http://www.ppdaicdn.com/2014/img/icon1.png) no-repeat;
+    margin: 0 3px 3px 0;
+}
+.borrowListContent table td.cert i.phone{
+	background-position: -32px -32px;
+}
+.borrowListContent table td.cert i.video{
+	background-position: -68px -31px;
+}
+.borrowListContent table td.cert i.identify{
+	background-position: 0px -32px;
+}
+.borrowListContent table td.cert i.hukou{
+	background-position: -150px -31px;
+}
+.borrowListContent table td.cert i.record{
+	background-position: -108px -32px;
+}
+.borrowListContent table td.orangeFont{
+	color: #F7971A;
+}
+.borrowListContent table td.sum{
+	font-size: 18px;
+}
+.borrowListContent table td.sum span{
+	font-size: 12px;
+}
+.borrowListContent table td.limitTime{
+	font-size: 18px;
+}
+.borrowListContent table td span.fontSize14 {
+    font-size: 14px;
+}
+.borrowListContent table td.process .processBar{
+	height: 6px;
+	width: 92px;
+	border: 1px solid #39A1EA;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.borrowListContent table td.process .processBar .inner{
+	height: 6px;
+	background: #39A1EA;
+    float: left;
+}
+.borrowListContent table td.process p{
+	font-size: 12px;
+	height: 14px;
+	color: #666;
+	text-align: center;
+	padding: 5px 0 0 0;
+}
+.borrowListContent table td.operate a{
+	width: 96px;
+	height: 28px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 28px;
+	color: #fff;
+	background: #39A1EA;
+	display: block;
+	margin: 0 auto;
+}
+.borrowListContent table td.operate a:hover{
+	background: #1D83CA;
+}
+.borrowListContent table td.operate .input{
+	height: 25px;
+	width: 96px;
+	margin: 0 auto;
+	padding: 1px 0;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+.borrowListContent table td.operate .input input{
+	height: 23px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	width: 60px;
+	border: none;
+	float: left;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.borrowListContent table td.operate .input span{
+	float: left;
+	width: 18px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.borrowListContent table td.operate .input .reduce {
+    background: #e0e0e0;
+}
+.borrowListContent table td.operate .input .orange,.borrowListContent table td.operate .input .add {
+    background: #FAAB02;
+}
+.borrowListContent .manjp{
+	margin-bottom: 5px;
+	background: #F8F8F8;
+	padding: 15px 25px;
+}
+.borrowListContent .manjp h3{
+	color: #666;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.borrowListContent .manjp p{
+	color: #666;
+}
+
+.bottomBanner{
+	height: 146px;
+	margin-bottom: 20px;
+}
+.bottomBanner a{
+	display: block;
+	height: 146px;
+	width: 490px;
+}
+.bottomBanner a.fl{
+	float: left;
+}
+.bottomBanner a.fr{
+	float: right;
+}
+#popWindow{
+	position: absolute;
+	z-index: 1000;
+	width: 570px;
+	height: 304px;
+}
+.popWindow{
+	width: 570px;
+	height: 304px;
+}
+.popWindow h3{
+	height: 56px;
+	width: 570px;
+	background: #F8F8F8;
+	border-radius: 5px 5px 0 0;
+	line-height: 56px;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+	font-weight: normal;
+	border-bottom: 1px solid #DADADA;
+	position: relative;
+}
+.popWindow h3 span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(http://www.ppdaicdn.com/2014/img/ppdai2014Icon.png) -227px -292px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+.popWindow .popContent{
+	background: #F8F8F8;
+	padding: 14px 0 0 22px;
+}
+.popWindow .popContent p{
+	font-size: 16px;
+	color: #666;
+}
+.popWindow .popContent p .sum{
+	font-size: 12px;
+	color: #39A1EA;
+}
+.popWindow .popContent p .sum strong{
+	font-weight: normal;
+	font-size: 26px;
+}
+.popWindow .popContent p label,.popWindow .popContent p span{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.popWindow .popContent p label{
+	width: 110px;
+}
+.popWindow .popContent p span .viewDetail{
+	color: #39A1EA;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.popWindow .popContent p span.lilv{
+	margin-right: 25px;
+}
+.popWindow .popContent p span.expir{
+	margin-right: 25px;
+}
+.popWindow .popContent p span em.title{
+	float: left;
+	width: 194px;
+}
+.popWindow .popBtn{
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+}
+.popWindow .popBtn .btn{
+	text-align: center;
+	padding: 15px 0 0 130px;
+}
+.popWindow .popBtn .btn input{
+	width: 198px;
+	height: 44px;
+	background: #39A1EA;
+	border-radius: 3px;
+	color: #fff;
+	float: left;
+	border: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.popWindow .popBtn .btn a{
+	float: left;
+	color: #666;
+	height: 44px;
+	width: 82px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 3px;
+	background: #E1E1E1;
+}
+.popWindow .popBtn p{
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	padding: 10px 0;
+	border-radius: 0 0 5px 5px;
+}
+.lendnavbar {
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    margin: 0 auto;
+}
+.lendnavbar div.posppb{
+	height: 18px;
+	padding-top: 5px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.lendnavbar a.ppb{
+	height: 18px;
+	color: #1D83CA;
+	line-height: 18px;
+	padding-top: 5px;
+    /* position: absolute;
+    right: 0;
+    top: 10px; */
+    float: left;
+    margin-left: 15px;
+}
+.borrowListContent .wrapTable .noInfoSpan {
+    border-bottom: 1px solid #d5d5d5;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+.borrowListContent .wrapTable .noInfoSpan a {
+    color: #39a1ea;
+}
+
+
+

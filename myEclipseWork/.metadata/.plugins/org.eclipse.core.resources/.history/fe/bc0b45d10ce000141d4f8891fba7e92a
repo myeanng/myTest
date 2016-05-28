@@ -1,0 +1,106 @@
+function imgTip(n,t,i,r){
+	$.trim(n.val()).length<1?(
+			n.parent().children("img.error").remove(),
+			n.parent().children("img.valided").remove(),
+			n.parent().append('<img class="error yzmTipInfo" src="'+t+'" />'),
+			$("#wraploginErrorMessage").append($('<div class="loginErrorMessage">'+r+"<\/div>"))):
+			(n.parent().children("img.error").remove(),
+					n.parent().children("img.valided").remove(),
+					n.parent().append('<img class="valided yzmTipInfo" src="'+i+'" />'),
+					$("#wraploginErrorMessage>div").each(
+						function(){
+							$(this).html()==r&&$(this).remove()
+							}
+						)
+						)
+					}
+
+function jump(n,t){
+	 t=t||!1;
+	 var i=document.getElementById(n),
+	 r=arguments.callee.caller.arguments[0]||window.event;
+	 r.keyCode==13&&(t?$("#login_btn").click():i.focus())
+	 }
+
+$(function(){
+	var n,t,i;jQuery.acSiteUrl="./ppd_login_files";
+	jQuery.acStaticCdnUrl="./ppd_login_files";
+	n=jQuery.acStaticCdnUrl+"/errorIcon.png";
+	t=jQuery.acStaticCdnUrl+"/correctIcon.png";
+	$("#UserName").on(
+		"blur",function(){
+			imgTip($(this),n,t,"用户名不能为空")
+			});
+	$("#Password").on(
+		"blur",function(){
+			imgTip($(this),n,t,"密码不能为空")
+			});
+//	$("#imgyzm").on(
+//		"blur",function(){
+//			imgTip($(this),n,t,"验证码不能为空")
+//			});
+	jQuery.cookie(
+		"ui-version",
+		"2014",
+		{expires:30,
+		 path:"/",
+		 domain:".ppdai.com",
+		 secure:!1
+		 });
+	  i=$.cookie("qlui_loginuname");
+	  i!=null&&i.length>0&&(
+			  $("#UserName").val(i),
+	          $("#UserName").blur()
+	          );
+	  $("#wraploginErrorMessage").length>0&&$.trim($("#wraploginErrorMessage").text())==""&&$("#wraploginErrorMessage").html("");
+	  $("#Login input").placeholder();
+	  $(".tpLogin").click(
+		  function(){
+			  var n=btnClick($(this).text());
+			  self==top?window.location.href=n:top.location.href=n
+			           });
+	  
+	  $("#login_btn").click(
+		  function(){
+			  if(($this=$(this),!$this.hasClass("disabled"))&&($("#UserName, #Password").blur(),!$("img.error").length)){
+				  $this.val("正在提交中...").attr("disabled","disabled");
+				  var n={
+					  IsAsync:!0
+					  
+					  //ValidateCode:$("#imgyzm").val()
+					  };
+				  $.post(
+					  './userController/login',{
+					  username:$("#UserName").val(),
+					  password:$("#Password").val()
+					  },
+					  function(data){
+						data=="true"?window.location='default.jsp':window.location='login.jsp';
+						}
+						
+						)
+								  }
+			  }
+		  )
+		  });
+
+     var btnClick=function(n){
+    	 var r=jQuery.acSiteUrl,
+    	 t=$("#Redirect").val(),i;
+    	 t=encodeURIComponent(t);
+    	 i="";
+    	 switch(n){
+    	 case"Alipay":i=r+"/thirdparty/login?apptype=0&redirect="+t;
+    	 break;
+    	 case"RenRen":i=r+"/thirdparty/login?apptype=4&redirect="+t;
+    	 break;
+    	 case"QQ":i=r+"/thirdparty/login?apptype=7&redirect="+t;
+    	 break;
+    	 case"Sina":i=r+"/thirdparty/login?apptype=3&redirect="+t;
+    	 break;
+    	 case"Tenpay":i=r+"/thirdparty/login?apptype=2&redirect="+t;
+    	 break;
+      	 case"Kaixin":i=r+"/thirdparty/login?apptype=5&redirect="+t
+    	 }
+    	 return i
+    	 }

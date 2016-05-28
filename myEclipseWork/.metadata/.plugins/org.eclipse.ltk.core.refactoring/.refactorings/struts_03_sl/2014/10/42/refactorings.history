@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.sl2.factory&apos; to &apos;com.sl3.factory&apos;&#x0D;&#x0A;- Original project: &apos;struts_03_sl&apos;&#x0D;&#x0A;- Original element: &apos;struts_03_sl/src/com.sl2.factory&apos;&#x0D;&#x0A;- Renamed element: &apos;struts_03_sl/src/com.sl3.factory&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.sl2.factory&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.sl2.factory" name="com.sl3.factory" qualified="false" references="true" stamp="1413508119704" textual="false" version="1.0"/>
+</session>

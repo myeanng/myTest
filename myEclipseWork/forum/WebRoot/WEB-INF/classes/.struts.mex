@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="forumpackage" location="412,10" size="595,420">
+    <action name="personAction_*" location="345,71" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="indexNew.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="exception.jsp" />
+      </result>
+      <result name="dui">
+        <resourceEdge source="dui" routing="0" target="listCategory.jsp" />
+      </result>
+    </action>
+    <action name="categoryAction_*" location="345,292" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addBoard.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="exception.jsp" />
+      </result>
+    </action>
+    <action name="boardAction_*" location="65,281" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="setAdmin.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="exception.jsp" />
+      </result>
+      <result name="setAdmin">
+        <resourceEdge source="setAdmin" routing="0" target="setAdmin.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="indexNew.jsp" path="/indexNew.jsp" location="1059,65" size="150,55" />
+  <webResource name="exception.jsp" path="/exception.jsp" location="9,275" size="150,55" />
+  <webResource name="listCategory.jsp" path="/form/listCategory.jsp" location="196,170" size="150,55" />
+  <webResource name="addBoard.jsp" path="/form/addBoard.jsp" location="761,485" size="150,55" />
+  <webResource name="setAdmin.jsp" path="/form/setAdmin.jsp" location="484,485" size="150,55" />
+</Struts2Diagram>
+

@@ -1,0 +1,7 @@
+package com.test.action;
+
+import org.springframework.web.struts.ActionSupport;
+
+public class BookAction extends ActionSupport {
+
+}

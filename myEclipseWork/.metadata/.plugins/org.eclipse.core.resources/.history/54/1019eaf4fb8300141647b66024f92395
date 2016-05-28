@@ -1,0 +1,12 @@
+package com.ss.entity;
+
+import com.ss.dao.BingXangDao;
+
+public class BingXangDaoImpl implements BingXangDao {
+
+	public void goumai() {
+		// TODO Auto-generated method stub
+		System.out.println("你购买了一台特价冰箱!");
+	}
+
+}

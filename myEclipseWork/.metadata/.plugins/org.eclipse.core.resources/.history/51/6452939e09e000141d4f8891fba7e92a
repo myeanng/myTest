@@ -1,0 +1,18 @@
+jQuery('.PPD_login_status').html('<div class="top_inner w1000center clearfix"><div class="mobileappdownload"><a href="http://www.ppdai.com/landingappdownload.html" target="_blank">下载手机客户端</a></div><ul class="top_toolNav"><li><a href="javascript:switchUI(2013);">切换旧版</a></li><li class="w68"><a href="http://ac.ppdai.com/User/Login?redirect=">登录</a></li><li class="w68 mr15"><a href="http://ac.ppdai.com/User/Register?redirect=">注册</a></li><li class="hasStatusArrow"><a href="http://help.ppdai.com" class="fz14">帮助</a><em class="statusArrow statusArrowDown"></em><div class="subContent"><a href="http://www.ppdai.com/consult">客服</a><a href="http://group.ppdai.com">论坛</a></div></li></ul></div>').addClass('top');
+var ac_status = { acSiteUrl: 'http://ac.ppdai.com', acStatic_Url: 'http://ac.ppdaicdn.com', www_ppdaicdn_Url: 'http://www.ppdaicdn.com', StatusScript_Version: 'a25325c331c7cb78992c66ce740908d0', IsTroubleLogin: false, LastLoginInfo: {}, SyncLoginDiscuzFlag: false, IsInMobilePhoneUserList: false, IsDeving: false };
+
+(function (doc) {
+  var ac_lsctl = {
+    createTag: function(t, url) { var e0 = doc.createElement(t); e0.src = url;
+      switch (t) { case 'script': e0.type = 'text/javascript'; break;
+      default: break;
+      }
+      doc.body.appendChild(e0);
+    }, safeFunc: function (func) { try { func(); } catch (err0) { } },
+    init: function() { var that = this;
+      var acstatusJs = ac_status.acStatic_Url + (ac_status.IsDeving ? '/js/acstatus.js?v=' : '/js/acstatus.min.js?v=') + ac_status.StatusScript_Version;
+      that.createTag('script', acstatusJs);
+    }
+  };
+  ac_lsctl.init();
+})(document);

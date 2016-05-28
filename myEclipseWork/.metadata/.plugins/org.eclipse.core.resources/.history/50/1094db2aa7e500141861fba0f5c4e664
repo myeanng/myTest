@@ -1,0 +1,12 @@
+package com.ppd.dao;
+
+import java.util.HashMap;
+
+import com.ppd.entity.Duein;
+
+public interface DueinDao extends BaseDao<Duein> {
+	double ljmoney(int id);
+	double dsmoney(int id);
+	double allLGmoney(int id);
+	int dueinNum(HashMap<String,Integer> map);
+}

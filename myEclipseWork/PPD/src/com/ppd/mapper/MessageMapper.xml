@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.MessageDao">
+  <select id="queryByParam" resultType="com.ppd.entity.Message" parameterType="com.ppd.entity.Message">
+  	select
+  	messageid,
+	message,
+	createtime,
+	status
+  	from message where usersByTouserid = #{usersByTouserid.userid} and status=#{status}
+  </select>
+  
+  <select id="queryById" resultType="com.ppd.entity.Message" parameterType="int">
+  	select
+  	messageid,
+	message,
+	createtime,
+	status
+  	from message where messageid = #{id}
+  </select>
+  
+  <insert id="add" parameterType="com.ppd.entity.Message">
+  	insert into message (messageid,
+	usersByTouserid,
+	usersBySenduserid,
+	message,
+	createtime,
+	status) 
+	values(#{messageid},#{usersByTouserid.userid}, #{usersBySenduserid.userid} , #{message} , #{createtime} , #{status})
+  </insert>
+  
+  <update id="up" parameterType="com.ppd.entity.Message">
+  	update message 
+		<set>
+			status = #{status}
+		</set>
+	where messageid = #{messageid}
+  </update>
+</mapper>

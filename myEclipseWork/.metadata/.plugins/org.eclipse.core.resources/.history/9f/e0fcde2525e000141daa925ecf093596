@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppd.dao.UserinfoDao">
+
+  
+  <resultMap type="com.ppd.entity.Userinfo" id="userinfo">
+  	<id column="accountid" property="accountid"/>
+  	<result column="accountpassword" property="accountpassword"/>
+  	<result column="allmoney" property="allmoney"/>
+  	<result column="outmoney" property="outmoney"/>
+  	<result column="inmoney" property="inmoney"/>
+  	<result column="allinvest" property="allinvest"/>
+  	<result column="allloan" property="allloan"/>
+  </resultMap>
+  
+  <resultMap type="com.ppd.entity.Account" id="accountMap" extends="account">
+  	<association property="com.ppd.entity.Users">
+  		<id column="userid" property="userid"/>
+  	</association>
+  </resultMap>
+</mapper>

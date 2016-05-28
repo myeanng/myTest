@@ -1,0 +1,23 @@
+package com.test.action;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.test.entity.Book2;
+import com.test.entity.User2;
+import com.test.service.BookService;
+@Component
+public class BookAction extends ActionSupport {
+	@Autowired
+	private BookService bookservice;
+	
+	public String addbook(){
+		Book2 book =new Book2();
+		book.setName("cs");
+		User2 user=new User2();
+		user.setId(1);
+		book.setUser2(user);
+		return "book";
+	}
+}
