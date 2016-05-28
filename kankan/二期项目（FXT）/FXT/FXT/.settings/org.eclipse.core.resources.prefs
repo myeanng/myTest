@@ -1,0 +1,19 @@
+#Wed Sep 03 11:42:53 CST 2014
+eclipse.preferences.version=1
+encoding//WebContent/admin/CXgoods.jsp=UTF-8
+encoding//WebContent/admin/addAdmin.jsp=UTF-8
+encoding//WebContent/admin/err.jsp=UTF-8
+encoding//WebContent/admin/main.jsp=UTF-8
+encoding//WebContent/admin/showguanliyuan.jsp=UTF-8
+encoding//WebContent/fukuan.jsp=UTF-8
+encoding//WebContent/gerenzhongxin.jsp=UTF-8
+encoding//WebContent/pay.jsp=UTF-8
+encoding//src/com/fxt/dao/OrdersDao.java=UTF-8
+encoding//src/com/fxt/service/OrdersService.java=UTF-8
+encoding//src/com/fxt/service/impl/OrdersServiceImpl.java=UTF-8
+encoding//src/com/fxt/servlet/ShowCommentServlet.java=UTF-8
+encoding//src/com/fxt/servlet/ShowPayServlet.java=UTF-8
+encoding//src/com/fxt/servlet/ShujufenxiServlet.java=UTF-8
+encoding//src/com/fxt/servlet/cxOrdersServlet.java=UTF-8
+encoding//src/com/fxt/servlet/findAmountByMonthServlet.java=UTF-8
+encoding//src/com/fxt/servlet/login.java=UTF-8
